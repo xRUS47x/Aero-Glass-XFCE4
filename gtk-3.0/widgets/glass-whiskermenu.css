@@ -1,0 +1,60 @@
+/* Whiskermenu Button Apperance e.g. Shutdown, Logoff Buttons */
+#whiskermenu-window button:hover,
+#whiskermenu-window button:checked {
+    background-image: linear-gradient(to bottom, 
+                        rgba(255,255,255,0.5), 
+                        rgba(255,255,255,0) 50%),
+                    linear-gradient(to bottom,
+                        rgba(0,0,0,0.375),
+                        rgba(0,0,0,0.0625) 100%);
+    border: 1px solid rgba(0,0,0,0.375);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.325) inset;
+}
+
+/* Whiskermenu Category Button Apperance */
+#whiskermenu-window button.category-button:hover,
+#whiskermenu-window button.category-button:checked {
+    background-image: linear-gradient(to bottom, 
+                        rgba(255,255,255,0.5), 
+                        rgba(255,255,255,0) 50%),
+                    linear-gradient(to bottom,
+                        rgba(0,0,0,0.375),
+                        rgba(0,0,0,0.0625) 100%);
+    border: 1px solid rgba(0,0,0,0.375);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.325) inset;
+    transition: 0ms
+}
+
+#whiskermenu-window button.category-button {
+    background-color: transparent;
+    min-height: 21px;
+    margin-bottom: 4px;
+    transition: 0ms
+}
+
+/* Whiskermenu Background */
+#whiskermenu-window {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom,
+        rgba(1,1,1,0.50) 0%,
+        rgba(1,1,1,0.75) 14%,
+        rgba(1,1,1,1.00) 50%,
+        rgba(1,1,1,0.75) 86%,
+        rgba(1,1,1,0.50) 100%
+    );
+
+    border: 1px solid rgba(0,0,0,0.375);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.325) inset;
+}
+
+/* Whiskermenu User Profile Picture Frame */
+#whiskermenu-window .profile-picture {
+    min-width: 48px;
+    min-height: 48px;
+    background-image:
+        url("../aero/xfce/user-glass-frame.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center, center;
+    background-size: 100% 100%, cover;
+    border-radius: 8px;
+}
