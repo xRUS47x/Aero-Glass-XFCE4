@@ -1,0 +1,1 @@
+Should you ever wish to replace the start orb, you can use this template to insert your own logo from another Linux distribution into the orb. The image files must then be saved in "gtk-3.0/aero/xfce/".
