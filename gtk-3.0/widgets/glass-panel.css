@@ -1,0 +1,277 @@
+/* Panel */
+.xfce4-panel.background {
+    background-image: url("../aero/xfce/panel.png");
+    background-repeat: repeat-x;
+    background-color: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+/* Menu Orb */
+#whiskermenu-button {
+    background-image: url("../aero/xfce/SB1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 38px;
+
+    min-width: 38px;
+    min-height: 38px;
+
+    padding: 0;
+    margin: 0 12px 0 7px;
+
+    border: none;
+    box-shadow: none;
+}
+
+#whiskermenu-button:hover {
+    background-image: url("../aero/xfce/SB2.png");
+}
+
+#whiskermenu-button:active,
+#whiskermenu-button:checked {
+    background-image: url("../aero/xfce/SB3.png");
+}
+
+/* Launcher Programs */
+#launcher-0 button,  #launcher-1 button,  #launcher-2 button,  #launcher-3 button,
+#launcher-4 button,  #launcher-5 button,  #launcher-6 button,  #launcher-7 button,
+#launcher-8 button,  #launcher-9 button,  #launcher-10 button, #launcher-11 button,
+#launcher-12 button, #launcher-13 button, #launcher-14 button, #launcher-15 button,
+#launcher-16 button, #launcher-17 button, #launcher-18 button, #launcher-19 button,
+#launcher-20 button, #launcher-21 button, #launcher-22 button, #launcher-23 button,
+#launcher-24 button, #launcher-25 button, #launcher-26 button, #launcher-27 button,
+#launcher-28 button, #launcher-29 button, #launcher-30 button {
+
+    margin-left: 0;
+    margin-right: 2px;
+    padding: 0;
+
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+/* Launcher Program Icon - Position & Width */
+#launcher-0 button image,  #launcher-1 button image,  #launcher-2 button image,  #launcher-3 button image,
+#launcher-4 button image,  #launcher-5 button image,  #launcher-6 button image,  #launcher-7 button image,
+#launcher-8 button image,  #launcher-9 button image,  #launcher-10 button image, #launcher-11 button image,
+#launcher-12 button image, #launcher-13 button image, #launcher-14 button image, #launcher-15 button image,
+#launcher-16 button image, #launcher-17 button image, #launcher-18 button image, #launcher-19 button image,
+#launcher-20 button image, #launcher-21 button image, #launcher-22 button image, #launcher-23 button image,
+#launcher-24 button image, #launcher-25 button image, #launcher-26 button image, #launcher-27 button image,
+#launcher-28 button image, #launcher-29 button image, #launcher-30 button image {
+
+    margin: 0 12px;
+    padding: 0;
+}
+
+/* Launcher Program - Hover */
+#launcher-0 button:hover,  #launcher-1 button:hover,  #launcher-2 button:hover,  #launcher-3 button:hover,
+#launcher-4 button:hover,  #launcher-5 button:hover,  #launcher-6 button:hover,  #launcher-7 button:hover,
+#launcher-8 button:hover,  #launcher-9 button:hover,  #launcher-10 button:hover, #launcher-11 button:hover,
+#launcher-12 button:hover, #launcher-13 button:hover, #launcher-14 button:hover, #launcher-15 button:hover,
+#launcher-16 button:hover, #launcher-17 button:hover, #launcher-18 button:hover, #launcher-19 button:hover,
+#launcher-20 button:hover, #launcher-21 button:hover, #launcher-22 button:hover, #launcher-23 button:hover,
+#launcher-24 button:hover, #launcher-25 button:hover, #launcher-26 button:hover, #launcher-27 button:hover,
+#launcher-28 button:hover, #launcher-29 button:hover, #launcher-30 button:hover {
+
+    background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: radial-gradient(circle at 50% 115%,
+                rgba(255,255,255,1) 0%,
+                rgba(255,255,255,0.28) 38%,
+                rgba(0,0,0,0) 70%),
+            linear-gradient(to bottom,
+                rgba(0,0,0,0) 0%,
+                rgba(0,0,0,0) 50%,
+                rgba(0,0,0,0) 60%,
+                rgba(0,0,0,0) 100%);
+    
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,0.550);
+        border-left-color: rgba(0,0,0,0.650);
+        border-right-color: rgba(0,0,0,0.610);
+    
+        box-shadow:
+            0 0 0 1px rgba(255,255,255,0.350) inset,
+            0 1px 0 rgba(255,255,255,0.14) inset;
+}
+
+/* Launcher Program - Pressed */
+#launcher-0 button:active,  #launcher-1 button:active,  #launcher-2 button:active,  #launcher-3 button:active,
+#launcher-4 button:active,  #launcher-5 button:active,  #launcher-6 button:active,  #launcher-7 button:active,
+#launcher-8 button:active,  #launcher-9 button:active,  #launcher-10 button:active, #launcher-11 button:active,
+#launcher-12 button:active, #launcher-13 button:active, #launcher-14 button:active, #launcher-15 button:active,
+#launcher-16 button:active, #launcher-17 button:active, #launcher-18 button:active, #launcher-19 button:active,
+#launcher-20 button:active, #launcher-21 button:active, #launcher-22 button:active, #launcher-23 button:active,
+#launcher-24 button:active, #launcher-25 button:active, #launcher-26 button:active, #launcher-27 button:active,
+#launcher-28 button:active, #launcher-29 button:active, #launcher-30 button:active {
+
+    background-color: transparent;
+        background-repeat: no-repeat;
+        background-image: radial-gradient(circle at 50% 115%,
+                rgba(255,255,255,1) 0%,
+                rgba(255,255,255,0.28) 38%,
+                rgba(0,0,0,0) 70%),
+            linear-gradient(to bottom,
+                rgba(0,0,0,0) 0%,
+                rgba(0,0,0,0.75) 50%,
+                rgba(0,0,0,0.67) 60%,
+                rgba(0,0,0,0) 100%);
+    
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,0.550);
+        border-left-color: rgba(0,0,0,0.650);
+        border-right-color: rgba(0,0,0,0.610);
+    
+        box-shadow:
+            0 0 0 1px rgba(255,255,255,0.350) inset,
+            0 1px 0 rgba(255,255,255,0.14) inset;
+}
+
+/* Launcher Program Icon - Pressed */
+#launcher-0 button:active image,  #launcher-1 button:active image,  #launcher-2 button:active image,  #launcher-3 button:active image,
+#launcher-4 button:active image,  #launcher-5 button:active image,  #launcher-6 button:active image,  #launcher-7 button:active image,
+#launcher-8 button:active image,  #launcher-9 button:active image,  #launcher-10 button:active image, #launcher-11 button:active image,
+#launcher-12 button:active image, #launcher-13 button:active image, #launcher-14 button:active image, #launcher-15 button:active image,
+#launcher-16 button:active image, #launcher-17 button:active image, #launcher-18 button:active image, #launcher-19 button:active image,
+#launcher-20 button:active image, #launcher-21 button:active image, #launcher-22 button:active image, #launcher-23 button:active image,
+#launcher-24 button:active image, #launcher-25 button:active image, #launcher-26 button:active image, #launcher-27 button:active image,
+#launcher-28 button:active image, #launcher-29 button:active image, #launcher-30 button:active image {
+
+    margin: 0 11px -2px 13px;
+    padding: 0;
+}
+
+/* Tasklist */
+.xfce4-panel .tasklist button {
+    margin-left: 0;
+    margin-right: 2px;
+}
+
+.xfce4-panel .tasklist button box label {
+    opacity: 0;
+    font-size: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.xfce4-panel .tasklist button image {
+    margin: 0px 10px;
+    padding: 0;
+}
+
+/* Tasklist - Width */
+.xfce4-panel .tasklist {
+    -XfceTasklist-max-button-length: 62;
+}
+
+/* Tasklist - Appearance */
+.tasklist button {
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(135,165,202,0));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+.xfce4-panel .tasklist button:hover {
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.50),
+                                      rgba(135,165,202,0.00));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+.xfce4-panel .tasklist button:checked {
+    background-image: linear-gradient(to bottom,
+                                      rgba(255,255,255,0.875),
+                                      rgba(255,255,255,0.25));
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+.xfce4-panel .tasklist button:active image {
+  margin: 0px 0px -2px 11px;
+}
+
+/* Widget Buttons - Hover */
+.xfce4-panel button:hover {
+    background-image:
+        radial-gradient(ellipse 140% 90% at 50% 125%,
+            rgba(255,255,255,1) 0%,
+            rgba(255,255,255,0.28) 38%,
+            rgba(0,0,0,0) 70%),
+        linear-gradient(to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0) 50%,
+            rgba(0,0,0,0) 60%,
+            rgba(0,0,0,0) 100%);
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 3px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.375) inset;
+}
+
+/* Widget Buttons - Pressed */
+.xfce4-panel button:active,
+.xfce4-panel button:checked {
+    background-image:
+        radial-gradient(ellipse 140% 90% at 50% 125%,
+            rgba(255,255,255,1) 0%,
+            rgba(255,255,255,0.28) 38%,
+            rgba(0,0,0,0) 70%),
+        linear-gradient(to bottom,
+            rgba(0,0,0,0) 0%,
+            rgba(0,0,0,0.75) 50%,
+            rgba(0,0,0,0.67) 60%,
+            rgba(0,0,0,0) 100%);
+    border: 1px solid rgba(0,0,0,0.5);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.5) inset;
+}
+
+/* PulseAudio Icon Size */
+.xfce4-panel #pulseaudio-button image {
+  -gtk-icon-transform: scale(0.5);
+}
+
+/* Clock */
+#clock-button {
+    margin-top: 2px;
+    margin-right: -11px;
+}
+
+/* ShowDesktop Button */
+#showdesktop-button {
+    background-image: linear-gradient(to bottom, 
+				      rgba(255,255,255,0.5), 
+				      rgba(255,255,255,0) 33.75%),
+		      linear-gradient(to bottom,
+                                      rgba(0,0,0,0.375),
+                                      rgba(0,0,0,0.0625) 100%);
+    border: 1px solid rgba(0,0,0,0.375);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.325) inset;
+    margin: 0;
+    border-radius: 0;
+    margin-left: 20px;
+    transition: 500ms;
+}
+
+#showdesktop-button image {
+    opacity: 0;
+    margin: -20px;
+}
+
+#showdesktop-button:hover {
+    background-image: linear-gradient(to bottom, 
+				      rgba(255,255,255,0.5), 
+				      rgba(255,255,255,0) 25%),
+		      linear-gradient(to bottom,
+                                      rgba(255,255,255,0.5),
+                                      rgba(255,255,255,0.25) 100%);
+}
