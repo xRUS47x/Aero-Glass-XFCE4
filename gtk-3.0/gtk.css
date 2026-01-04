@@ -1,0 +1,6 @@
+/* Replace this with a theme base from, for example, Adwaita or from pre-built themes from Linux distros such as Mint or Manjaro etc. DON'T FORGET TO PUT THE ASSETS FROM THE DESIRED THEME INTO THE GTK-3.0 FOLDER IF THEY USE ANY, OTHERWISE IT MAY CAUSE DISPLAY ERRORS!!!  */
+@import url("adwaita-base.css");
+
+/* Aero Assets Override */
+@import url("widgets/glass-panel.css");
+@import url("widgets/glass-whiskermenu.css");
