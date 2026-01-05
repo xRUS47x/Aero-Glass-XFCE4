@@ -15,3 +15,5 @@ A Linux XFCE theme that replicates the Look and Feel of Windows Aero.
 
 Download the `.zip` file at the ` <> Code ` Button and extract it to the local themes directory 
 `/home/$USER/.themes`
+
+Paste the `picom.conf` to the directory `/home/$USER/.config` and restart picom to apply the settings.
