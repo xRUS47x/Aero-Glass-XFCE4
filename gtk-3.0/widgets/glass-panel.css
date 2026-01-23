@@ -472,41 +472,125 @@
 /* ShowDesktop Button */
 #showdesktop-button {
     background-color: transparent;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to bottom,
-                rgba(255,255,255,0.3) 0%,
-                rgba(255,255,255,0) 40%,
-                rgba(255,255,255,0) 50%,
-                rgba(255,255,255,0.15) 100%);
-    border: 1px solid rgba(0,0,0,0.375);
-    box-shadow: 0 0 0 1px rgba(255,255,255,0.325) inset;
+    background-repeat: no-repeat;
+
+    background-image:
+        linear-gradient(to bottom,
+            rgba(255,255,255,0.30) 0%,
+            rgba(255,255,255,0.14) 16%,
+            rgba(255,255,255,0.00) 40%
+        ),
+
+        linear-gradient(to bottom,
+            rgba(0,0,0,0.22) 0%,
+            rgba(0,0,0,0.30) 55%,
+            rgba(0,0,0,0.18) 100%
+        ),
+
+        linear-gradient(to right,
+            rgba(255,255,255,0.10) 0%,
+            rgba(255,255,255,0.22) 50%,
+            rgba(255,255,255,0.12) 100%
+        ),
+
+        linear-gradient(to bottom,
+            rgba(255,255,255,0.00) 0%,
+            rgba(255,255,255,0.30) 18%,
+            rgba(255,255,255,0.22) 50%,
+            rgba(255,255,255,0.26) 86%,
+            rgba(255,255,255,0.00) 100%
+        );
+
+    background-size:
+        100% 100%,
+        100% 100%,
+        100% 1px,
+        1px 100%;
+    background-position:
+        left top,
+        left top,
+        left bottom,
+        right top;
+
+    border: 1px solid rgba(0,0,0,0.38);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.26) inset;
+
     margin: 0;
-    border-radius: 0;
     margin-left: 20px;
+    border-radius: 0;
     transition: 0ms;
 }
 
 #showdesktop-button:hover {
     background-color: transparent;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to bottom,
-                rgba(255,255,255,0.4) 0%,
-                rgba(255,255,255,0.2) 40%,
-                rgba(255,255,255,0.12000000000000001) 50%,
-                rgba(255,255,255,0.2) 100%);
+    background-repeat: no-repeat;
+
+    background-image:
+        linear-gradient(to bottom,
+            rgba(255,255,255,0.72) 0%,
+            rgba(255,255,255,0.53) 6%,
+            rgba(255,255,255,0.43) 14%,
+            rgba(255,255,255,0.22) 30%,
+            rgba(255,255,255,0.15) 44%,
+            rgba(255,255,255,0.11) 60%,
+            rgba(255,255,255,0.082) 100%
+        ),
+
+        linear-gradient(to bottom,
+            rgba(255,255,255,0.00) 0%,
+            rgba(255,255,255,0.18) 18%,
+            rgba(255,255,255,0.14) 50%,
+            rgba(255,255,255,0.16) 86%,
+            rgba(255,255,255,0.00) 100%
+        );
+
+    background-size:
+        100% 100%,
+        1px 100%;
+    background-position:
+        left top,
+        right top;
+
+    border: 1px solid rgba(0,0,0,0.34);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.22) inset;
 }
 
 #showdesktop-button:active {
     background-color: transparent;
-        background-repeat: no-repeat;
-        background-image: linear-gradient(to bottom,
-                rgba(255,255,255,0.5) 0%,
-                rgba(255,255,255,0.3) 40%,
-                rgba(255,255,255,0.21999999999999997) 50%,
-                rgba(255,255,255,0.3) 100%);
+    background-repeat: no-repeat;
+
+    background-image:
+        linear-gradient(to bottom,
+            rgba(255,255,255,0.87) 0%,
+            rgba(255,255,255,0.77) 10%,
+            rgba(255,255,255,0.72) 20%,
+            rgba(255,255,255,0.60) 40%,
+            rgba(255,255,255,0.53) 60%,
+            rgba(255,255,255,0.51) 100%
+        ),
+
+        linear-gradient(to bottom,
+            rgba(255,255,255,0.00) 0%,
+            rgba(255,255,255,0.22) 18%,
+            rgba(255,255,255,0.18) 50%,
+            rgba(255,255,255,0.20) 86%,
+            rgba(255,255,255,0.00) 100%
+        );
+
+    background-size:
+        100% 100%,
+        1px 100%;
+    background-position:
+        left top,
+        right top;
+
+    border: 1px solid rgba(0,0,0,0.38);
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.20) inset;
 }
 
 #showdesktop-button image {
     opacity: 0;
+    margin: -20px;
+}
     margin: -20px;
 }
