@@ -3,7 +3,7 @@ A Linux XFCE theme that replicates the Look and Feel of Windows Aero.
 ## Preview
 
 
-<img width="1920" height="1080" alt="Aero" src="https://github.com/user-attachments/assets/b56f4085-5312-4406-adf1-ac23abcf18ee" />
+<img width="1920" height="1080" alt="Aero-Glass" src="https://github.com/user-attachments/assets/82536182-86ec-4d97-bbd8-ad8b25dbf0d1" />
 
 
 ## Compatible OS + XFCE Version
