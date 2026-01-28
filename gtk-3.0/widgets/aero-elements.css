@@ -1,5 +1,5 @@
 /* Panel Colors */
-@define-color panel_base  #99b4d1; /* CHANGE THIS VALUE HERE TO CHANGE THE COLORS OF THE PANEL AND MENU. */
+@define-color panel_base  #73b996; /* CHANGE THIS VALUE HERE TO CHANGE THE COLORS OF THE PANEL AND MENU. */
 @define-color accent      @panel_base;
 
 @define-color edge_dark   mix(@accent, #000000, 0.607844);
@@ -11,14 +11,15 @@
   background-color: transparent;
 
   background-image: /* SET THE OPACITY HERE: 0.00 = TRANSPARENT, 1.00 = OPAQUE */
-    linear-gradient(alpha(@edge_dark, 0.75), alpha(@edge_dark, 0.75)),
-    linear-gradient(alpha(@edge_light, 0.75), alpha(@edge_light, 0.75)),
-    linear-gradient(alpha(@panel_base, 0.75), alpha(@panel_base, 0.75));
+    linear-gradient(alpha(@edge_dark, 0.50), alpha(@edge_dark, 0.50)),
+    linear-gradient(alpha(@edge_light, 0.50), alpha(@edge_light, 0.50)),
+    linear-gradient(alpha(@panel_base, 0.50), alpha(@panel_base, 0.50));
 
   background-size: 100% 1px, 100% 1px, 100% 100%;
   background-position: 0 0, 0 1px, 0 0;
   background-repeat: no-repeat;
 }
+
 
 /* Whiskermenu Colors */
 @define-color wm_base @accent;
@@ -29,6 +30,7 @@
 @define-color wm_56   mix(@wm_base, #000000, 0.635294);
 @define-color wm_86   mix(@wm_base, #000000, 0.352941);
 @define-color wm_100  mix(@wm_base, #000000, 0.066667);
+
 
 /* Whiskermenu Background */
 #whiskermenu-window {
@@ -55,4 +57,191 @@
 
 #whiskermenu-window border {
   border-color: @edge_dark;
+}
+
+
+/* CSD Window Colors */
+@define-color window_backdrop mix(@accent, #ffffff, 0.25);
+
+@define-color window_edge_active   mix(@accent, #ffffff, 0.742574);
+@define-color window_edge_backdrop mix(@accent, #ffffff, 0.8);
+
+@define-color window_title_text           #000000;
+@define-color window_title_shadow         #ffffff;
+
+@define-color window_title_text_backdrop  alpha(@window_title_text, 0.75);
+@define-color window_title_shadow_backdrop alpha(@window_title_shadow, 0.75);
+
+
+/* CSD Window Background */
+window.csd headerbar.titlebar,
+window.csd headerbar.default-decoration,
+window.csd .titlebar,
+window.csd .titlebar.default-decoration {
+  background: @panel_base;
+  background-image: none;
+  box-shadow: none;
+}
+
+window.csd headerbar.titlebar {
+  border: 1px solid @window_edge_active;
+}
+
+window.csd headerbar.titlebar:backdrop,
+window.csd headerbar.default-decoration:backdrop,
+window.csd .titlebar:backdrop,
+window.csd .titlebar.default-decoration:backdrop {
+  background: @window_backdrop;
+  background-image: none;
+  box-shadow: none;
+}
+
+headerbar.titlebar:backdrop {
+  border: 1px solid @window_edge_backdrop;
+}
+
+window.csd headerbar.titlebar .title,
+window.csd headerbar.titlebar label.title,
+window.csd .titlebar .title,
+window.csd .titlebar label.title {
+  color: @window_title_text;
+  text-shadow: 0 1px 0 @window_title_shadow;
+}
+
+window.csd headerbar.titlebar:backdrop .title,
+window.csd headerbar.titlebar:backdrop label.title,
+window.csd .titlebar:backdrop .title,
+window.csd .titlebar:backdrop label.title {
+  color: @window_title_text_backdrop;
+  text-shadow: 0 1px 0 @window_title_shadow_backdrop;
+}
+
+window.csd headerbar.titlebar button.titlebutton image,
+window.csd headerbar.default-decoration button.titlebutton image,
+window.csd headerbar.titlebar windowcontrols button image,
+window.csd headerbar.default-decoration windowcontrols button image,
+window.csd headerbar.titlebar:backdrop button.titlebutton image,
+window.csd headerbar.titlebar:backdrop windowcontrols button image,
+window.csd headerbar.default-decoration:backdrop button.titlebutton image,
+window.csd headerbar.default-decoration:backdrop windowcontrols button image {
+  color: #ffffff;
+  -gtk-icon-shadow:
+    -1px  0   #000000,
+     1px  0   #000000,
+     0   -1px #000000,
+     0    1px #000000;
+}
+
+window.csd headerbar.titlebar button.titlebutton,
+window.csd headerbar.default-decoration button.titlebutton,
+window.csd headerbar.titlebar windowcontrols button,
+window.csd headerbar.default-decoration windowcontrols button {
+  min-width: 46px;
+  min-height: 18px;
+  padding: 0;
+  margin: -25px  -3px 5px;
+
+  border-radius: 0;
+  border: 1px solid alpha(#000000, 0.35);
+
+  box-shadow: inset 0 1px alpha(#ffffff, 0.35);
+
+  background-color: transparent;
+  background-image: linear-gradient(to bottom,
+    alpha(#ffffff, 0.28),
+    alpha(#ffffff, 0.00) 45%,
+    alpha(#000000, 0.10));
+  background-repeat: no-repeat;
+}
+
+window.csd headerbar.titlebar button.titlebutton.minimize,
+window.csd headerbar.titlebar windowcontrols button.minimize,
+window.csd headerbar.titlebar button.titlebutton.maximize,
+window.csd headerbar.titlebar windowcontrols button.maximize {
+  min-width: 25px;
+}
+
+window.csd headerbar.titlebar button.titlebutton.close,
+window.csd headerbar.titlebar windowcontrols button.close {
+  min-width: 46px;
+}
+
+window.csd headerbar.titlebar button.titlebutton:hover:not(.close),
+window.csd headerbar.titlebar windowcontrols button:hover:not(.close) {
+  border-color: alpha(#000000, 0.55);
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#7fe7e7, 0.95) 0%,
+      alpha(#7fe7e7, 0.45) 35%,
+      alpha(#7fe7e7, 0.00) 68%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.88) 0%,
+      alpha(#ffffff, 0.35) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #d2e8f7 0%,
+      #4fa2cf 52%,
+      #1d6f87 100%);
+}
+
+window.csd headerbar.titlebar button.titlebutton.close:hover,
+window.csd headerbar.titlebar windowcontrols button.close:hover {
+  border-color: alpha(#000000, 0.60);
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#f1d08b, 0.95) 0%,
+      alpha(#f1d08b, 0.45) 38%,
+      alpha(#f1d08b, 0.00) 70%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.88) 0%,
+      alpha(#ffffff, 0.35) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #fbc3b8 0%,
+      #df4327 55%,
+      #8b1f10 100%);
+}
+
+window.csd headerbar.titlebar button.titlebutton:active:not(.close),
+window.csd headerbar.titlebar windowcontrols button:active:not(.close) {
+  border-color: alpha(#000000, 0.65);
+  box-shadow:
+    inset 0 2px alpha(#000000, 0.22),
+    inset 0 -1px alpha(#000000, 0.22);
+
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#7fe7e7, 0.85) 0%,
+      alpha(#7fe7e7, 0.35) 35%,
+      alpha(#7fe7e7, 0.00) 70%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.82) 0%,
+      alpha(#ffffff, 0.28) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #c5d5df 0%,
+      #318798 55%,
+      #0f4f5a 100%);
+}
+
+window.csd headerbar.titlebar button.titlebutton.close:active,
+window.csd headerbar.titlebar windowcontrols button.close:active {
+  border-color: alpha(#000000, 0.70);
+  box-shadow:
+    inset 0 2px alpha(#000000, 0.28),
+    inset 0 -1px alpha(#000000, 0.25);
+
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#e8d27a, 0.85) 0%,
+      alpha(#e8d27a, 0.30) 40%,
+      alpha(#e8d27a, 0.00) 72%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.78) 0%,
+      alpha(#ffffff, 0.25) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #e3cbbd 0%,
+      #9e4329 58%,
+      #5a1a10 100%);
 }
