@@ -19,14 +19,16 @@ Download the `.zip` file at the ` <> Code ` Button and extract it to the local t
 
 Paste the `picom.conf` to the directory `/home/$USER/.config` and restart picom to apply the settings.
 
-## Customizing the color + opacity of the taskbar and whisker menu
+## Customizing the color and opacity of the menu, taskbar and window decorations.
 
-Navigate to ".../gtk-3.0/widgets/aero-elements.css" in the theme folder
+- Right-click on the theme's root folder.
 
-and change the second line to the code "@define-color panel_base #XXX;" Add your desired color after the hashtag by using the HTML color code.
+- Click "Open in Terminal".
 
-To change the opacity, you need to change the values ​​in
-  "linear-gradient(alpha(@edge_dark, 0.75), alpha(@edge_dark, 0.75)),
-  linear-gradient(alpha(@edge_light, 0.75), alpha(@edge_light, 0.75)),
-  linear-gradient(alpha(@panel_base, 0.75), alpha(@panel_base, 0.75));"
-from 0.75 to any other value. To change the opacity of the whisker menu, you need to manually adjust the background opacity in the whisker menu settings.
+- Type "./color-tool.py" and press Enter.
+
+- Now you can change the theme's colors as desired.
+
+- To save the color scheme, click "Apply" and then "Save Changes".
+
+<img width="1271" height="979" alt="Color-Tool" src="https://github.com/user-attachments/assets/3ec37397-a235-4e10-8486-3bf45ce9acb4" />
