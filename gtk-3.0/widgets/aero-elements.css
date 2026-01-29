@@ -100,20 +100,12 @@ headerbar.titlebar:backdrop {
   border: 1px solid @window_edge_backdrop;
 }
 
-window.csd headerbar.titlebar .title,
-window.csd headerbar.titlebar label.title,
-window.csd .titlebar .title,
-window.csd .titlebar label.title {
-  color: @window_title_text;
-  text-shadow: 0 1px 0 @window_title_shadow;
-}
-
-window.csd headerbar.titlebar:backdrop .title,
-window.csd headerbar.titlebar:backdrop label.title,
-window.csd .titlebar:backdrop .title,
-window.csd .titlebar:backdrop label.title {
-  color: @window_title_text_backdrop;
-  text-shadow: 0 1px 0 @window_title_shadow_backdrop;
+headerbar label.title,
+headerbar label.title:backdrop {
+    color: #000000;
+    text-shadow: 
+        0 0 15px rgba(255, 255, 255, 1.00),
+        0 0 10px rgba(255, 255, 255, 1.00);
 }
 
 window.csd headerbar.titlebar button.titlebutton image,
