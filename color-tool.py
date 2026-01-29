@@ -108,23 +108,34 @@ def opacity_to_percent(opacity: float) -> int:
     return int(round(clamp(opacity, 0.0, 1.0) * 100))
 
 def compute_final_color_and_opacity(base_hex: str, enable_transparency: bool, intensity_0_100: int) -> Tuple[str, float]:
+    """Return (hex_color, opacity).
+
+    Fix: selecting pure black in the HSV mixer must stay black.
+    The old implementation mixed every color with white based on the intensity slider,
+    which turned #000000 into gray at lower intensities.
+
+    New behavior (Win7-like):
+    - Keep the chosen lightness/value.
+    - Use the intensity slider to scale *saturation* (colorization strength).
+    - If transparency is enabled, also scale opacity with intensity.
+    """
     base_hex = normalize_hex(base_hex)
     t = clamp(intensity_0_100 / 100.0, 0.0, 1.0)
 
-    white = (1.0, 1.0, 1.0)
-    base_rgb = hex_to_rgb01(base_hex)
+    r, g, b = hex_to_rgb01(base_hex)
+    h, l, s = colorsys.rgb_to_hls(r, g, b)
+
+    # Color intensity mainly reduces/boosts colorization (saturation),
+    # without pushing colors toward white (so black stays black).
+    s2 = clamp(s * t, 0.0, 1.0)
+    r2, g2, b2 = colorsys.hls_to_rgb(h, l, s2)
 
     if enable_transparency:
-        # keep it visibly tinted, but still translucent
-        tint_min = 0.10
-        mix_t = tint_min + (1.0 - tint_min) * t
         opacity = 0.10 + 0.80 * t
     else:
-        mix_t = t
         opacity = 1.00
 
-    final_rgb = mix_rgb01(white, base_rgb, mix_t)
-    return rgb01_to_hex(final_rgb), opacity
+    return rgb01_to_hex((r2, g2, b2)), opacity
 
 def run_cmd(args: List[str]) -> Tuple[int, str, str]:
     p = subprocess.run(args, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
@@ -316,6 +327,125 @@ def restart_xfwm() -> None:
 def restart_panel() -> None:
     subprocess.Popen(["xfce4-panel", "-r"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
 
+
+# ----------------------------
+# Picom transparency patching
+# ----------------------------
+
+PICOM_TRANSPARENCY_KEYS = (
+    "blur-method",
+    "blur-strength",
+    "blur-background",
+    "blur-background-frame",
+    "frame-opacity",
+    "inactive-opacity",
+    "active-opacity",
+)
+
+PICOM_DEFAULT_TRANSPARENCY_BLOCK = """blur-method = "dual_kawase";
+blur-strength = 2;
+blur-background = true;
+blur-background-frame = true;
+
+frame-opacity = 0.5;
+
+inactive-opacity = 1.0;
+active-opacity = 1.0;
+"""
+
+def picom_conf_path(home: Path) -> Path:
+    # Most distros use ~/.config/picom.conf (no picom/ subdir) for the main config
+    return home / ".config" / "picom.conf"
+
+def picom_block_storage_path() -> Path:
+    # We store removed lines here so we can re-insert the user's previous values later.
+    return ensure_dir(config_dir()) / "picom_transparency_block.txt"
+
+def _save_picom_block(text: str) -> None:
+    try:
+        picom_block_storage_path().write_text(text, encoding="utf-8")
+    except Exception:
+        pass
+
+def _load_picom_block() -> Optional[str]:
+    try:
+        p = picom_block_storage_path()
+        if p.exists():
+            t = p.read_text(encoding="utf-8", errors="replace").strip("\n")
+            return (t + "\n") if t else None
+    except Exception:
+        return None
+    return None
+
+def _has_active_picom_keys(conf_text: str) -> bool:
+    for line in conf_text.splitlines():
+        stripped = line.lstrip()
+        if not stripped or stripped.startswith("#") or stripped.startswith("//"):
+            continue
+        if re.match(rf"^({'|'.join(map(re.escape, PICOM_TRANSPARENCY_KEYS))})\s*=", stripped):
+            return True
+    return False
+
+def patch_picom_conf(home: Path, enable_transparency: bool) -> str:
+    """
+    When transparency is disabled: remove the picom lines listed in PICOM_TRANSPARENCY_KEYS.
+    When enabled: re-insert them (restoring the last removed values if available, otherwise defaults).
+    Returns a short status message if a change was made, otherwise "".
+    """
+    conf = picom_conf_path(home)
+
+    # If there's no config yet, only create it when enabling transparency.
+    if not conf.exists():
+        if not enable_transparency:
+            return ""
+        try:
+            ensure_dir(conf.parent)
+            block = _load_picom_block() or PICOM_DEFAULT_TRANSPARENCY_BLOCK
+            conf.write_text(block.strip("\n") + "\n", encoding="utf-8")
+            return "Picom: picom.conf erstellt + Transparenz-Block eingefügt"
+        except Exception as e:
+            return f"Picom: Konnte picom.conf nicht erstellen ({e})"
+
+    txt = conf.read_text(encoding="utf-8", errors="replace")
+
+    if enable_transparency:
+        # If user already has active keys, do nothing (avoid duplicates).
+        if _has_active_picom_keys(txt):
+            return ""
+        block = _load_picom_block() or PICOM_DEFAULT_TRANSPARENCY_BLOCK
+        new_txt = txt.rstrip("\n") + "\n\n" + block.strip("\n") + "\n"
+        if new_txt != txt:
+            conf.write_text(new_txt, encoding="utf-8")
+            return "Picom: Transparenz-Block wieder eingefügt"
+        return ""
+
+    # Disable: remove active lines for the keys.
+    removed: List[str] = []
+    out_lines: List[str] = []
+    changed = False
+
+    for line in txt.splitlines(True):  # keep newlines
+        stripped = line.lstrip()
+        if stripped.startswith("#") or stripped.startswith("//"):
+            out_lines.append(line)
+            continue
+
+        m = re.match(rf"^\s*({'|'.join(map(re.escape, PICOM_TRANSPARENCY_KEYS))})\s*=", line)
+        if m:
+            removed.append(line.rstrip("\n"))
+            changed = True
+            continue
+
+        out_lines.append(line)
+
+    if not changed:
+        return ""
+
+    # Save what we removed so we can restore exactly later.
+    _save_picom_block("\n".join(removed).strip("\n") + "\n")
+
+    conf.write_text("".join(out_lines), encoding="utf-8")
+    return f"Picom: {len(removed)} Transparenz-Zeilen entfernt"
 
 # ----------------------------
 # XFWM4 generation (template -> xfwm4, recolor marker-family in XPMs)
@@ -850,6 +980,17 @@ class Win7ColorTool(Gtk.Window):
         except Exception:
             b["xfwm4_backup_path"] = None
 
+        try:
+            home = get_real_home()
+            pc = picom_conf_path(home)
+            b["picom_conf_exists"] = bool(pc.exists())
+            b["picom_conf_text"] = pc.read_text(encoding="utf-8", errors="replace") if pc.exists() else None
+        except Exception:
+            b["picom_conf_exists"] = False
+            b["picom_conf_text"] = None
+
+
+
         self._session_backup = b
 
     def _restore_session_backup(self):
@@ -899,6 +1040,24 @@ class Win7ColorTool(Gtk.Window):
                     msgs.append("Restored: xfwm4 folder")
         except Exception as e:
             msgs.append(f"Restore xfwm4 folder failed: {e}")
+
+
+        try:
+            home = get_real_home()
+            pc = picom_conf_path(home)
+            existed = bool(b.get("picom_conf_exists"))
+            text = b.get("picom_conf_text")
+            if existed:
+                if text is not None:
+                    ensure_dir(pc.parent)
+                    pc.write_text(text, encoding="utf-8")
+                    msgs.append("Restored: picom.conf")
+            else:
+                if pc.exists():
+                    pc.unlink()
+                    msgs.append("Removed: picom.conf (created during session)")
+        except Exception as e:
+            msgs.append(f"Restore picom.conf failed: {e}")
 
         try:
             if self.do_restart_xfwm:
@@ -1188,6 +1347,10 @@ class Win7ColorTool(Gtk.Window):
         try:
             patch_aero_elements_css(self.cfg.aero_css, applied_hex, opacity)
             msgs.append(f"GTK CSS: panel_base={applied_hex}, alpha={opacity:.2f}")
+
+            picom_msg = patch_picom_conf(get_real_home(), self.enable_transparency)
+            if picom_msg:
+                msgs.append(picom_msg)
 
             if self.sync_whisker:
                 msgs.append(set_whisker_opacity_xfconf(percent))
