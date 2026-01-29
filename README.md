@@ -10,7 +10,7 @@ A Linux XFCE theme that replicates the Look and Feel of Windows Aero.
 
 - Linux Mint 22.2 - XFCE 4.18
 
-(The theme's functionality may vary depending on the Distribution and XFCE version. Please keep in Mind that this theme is currently W.I.P!)
+(The theme's functionality may vary depending on the Distribution and XFCE version.)
 
 ## Manual Installation Guide
 
