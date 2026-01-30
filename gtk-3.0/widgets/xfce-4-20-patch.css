@@ -1,0 +1,10 @@
+/* Tasklist - Icon - Pressed */
+.xfce4-panel .tasklist button:active image {
+    margin: 0px 10px -2px 11px
+}
+
+/* Tasklist - Width */
+.xfce4-panel .tasklist {
+    -XfceTasklist-min-button-length: 0;
+    -XfceTasklist-max-button-length: 62;
+}
