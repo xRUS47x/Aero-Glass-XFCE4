@@ -181,6 +181,11 @@
     padding: 0;
 }
 
+/* Tasklist - Icon - Pressed */
+.xfce4-panel .tasklist button:active image {
+  margin: 0px 0px -2px 11px;
+}
+
 /* Tasklist - Width */
 .xfce4-panel .tasklist {
     -XfceTasklist-max-button-length: 62;
@@ -330,7 +335,7 @@
   transition: 0ms;
 }
 
-/* Tasklist - Appearance - Active + Hover */
+/* Tasklist - Appearance - Pressed + Hover */
 .xfce4-panel .tasklist button:checked:hover {
   background-color: transparent;
   background-repeat: no-repeat;
@@ -380,11 +385,6 @@
   text-shadow: none;
 
   transition: 0ms;
-}
-
-/* Tasklist - Icon - Pressed */
-.xfce4-panel .tasklist button:active image {
-  margin: 0px 0px -2px 11px;
 }
 
 /* Docklike - Button Position */
