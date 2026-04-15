@@ -1,0 +1,36 @@
+#whiskermenu-window scrolledwindow > viewport {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+
+#whiskermenu-window .category-button {
+    min-width: 0;
+    padding-left: 4px;
+    margin-right: -4px;
+}
+
+#whiskermenu-window button.category-button {
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    min-height: 30px;
+    min-width: 140px;
+}
+
+#whiskermenu-window button.category-button label {
+    padding-left: 3px;
+}
+
+#whiskermenu-window button.category-button:hover {
+    background-color: transparent;
+    background-image: url("../../../assets/xfce/whiskermenu/category/category.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 140px 30px;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    min-height: 30px;
+    min-width: 140px;
+}
