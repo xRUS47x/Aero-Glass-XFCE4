@@ -1,0 +1,31 @@
+#launcher-arrow {
+    margin-right: 2px;
+}
+
+#launcher-arrow:hover {
+    background-image: url("../../../assets/xfce/panel/launcher/launcher-hover.png");
+}
+
+#launcher-arrow:active {
+    background-image: url("../../../assets/xfce/panel/launcher/launcher-hover-pressed.png");
+}
+
+#launcher-arrow button {
+    min-width: 60px;
+    min-height: 40px;
+
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 60px 40px;
+    border: 0;
+    box-shadow: none;
+}
+
+#launcher-arrow image {
+    margin: 0 13px;
+}
+
+#launcher-arrow:active image {
+    margin: 0 13px;
+    -gtk-icon-transform: translate(1px, 1px);
+}

@@ -1,0 +1,8 @@
+#clock-button {
+    margin-top: 2px;
+    margin-right: -15px;
+}
+
+#clock-button > box > box > label:first-child {
+    margin-bottom: -2px;
+}

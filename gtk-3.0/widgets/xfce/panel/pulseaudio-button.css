@@ -1,0 +1,4 @@
+.xfce4-panel #pulseaudio-button image {
+    -gtk-icon-transform: scale(0.5);
+}
+

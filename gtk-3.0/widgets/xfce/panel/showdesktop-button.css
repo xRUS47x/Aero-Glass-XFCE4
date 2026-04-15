@@ -1,0 +1,19 @@
+#showdesktop-button {
+    background-image: url("../../../assets/xfce/panel/showdesktop/showdesktop-standard.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 15px 40px;
+    min-width: 15px;
+}
+
+#showdesktop-button:hover {
+    background-image: url("../../../assets/xfce/panel/showdesktop/showdesktop-hover.png");
+}
+
+#showdesktop-button:active:hover {
+    background-image: url("../../../assets/xfce/panel/showdesktop/showdesktop-pressed.png");
+}
+
+#showdesktop-button image {
+  opacity: 0;
+}

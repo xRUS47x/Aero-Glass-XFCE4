@@ -1,0 +1,24 @@
+#whiskermenu-button {
+    background-image: url("../../../assets/xfce/panel/startbutton/startbutton-standard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto 38px;
+
+    min-width: 38px;
+    min-height: 38px;
+
+    padding: 0;
+    margin: 0 12px 0 7px;
+
+    border: none;
+    box-shadow: none;
+}
+
+#whiskermenu-button:hover {
+    background-image: url("../../../assets/xfce/panel/startbutton/startbutton-hover.png");
+}
+
+#whiskermenu-button:checked,
+#whiskermenu-button:hover:checked {
+    background-image: url("../../../assets/xfce/panel/startbutton/startbutton-pressed.png");
+}

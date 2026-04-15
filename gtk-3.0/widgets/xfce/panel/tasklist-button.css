@@ -1,0 +1,51 @@
+.xfce4-panel .tasklist {
+    -XfceTasklist-min-button-length: 62;
+    -XfceTasklist-max-button-length: 62;
+}
+
+.xfce4-panel .tasklist button {
+    background-image: url("../../../assets/xfce/panel/tasklist/tasklist-standard.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 60px 40px;
+    margin-right: 2px;
+    min-height: 40px;
+    min-width: 60px;
+    transition: 200ms
+}
+
+.xfce4-panel .tasklist button:hover {
+    background-image: url("../../../assets/xfce/panel/tasklist/tasklist-hover.png");
+}
+
+.xfce4-panel .tasklist button:hover:active {
+    background-image: url("../../../assets/xfce/panel/tasklist/tasklist-checked-pressed.png");
+}
+
+.xfce4-panel .tasklist button:checked {
+    background-image: url("../../../assets/xfce/panel/tasklist/tasklist-checked.png");
+}
+
+.xfce4-panel .tasklist button:checked:hover {
+    background-image: url("../../../assets/xfce/panel/tasklist/tasklist-checked-hover.png");
+}
+
+.xfce4-panel .tasklist button:checked:hover:active {
+    background-image: url("../../../assets/xfce/panel/tasklist/tasklist-checked-pressed.png");
+}
+
+.xfce4-panel .tasklist button box label {
+    opacity: 0;
+    font-size: 0;
+}
+
+.xfce4-panel .tasklist button image {
+    margin: 0 11px;
+}
+
+.xfce4-panel .tasklist button:active image {
+    margin: 0 11px;
+    -gtk-icon-transform: translate(1px, 1px);
+}
+
+
