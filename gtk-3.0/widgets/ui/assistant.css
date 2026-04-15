@@ -1,0 +1,26 @@
+assistant > box.horizontal > box.vertical > notebook > stack > box.horizontal {
+    background-color: #ffffff;
+    border: 1px solid #848694;
+    border-radius: 0;
+}
+
+assistant box.sidebar {
+    background-image: none;
+    border-right: 1px solid #ffffff;
+    box-shadow: inset -1px 0 0 0 #a0a0a0;
+    min-width: 75px;
+    padding: 10px;
+}
+
+assistant box.sidebar label {
+    font-weight: normal;
+}
+
+assistant box.sidebar label.highlight {
+    font-weight: bold;
+}
+
+assistant notebook {
+    border-bottom: 1px solid #ffffff;
+    box-shadow: inset 0 -1px 0 0 #a0a0a0;
+}
