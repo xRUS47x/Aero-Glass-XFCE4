@@ -1,0 +1,190 @@
+/*
+ * Windows 7 PNG progressbar for GTK 3
+ * Expected asset path: ./../../assets/ui/bars/
+ *
+ * Trough slices:
+ *   trough-h-left.png   9x14
+ *   trough-h-center.png 1x14
+ *   trough-h-right.png  9x14
+ *   trough-v-top.png    14x9
+ *   trough-v-center.png 14x1
+ *   trough-v-bottom.png 14x9
+ *
+ * Fill assets:
+ *   green-h-full.png    51x14
+ *   red-h-full.png      51x14
+ *   yellow-h-full.png   51x14
+ *   green-v-full.png    14x51
+ *   red-v-full.png      14x51
+ *   yellow-v-full.png   14x51
+ *   green-h-center.png  1x14
+ *   red-h-center.png    1x14
+ *   yellow-h-center.png 1x14
+ *   green-v-center.png  14x1
+ *   red-v-center.png    14x1
+ *   yellow-v-center.png 14x1
+ */
+
+progressbar,
+progressbar:backdrop {
+  min-height: 14px;
+  min-width: 14px;
+}
+
+/* =========================
+ * 1) TROUGH
+ * ========================= */
+progressbar.horizontal trough,
+progressbar.horizontal trough:backdrop {
+  margin: 0;
+  padding: 0;
+  min-height: 14px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  background-image:
+    url("../../assets/ui/bars/trough-h-left.png"),
+    url("../../assets/ui/bars/trough-h-right.png"),
+    url("../../assets/ui/bars/trough-h-center.png");
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0 0, 100% 0, 9px 0;
+  background-size: 9px 14px, 9px 14px, 1px 14px;
+}
+
+progressbar.vertical trough,
+progressbar.vertical trough:backdrop {
+  margin: 0;
+  padding: 0;
+  min-width: 14px;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  background-image:
+    url("../../assets/ui/bars/trough-v-top.png"),
+    url("../../assets/ui/bars/trough-v-bottom.png"),
+    url("../../assets/ui/bars/trough-v-center.png");
+  background-repeat: no-repeat, no-repeat, repeat-y;
+  background-position: 0 0, 0 100%, 0 9px;
+  background-size: 14px 9px, 14px 9px, 14px 1px;
+}
+
+/* =========================
+ * 2) PROGRESS FILL
+ * Caps come from *_full.png via border-image.
+ * The center strip comes from the dedicated *_center.png asset.
+ * ========================= */
+
+/* Default / green / full */
+progressbar.horizontal progress,
+progressbar.horizontal progress:backdrop,
+progressbar.green.horizontal progress,
+progressbar.green.horizontal progress:backdrop,
+progressbar.full.horizontal progress,
+progressbar.full.horizontal progress:backdrop,
+progressbar.horizontal progress.green,
+progressbar.horizontal progress.green:backdrop,
+progressbar.horizontal progress.full,
+progressbar.horizontal progress.full:backdrop {
+  margin: 0;
+  padding: 0;
+  min-height: 14px;
+  background-color: transparent;
+  background-image: url("../../assets/ui/bars/green-h-center.png");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: 1px 14px;
+  background-origin: content-box;
+  background-clip: content-box;
+  box-shadow: none;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 0 25px 0 25px;
+  border-radius: 0;
+  border-image-source: url("../../assets/ui/bars/green-h-full.png");
+  border-image-slice: 0 25 0 25;
+  border-image-width: 0 25px 0 25px;
+  border-image-repeat: stretch;
+}
+
+progressbar.vertical progress,
+progressbar.vertical progress:backdrop,
+progressbar.green.vertical progress,
+progressbar.green.vertical progress:backdrop,
+progressbar.full.vertical progress,
+progressbar.full.vertical progress:backdrop,
+progressbar.vertical progress.green,
+progressbar.vertical progress.green:backdrop,
+progressbar.vertical progress.full,
+progressbar.vertical progress.full:backdrop {
+  margin: 0;
+  padding: 0;
+  min-width: 14px;
+  background-color: transparent;
+  background-image: url("../../assets/ui/bars/green-v-center.png");
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-size: 14px 1px;
+  background-origin: content-box;
+  background-clip: content-box;
+  box-shadow: none;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 25px 0 25px 0;
+  border-radius: 0;
+  border-image-source: url("../../assets/ui/bars/green-v-full.png");
+  border-image-slice: 25 0 25 0;
+  border-image-width: 25px 0 25px 0;
+  border-image-repeat: stretch;
+}
+
+/* Yellow / high */
+progressbar.high.horizontal progress,
+progressbar.high.horizontal progress:backdrop,
+progressbar.yellow.horizontal progress,
+progressbar.yellow.horizontal progress:backdrop,
+progressbar.horizontal progress.high,
+progressbar.horizontal progress.high:backdrop,
+progressbar.horizontal progress.yellow,
+progressbar.horizontal progress.yellow:backdrop {
+  background-image: url("../../assets/ui/bars/yellow-h-center.png");
+  border-image-source: url("../../assets/ui/bars/yellow-h-full.png");
+}
+
+progressbar.high.vertical progress,
+progressbar.high.vertical progress:backdrop,
+progressbar.yellow.vertical progress,
+progressbar.yellow.vertical progress:backdrop,
+progressbar.vertical progress.high,
+progressbar.vertical progress.high:backdrop,
+progressbar.vertical progress.yellow,
+progressbar.vertical progress.yellow:backdrop {
+  background-image: url("../../assets/ui/bars/yellow-v-center.png");
+  border-image-source: url("../../assets/ui/bars/yellow-v-full.png");
+}
+
+/* Red / low */
+progressbar.low.horizontal progress,
+progressbar.low.horizontal progress:backdrop,
+progressbar.red.horizontal progress,
+progressbar.red.horizontal progress:backdrop,
+progressbar.horizontal progress.low,
+progressbar.horizontal progress.low:backdrop,
+progressbar.horizontal progress.red,
+progressbar.horizontal progress.red:backdrop {
+  background-image: url("../../assets/ui/bars/red-h-center.png");
+  border-image-source: url("../../assets/ui/bars/red-h-full.png");
+}
+
+progressbar.low.vertical progress,
+progressbar.low.vertical progress:backdrop,
+progressbar.red.vertical progress,
+progressbar.red.vertical progress:backdrop,
+progressbar.vertical progress.low,
+progressbar.vertical progress.low:backdrop,
+progressbar.vertical progress.red,
+progressbar.vertical progress.red:backdrop {
+  background-image: url("../../assets/ui/bars/red-v-center.png");
+  border-image-source: url("../../assets/ui/bars/red-v-full.png");
+}

@@ -1,0 +1,7 @@
+menu > menuitem:hover {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}

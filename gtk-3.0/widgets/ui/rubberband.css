@@ -1,0 +1,7 @@
+rubberband,
+.rubberband {
+  border: 1px solid #3399ff;
+  background-color: rgba(55, 135, 215, 0.35);
+  background-image: none;
+  box-shadow: none;
+}

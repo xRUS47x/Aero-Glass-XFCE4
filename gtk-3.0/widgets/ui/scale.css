@@ -1,0 +1,351 @@
+scale.horizontal slider {
+    min-height: 16px;
+    min-width: 8px;
+
+    background-image: linear-gradient(to bottom,
+        #fcfcfc 0%,
+        #fcfcfc 4.347826087%,
+        #f2f2f2 4.347826087%,
+        #f2f2f2 8.695652174%,
+        #f1f1f1 8.695652174%,
+        #f1f1f1 13.043478261%,
+        #f0f0f0 13.043478261%,
+        #f0f0f0 17.391304348%,
+        #efefef 17.391304348%,
+        #efefef 21.739130435%,
+        #eeeeee 21.739130435%,
+        #eeeeee 26.086956522%,
+        #ececec 26.086956522%,
+        #ececec 30.434782609%,
+        #ebebeb 30.434782609%,
+        #ebebeb 34.782608696%,
+        #dbdbdb 34.782608696%,
+        #dbdbdb 39.130434783%,
+        #dbdbdb 39.130434783%,
+        #dbdbdb 43.47826087%,
+        #dbdbdb 43.47826087%,
+        #dbdbdb 47.826086957%,
+        #dbdbdb 47.826086957%,
+        #dbdbdb 52.173913043%,
+        #dbdbdb 52.173913043%,
+        #dbdbdb 56.52173913%,
+        #dbdbdb 56.52173913%,
+        #dbdbdb 60.869565217%,
+        #dbdbdb 60.869565217%,
+        #dbdbdb 65.217391304%,
+        #dbdbdb 65.217391304%,
+        #dbdbdb 69.565217391%,
+        #d9d9d9 69.565217391%,
+        #d9d9d9 73.913043478%,
+        #d7d7d7 73.913043478%,
+        #d7d7d7 78.260869565%,
+        #d6d6d6 78.260869565%,
+        #d6d6d6 82.608695652%,
+        #d4d4d4 82.608695652%,
+        #d4d4d4 86.956521739%,
+        #d7d7d7 86.956521739%,
+        #d7d7d7 91.304347826%,
+        #d9d9d9 91.304347826%,
+        #d9d9d9 95.652173913%,
+        #f4f4f4 95.652173913%,
+        #f4f4f4 100%
+    );
+
+    border: 1px solid #707070;
+    border-radius: 2px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.70),
+        inset -1px 0 0 rgba(255,255,255,0.70);
+}
+
+scale.horizontal slider:hover {
+    background-image: linear-gradient(to bottom,
+        #fafdfe 0%,
+        #fafdfe 4.347826087%,
+        #e9f6fd 4.347826087%,
+        #e9f6fd 8.695652174%,
+        #e7f5fd 8.695652174%,
+        #e7f5fd 13.043478261%,
+        #e5f4fd 13.043478261%,
+        #e5f4fd 17.391304348%,
+        #e2f3fc 17.391304348%,
+        #e2f3fc 21.739130435%,
+        #def2fc 21.739130435%,
+        #def2fc 26.086956522%,
+        #dbf1fc 26.086956522%,
+        #dbf1fc 30.434782609%,
+        #d8effc 30.434782609%,
+        #d8effc 34.782608696%,
+        #bde6fd 34.782608696%,
+        #bde6fd 39.130434783%,
+        #bde6fd 39.130434783%,
+        #bde6fd 43.47826087%,
+        #bde6fd 43.47826087%,
+        #bde6fd 47.826086957%,
+        #bde6fd 47.826086957%,
+        #bde6fd 52.173913043%,
+        #bde6fd 52.173913043%,
+        #bde6fd 56.52173913%,
+        #bde6fd 56.52173913%,
+        #bde6fd 60.869565217%,
+        #bde6fd 60.869565217%,
+        #bde6fd 65.217391304%,
+        #bde6fd 65.217391304%,
+        #bde6fd 69.565217391%,
+        #bae4fc 69.565217391%,
+        #bae4fc 73.913043478%,
+        #b6e2fb 73.913043478%,
+        #b6e2fb 78.260869565%,
+        #b2e0f9 78.260869565%,
+        #b2e0f9 82.608695652%,
+        #aedef8 82.608695652%,
+        #aedef8 86.956521739%,
+        #aedef8 86.956521739%,
+        #aedef8 91.304347826%,
+        #b5e0f7 91.304347826%,
+        #b5e0f7 95.652173913%,
+        #e9f6fc 95.652173913%,
+        #e9f6fc 100%
+    );
+
+    border: 1px solid #3c7fb1;
+    border-radius: 2px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.70),
+        inset -1px 0 0 rgba(255,255,255,0.70);
+}
+
+scale.horizontal slider:hover:active,
+scale.horizontal slider:checked {
+    background-image: linear-gradient(to bottom,
+        #fafdfe 0%,
+        #fafdfe 4.347826087%,
+        #e5f4fc 4.347826087%,
+        #e5f4fc 8.695652174%,
+        #dcf1fb 8.695652174%,
+        #dcf1fb 13.043478261%,
+        #d2ecfa 13.043478261%,
+        #d2ecfa 17.391304348%,
+        #c7e7f9 17.391304348%,
+        #c7e7f9 21.739130435%,
+        #bbe2f7 21.739130435%,
+        #bbe2f7 26.086956522%,
+        #b0def6 26.086956522%,
+        #b0def6 30.434782609%,
+        #a6d9f4 30.434782609%,
+        #a6d9f4 34.782608696%,
+        #9dd5f3 34.782608696%,
+        #9dd5f3 39.130434783%,
+        #6cbbe5 39.130434783%,
+        #6cbbe5 43.47826087%,
+        #6cbbe5 43.47826087%,
+        #6cbbe5 47.826086957%,
+        #6cbbe5 47.826086957%,
+        #6cbbe5 52.173913043%,
+        #6cbbe5 52.173913043%,
+        #6cbbe5 56.52173913%,
+        #6cbbe5 56.52173913%,
+        #6cbbe5 60.869565217%,
+        #6cbbe5 60.869565217%,
+        #6cbbe5 65.217391304%,
+        #6cbbe5 65.217391304%,
+        #6cbbe5 69.565217391%,
+        #63b3de 69.565217391%,
+        #63b3de 73.913043478%,
+        #5aaad5 73.913043478%,
+        #5aaad5 78.260869565%,
+        #50a1cc 78.260869565%,
+        #50a1cc 82.608695652%,
+        #50a1cc 82.608695652%,
+        #50a1cc 86.956521739%,
+        #50a1cc 86.956521739%,
+        #50a1cc 91.304347826%,
+        #5ca3c9 91.304347826%,
+        #5ca3c9 95.652173913%,
+        #cfe3ed 95.652173913%,
+        #cfe3ed 100%
+    );
+
+    border: 1px solid #2c628b;
+    border-radius: 2px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.70),
+        inset -1px 0 0 rgba(255,255,255,0.70);
+}
+
+scale.horizontal slider:disabled {
+    background-image: linear-gradient(to bottom,
+        #f4f4f4 0%,
+        #f4f4f4 100%,
+    );
+
+    border: 1px solid #adb2b5;
+    border-radius: 2px;
+    box-shadow:
+        inset 0 0 0 1px rgba(252,252,252,1.00);
+}
+
+scale.vertical slider {
+    min-height: 8px;
+    min-width: 16px;
+
+    background-image: linear-gradient(to bottom,
+        #fcfcfc 0%,
+        #fcfcfc 8.333333333%,
+        #f2f2f2 8.333333333%,
+        #f2f2f2 16.666666667%,
+        #f0f0f0 16.666666667%,
+        #f0f0f0 25%,
+        #eeeeee 25%,
+        #eeeeee 33.333333333%,
+        #ebebeb 33.333333333%,
+        #ebebeb 41.666666667%,
+        #ebebeb 41.666666667%,
+        #ebebeb 50%,
+        #dbdbdb 50%,
+        #dbdbdb 58.333333333%,
+        #dbdbdb 58.333333333%,
+        #dbdbdb 66.666666667%,
+        #d8d8d8 66.666666667%,
+        #d8d8d8 75%,
+        #d5d5d5 75%,
+        #d5d5d5 83.333333333%,
+        #d2d2d2 83.333333333%,
+        #d2d2d2 91.666666667%,
+        #f3f3f3 91.666666667%,
+        #f3f3f3 100%
+    );
+
+    border: 1px solid #707070;
+    border-radius: 2px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.70),
+        inset -1px 0 0 rgba(255,255,255,0.70);
+}
+
+scale.vertical slider:hover {
+    background-image: linear-gradient(to bottom,
+        #fafdfe 0%,
+        #fafdfe 8.333333333%,
+        #e8f6fd 8.333333333%,
+        #e8f6fd 16.666666667%,
+        #e4f4fd 16.666666667%,
+        #e4f4fd 25%,
+        #dff2fc 25%,
+        #dff2fc 33.333333333%,
+        #daf0fc 33.333333333%,
+        #daf0fc 41.666666667%,
+        #daf0fc 41.666666667%,
+        #daf0fc 50%,
+        #bde6fd 50%,
+        #bde6fd 58.333333333%,
+        #bde6fd 58.333333333%,
+        #bde6fd 66.666666667%,
+        #b7e3fb 66.666666667%,
+        #b7e3fb 75%,
+        #b1dff9 75%,
+        #b1dff9 83.333333333%,
+        #abdcf7 83.333333333%,
+        #abdcf7 91.666666667%,
+        #e9f5fc 91.666666667%,
+        #e9f5fc 100%
+    );
+
+    border: 1px solid #3c7fb1;
+    border-radius: 2px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.70),
+        inset -1px 0 0 rgba(255,255,255,0.70);
+}
+
+scale.vertical slider:hover:active,
+scale.vertical slider:checked {
+    background-image: linear-gradient(to bottom,
+        #fafdfe 0%,
+        #fafdfe 8.333333333%,
+        #e0f2fc 8.333333333%,
+        #e0f2fc 16.666666667%,
+        #d0ebfa 16.666666667%,
+        #d0ebfa 25%,
+        #bee3f7 25%,
+        #bee3f7 33.333333333%,
+        #acdcf5 33.333333333%,
+        #acdcf5 41.666666667%,
+        #acdcf5 41.666666667%,
+        #acdcf5 50%,
+        #9dd5f3 50%,
+        #9dd5f3 58.333333333%,
+        #9dd5f3 58.333333333%,
+        #9dd5f3 66.666666667%,
+        #67b7e1 66.666666667%,
+        #67b7e1 75%,
+        #58a8d3 75%,
+        #58a8d3 83.333333333%,
+        #4899c4 83.333333333%,
+        #4899c4 91.666666667%,
+        #cee2ed 91.666666667%,
+        #cee2ed 100%
+    );
+
+    border: 1px solid #2c628b;
+    border-radius: 2px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.70),
+        inset -1px 0 0 rgba(255,255,255,0.70);
+}
+
+scale.vertical slider:disabled {
+    background-image: linear-gradient(to bottom,
+        #f4f4f4 0%,
+        #f4f4f4 100%,
+    );
+
+    border: 1px solid #adb2b5;
+    border-radius: 2px;
+    box-shadow:
+        inset 0 0 0 1px rgba(252,252,252,1.00);
+}
+
+scale.horizontal > trough > highlight {
+    background-image: linear-gradient(#e7eaea, #e7eaea);
+    border-radius: 1px;
+    border-bottom: 1px solid #fcfcfc;
+    border-left:   1px solid #b0b0b0;
+    border-right:  1px solid #fdfdfd;
+    border-top:    1px solid #b0b0b0;
+}
+
+scale.horizontal trough {
+    background-image: linear-gradient(#e7eaea, #e7eaea);
+    border-radius: 1px;
+    border-bottom: 1px solid #fcfcfc;
+    border-left:   1px solid #b0b0b0;
+    border-right:  1px solid #fdfdfd;
+    border-top:    1px solid #b0b0b0;
+}
+
+scale.horizontal slider {
+  margin: -8px 0;
+}
+
+scale.vertical > trough > highlight {
+    background-image: linear-gradient(#e7eaea, #e7eaea);
+    border-radius: 1px;
+    border-bottom: 1px solid #fcfcfc;
+    border-left:   1px solid #b0b0b0;
+    border-right:  1px solid #fdfdfd;
+    border-top:    1px solid #b0b0b0;
+}
+
+scale.vertical trough {
+    background-image: linear-gradient(#e7eaea, #e7eaea);
+    border-radius: 1px;
+    border-bottom: 1px solid #fdfdfd;
+    border-left:   1px solid #fcfcfc;
+    border-right:  1px solid #b0b0b0;
+    border-top:    1px solid #b0b0b0;
+}
+
+scale.vertical slider {
+  margin: 0 -8px;
+}

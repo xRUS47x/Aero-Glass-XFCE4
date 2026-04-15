@@ -1,0 +1,40 @@
+@keyframes spin {
+  0%        { -gtk-icon-source: url("../../assets/ui/spinner/spinner_A.png"); }
+  5.5556%   { -gtk-icon-source: url("../../assets/ui/spinner/spinner_B.png"); }
+  11.1111%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_C.png"); }
+  16.6667%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_D.png"); }
+  22.2222%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_E.png"); }
+  27.7778%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_F.png"); }
+  33.3333%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_G.png"); }
+  38.8889%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_H.png"); }
+  44.4444%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_I.png"); }
+  50%       { -gtk-icon-source: url("../../assets/ui/spinner/spinner_J.png"); }
+  55.5556%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_K.png"); }
+  61.1111%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_L.png"); }
+  66.6667%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_M.png"); }
+  72.2222%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_N.png"); }
+  77.7778%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_O.png"); }
+  83.3333%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_P.png"); }
+  88.8889%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_Q.png"); }
+  94.4444%  { -gtk-icon-source: url("../../assets/ui/spinner/spinner_R.png"); }
+  100%      { -gtk-icon-source: url("../../assets/ui/spinner/spinner_A.png"); }
+}
+
+spinner {
+    min-width: 20px;
+    min-height: 20px;
+    background: none;
+    opacity: 0;
+    -gtk-icon-source: url("../../assets/ui/spinner/spinner_A.png");
+}
+spinner:backdrop {
+    color: @bg_color;
+}
+spinner:checked {
+    opacity: 1;
+    animation: spin 2s steps(20) infinite;
+}
+spinner:checked:disabled {
+    opacity: 0.5;
+    -gtk-icon-shadow: none;
+}

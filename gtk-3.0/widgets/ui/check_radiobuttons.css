@@ -1,0 +1,101 @@
+check {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/normal.png"));
+    min-height: 13px;
+    min-width: 13px;
+    padding: 3px;
+}
+
+check:hover {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/normal-hover.png"));
+}
+
+check:active {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/normal-pressed.png"));
+}
+
+check:disabled {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/normal-disabled.png"));
+}
+
+check:checked {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/checked.png"));
+}
+
+check:checked:hover {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/checked-hover.png"));
+}
+
+check:checked:active {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/checked-pressed.png"));
+}
+
+check:checked:disabled {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/checked-disabled.png"));
+}
+
+check:indeterminate {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/indeterminate.png"));
+}
+
+check:indeterminate:hover {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/indeterminate-hover.png"));
+}
+
+check:indeterminate:active {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/indeterminate-pressed.png"));
+}
+
+check:indeterminate:disabled {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/indeterminate-disabled.png"));
+}
+
+radio {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/normal.png"));
+    min-height: 12px;
+    min-width: 12px;
+    padding: 4px;
+}
+
+radio:hover {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/normal-hover.png"));
+}
+
+radio:active {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/normal-pressed.png"));
+}
+
+radio:disabled {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/normal-disabled.png"));
+}
+
+radio:checked {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/checked.png"));
+}
+
+radio:checked:hover {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/checked-hover.png"));
+}
+
+radio:checked:active {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/checked-pressed.png"));
+}
+
+radio:checked:disabled {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/checked-disabled.png"));
+}
+
+radio:indeterminate {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/indeterminate.png"));
+}
+
+radio:indeterminate:hover {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/indeterminate-hover.png"));
+}
+
+radio:indeterminate:active {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/indeterminate-pressed.png"));
+}
+
+radio:indeterminate:disabled {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/indeterminate-disabled.png"));
+}

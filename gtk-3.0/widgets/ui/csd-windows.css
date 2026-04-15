@@ -1,0 +1,137 @@
+headerbar label.title,
+headerbar label.title:backdrop {
+    color: #000000;
+    text-shadow: 
+        0 0 15px rgba(255, 255, 255, 1.00),
+        0 0 10px rgba(255, 255, 255, 1.00);
+}
+
+headerbar.titlebar button.titlebutton image,
+headerbar.default-decoration button.titlebutton image,
+headerbar.titlebar windowcontrols button image,
+headerbar.default-decoration windowcontrols button image,
+headerbar.titlebar:backdrop button.titlebutton image,
+headerbar.titlebar:backdrop windowcontrols button image,
+headerbar.default-decoration:backdrop button.titlebutton image,
+headerbar.default-decoration:backdrop windowcontrols button image {
+  color: #ffffff;
+  -gtk-icon-shadow:
+    -1px  0   #000000,
+     1px  0   #000000,
+     0   -1px #000000,
+     0    1px #000000;
+}
+
+headerbar.titlebar button.titlebutton,
+headerbar.default-decoration button.titlebutton,
+headerbar.titlebar windowcontrols button,
+headerbar.default-decoration windowcontrols button {
+  min-width: 46px;
+  min-height: 18px;
+  padding: 0;
+  margin: -25px -3px 20px;
+
+  border-radius: 0;
+  border: 1px solid alpha(#000000, 0.35);
+
+  box-shadow: inset 0 1px alpha(#ffffff, 0.35);
+
+  background-color: transparent;
+  background-image: linear-gradient(to bottom,
+    alpha(#ffffff, 0.28),
+    alpha(#ffffff, 0.00) 45%,
+    alpha(#000000, 0.10));
+  background-repeat: no-repeat;
+}
+
+headerbar.titlebar button.titlebutton.minimize,
+headerbar.titlebar windowcontrols button.minimize,
+headerbar.titlebar button.titlebutton.maximize,
+headerbar.titlebar windowcontrols button.maximize {
+  min-width: 25px;
+}
+
+headerbar.titlebar button.titlebutton.close,
+headerbar.titlebar windowcontrols button.close {
+  min-width: 46px;
+}
+
+headerbar.titlebar button.titlebutton:hover:not(.close),
+headerbar.titlebar windowcontrols button:hover:not(.close) {
+  border-color: alpha(#000000, 0.55);
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#7fe7e7, 0.95) 0%,
+      alpha(#7fe7e7, 0.45) 35%,
+      alpha(#7fe7e7, 0.00) 68%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.88) 0%,
+      alpha(#ffffff, 0.35) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #d2e8f7 0%,
+      #4fa2cf 52%,
+      #1d6f87 100%);
+}
+
+headerbar.titlebar button.titlebutton.close:hover,
+headerbar.titlebar windowcontrols button.close:hover {
+  border-color: alpha(#000000, 0.60);
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#f1d08b, 0.95) 0%,
+      alpha(#f1d08b, 0.45) 38%,
+      alpha(#f1d08b, 0.00) 70%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.88) 0%,
+      alpha(#ffffff, 0.35) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #fbc3b8 0%,
+      #df4327 55%,
+      #8b1f10 100%);
+}
+
+headerbar.titlebar button.titlebutton:active:not(.close),
+headerbar.titlebar windowcontrols button:active:not(.close) {
+  border-color: alpha(#000000, 0.65);
+  box-shadow:
+    inset 0 2px alpha(#000000, 0.22),
+    inset 0 -1px alpha(#000000, 0.22);
+
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#7fe7e7, 0.85) 0%,
+      alpha(#7fe7e7, 0.35) 35%,
+      alpha(#7fe7e7, 0.00) 70%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.82) 0%,
+      alpha(#ffffff, 0.28) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #c5d5df 0%,
+      #318798 55%,
+      #0f4f5a 100%);
+}
+
+headerbar.titlebar button.titlebutton.close:active,
+headerbar.titlebar windowcontrols button.close:active {
+  border-color: alpha(#000000, 0.70);
+  box-shadow:
+    inset 0 2px alpha(#000000, 0.28),
+    inset 0 -1px alpha(#000000, 0.25);
+
+  background-image:
+    radial-gradient(circle at 50% 110%,
+      alpha(#e8d27a, 0.85) 0%,
+      alpha(#e8d27a, 0.30) 40%,
+      alpha(#e8d27a, 0.00) 72%),
+    linear-gradient(to bottom,
+      alpha(#ffffff, 0.78) 0%,
+      alpha(#ffffff, 0.25) 42%,
+      alpha(#ffffff, 0.00) 55%),
+    linear-gradient(to bottom,
+      #e3cbbd 0%,
+      #9e4329 58%,
+      #5a1a10 100%);
+}

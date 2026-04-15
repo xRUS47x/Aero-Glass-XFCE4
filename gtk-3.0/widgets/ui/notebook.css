@@ -1,0 +1,483 @@
+/* ========== NOTEBOOKS (BASE) ========== */
+notebook > header,
+notebook > header:backdrop {
+    background-color: transparent;
+    border: none;
+}
+
+notebook.frame,
+notebook.frame:backdrop {
+    border: none;
+}
+
+notebook > stack {
+    box-shadow:
+        inset 0  1px 0 rgba(137,140,149,1.00),  /* outer top */
+        inset 1px 0  0 rgba(137,140,149,1.00),  /* outer left */
+        inset -1px 0 0 rgba(137,140,149,1.00),  /* outer right */
+        inset 0 -1px 0 rgba(137,140,149,1.00);  /* outer bottom */
+}
+
+/* ========== NOTEBOOKS (TOP) ========== */
+notebook > header.top > tabs > tab,
+notebook > header.top > tabs > tab:backdrop {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #f2f2f2 0%,
+        #f2f2f2 12.5%,
+        #f1f1f1 12.5%,
+        #f1f1f1 18.75%,
+        #f0f0f0 18.75%,
+        #f0f0f0 25%,
+        #efefef 25%,
+        #efefef 31.25%,
+        #ededed 31.25%,
+        #ededed 37.5%,
+        #ececec 37.5%,
+        #ececec 43.75%,
+        #ebebeb 43.75%,
+        #ebebeb 50%,
+        #dddddd 50%,
+        #dddddd 56.25%,
+        #dbdbdb 56.25%,
+        #dbdbdb 62.5%,
+        #dadada 62.5%,
+        #dadada 68.75%,
+        #d8d8d8 68.75%,
+        #d8d8d8 75%,
+        #d4d4d4 75%,
+        #d4d4d4 81.25%,
+        #d2d2d2 81.25%,
+        #d2d2d2 87.5%,
+        #d1d1d1 87.5%,
+        #d1d1d1 93.75%,
+        #cfcfcf 93.75%,
+        #cfcfcf 100%
+    );
+    box-shadow:
+        inset 0  2px 0 rgba(255,255,255,0.75),  /* inner top */
+        inset 2px 0  0 rgba(255,255,255,0.75),  /* inner left */
+        inset -2px 0 0 rgba(255,255,255,0.75),  /* inner right */
+        inset 0 -2px 0 rgba(0,0,0,0.00),        /* inner bottom */
+        inset 0  1px 0 rgba(137,140,149,1.00),  /* outer top */
+        inset 1px 0  0 rgba(137,140,149,1.00),  /* outer left */
+        inset -1px 0 0 rgba(137,140,149,1.00),  /* outer right */
+        inset 0 -1px 0 rgba(137,140,149,1.00);  /* outer bottom */
+    border: none;
+    color: #000000;
+}
+
+notebook > header.top > tabs > tab:hover,
+notebook > header.top > tabs > tab:backdrop:hover {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #eaf6fd 0%,
+        #eaf6fd 6.25%,
+        #e8f6fd 6.25%,
+        #e8f6fd 12.5%,
+        #e6f5fd 12.5%,
+        #e6f5fd 18.75%,
+        #e4f4fc 18.75%,
+        #e4f4fc 25%,
+        #e1f3fc 25%,
+        #e1f3fc 31.25%,
+        #def2fc 31.25%,
+        #def2fc 37.5%,
+        #dcf1fc 37.5%,
+        #dcf1fc 43.75%,
+        #d9f0fc 43.75%,
+        #d9f0fc 50%,
+        #bee6fd 50%,
+        #bee6fd 56.25%,
+        #bce5fc 56.25%,
+        #bce5fc 62.5%,
+        #b9e3fb 62.5%,
+        #b9e3fb 68.75%,
+        #b5e2fa 68.75%,
+        #b5e2fa 75%,
+        #afdef8 75%,
+        #afdef8 81.25%,
+        #acdcf7 81.25%,
+        #acdcf7 87.5%,
+        #a9dbf6 87.5%,
+        #a9dbf6 93.75%,
+        #a7d9f5 93.75%,
+        #a7d9f5 100%
+    );
+    box-shadow:
+        inset 0  2px 0 rgba(255,255,255,0.65),  /* inner top */
+        inset 2px 0  0 rgba(255,255,255,0.65),  /* inner left */
+        inset -2px 0 0 rgba(255,255,255,0.65),  /* inner right */
+        inset 0 -2px 0 rgba(0,0,0,0.00),        /* inner bottom */
+        inset 0  1px 0 rgba(60,127,177,1.00),   /* outer top */
+        inset 1px 0  0 rgba(60,127,177,1.00),   /* outer left */
+        inset -1px 0 0 rgba(60,127,177,1.00),   /* outer right */
+        inset 0 -1px 0 rgba(137,140,149,1.00);  /* outer bottom */
+    border: none;
+    color: #000000;
+}
+
+notebook > header.top > tabs > tab:checked,
+notebook > header.top > tabs > tab:backdrop:checked {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #ffffff 0%,
+        #ffffff 100%
+    );
+    box-shadow:
+        inset 0  1px 0 rgba(137,140,149,1.00),  /* outer top */
+        inset 1px 0  0 rgba(137,140,149,1.00),  /* outer left */
+        inset -1px 0 0 rgba(137,140,149,1.00),  /* outer right */
+        inset 0 -1px 0 rgba(0,0,0,0.00);        /* outer bottom */
+    border: none;
+    color: #000000;
+}
+
+/* ========== NOTEBOOKS (BOTTOM) ========== */
+notebook > header.bottom > tabs > tab,
+notebook > header.bottom > tabs > tab:backdrop {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #f2f2f2 0%,
+        #f2f2f2 12.5%,
+        #f1f1f1 12.5%,
+        #f1f1f1 18.75%,
+        #f0f0f0 18.75%,
+        #f0f0f0 25%,
+        #efefef 25%,
+        #efefef 31.25%,
+        #ededed 31.25%,
+        #ededed 37.5%,
+        #ececec 37.5%,
+        #ececec 43.75%,
+        #ebebeb 43.75%,
+        #ebebeb 50%,
+        #dddddd 50%,
+        #dddddd 56.25%,
+        #dbdbdb 56.25%,
+        #dbdbdb 62.5%,
+        #dadada 62.5%,
+        #dadada 68.75%,
+        #d8d8d8 68.75%,
+        #d8d8d8 75%,
+        #d4d4d4 75%,
+        #d4d4d4 81.25%,
+        #d2d2d2 81.25%,
+        #d2d2d2 87.5%,
+        #d1d1d1 87.5%,
+        #d1d1d1 93.75%,
+        #cfcfcf 93.75%,
+        #cfcfcf 100%
+    );
+    box-shadow:
+        inset 2px 0  0 rgba(255,255,255,0.75),  /* inner left */
+        inset -2px 0 0 rgba(255,255,255,0.75),  /* inner right */
+        inset 0  -2px 0 rgba(255,255,255,0.75), /* inner bottom */
+        inset 0  2px 0 rgba(0,0,0,0.00),        /* inner top */
+        inset 0  1px 0 rgba(137,140,149,1.00),  /* outer top */
+        inset 1px 0  0 rgba(137,140,149,1.00),  /* outer left */
+        inset -1px 0 0 rgba(137,140,149,1.00),  /* outer right */
+        inset 0  -1px 0 rgba(137,140,149,1.00); /* outer bottom */
+    border: none;
+    color: #000000;
+}
+
+notebook > header.bottom > tabs > tab:hover,
+notebook > header.bottom > tabs > tab:backdrop:hover {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #eaf6fd 0%,
+        #eaf6fd 6.25%,
+        #e8f6fd 6.25%,
+        #e8f6fd 12.5%,
+        #e6f5fd 12.5%,
+        #e6f5fd 18.75%,
+        #e4f4fc 18.75%,
+        #e4f4fc 25%,
+        #e1f3fc 25%,
+        #e1f3fc 31.25%,
+        #def2fc 31.25%,
+        #def2fc 37.5%,
+        #dcf1fc 37.5%,
+        #dcf1fc 43.75%,
+        #d9f0fc 43.75%,
+        #d9f0fc 50%,
+        #bee6fd 50%,
+        #bee6fd 56.25%,
+        #bce5fc 56.25%,
+        #bce5fc 62.5%,
+        #b9e3fb 62.5%,
+        #b9e3fb 68.75%,
+        #b5e2fa 68.75%,
+        #b5e2fa 75%,
+        #afdef8 75%,
+        #afdef8 81.25%,
+        #acdcf7 81.25%,
+        #acdcf7 87.5%,
+        #a9dbf6 87.5%,
+        #a9dbf6 93.75%,
+        #a7d9f5 93.75%,
+        #a7d9f5 100%
+    );
+    box-shadow:
+        inset 2px 0  0 rgba(255,255,255,0.65),  /* inner left */
+        inset -2px 0 0 rgba(255,255,255,0.65),  /* inner right */
+        inset 0  -2px 0 rgba(255,255,255,0.65), /* inner bottom */
+        inset 0  2px 0 rgba(0,0,0,0.00),        /* inner top */
+        inset 1px 0  0 rgba(60,127,177,1.00),   /* outer left */
+        inset -1px 0 0 rgba(60,127,177,1.00),   /* outer right */
+        inset 0  -1px 0 rgba(60,127,177,1.00),  /* outer top */
+        inset 0  1px 0 rgba(137,140,149,1.00);  /* outer bottom */
+    border: none;
+    color: #000000;
+}
+
+notebook > header.bottom > tabs > tab:checked,
+notebook > header.bottom > tabs > tab:backdrop:checked {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #ffffff 0%,
+        #ffffff 100%
+    );
+    box-shadow:
+        inset 0  1px 0 rgba(0,0,0,0.00),        /* outer top */
+        inset 1px 0  0 rgba(137,140,149,1.00),  /* outer left */
+        inset -1px 0 0 rgba(137,140,149,1.00),  /* outer right */
+        inset 0 -1px 0 rgba(137,140,149,1.00);  /* outer bottom */
+    border: none;
+    color: #000000;
+}
+
+/* ========== NOTEBOOKS (LEFT) ========== */
+notebook > header.left > tabs > tab,
+notebook > header.left > tabs > tab:backdrop {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #f2f2f2 0%,
+        #f2f2f2 12.5%,
+        #f1f1f1 12.5%,
+        #f1f1f1 18.75%,
+        #f0f0f0 18.75%,
+        #f0f0f0 25%,
+        #efefef 25%,
+        #efefef 31.25%,
+        #ededed 31.25%,
+        #ededed 37.5%,
+        #ececec 37.5%,
+        #ececec 43.75%,
+        #ebebeb 43.75%,
+        #ebebeb 50%,
+        #dddddd 50%,
+        #dddddd 56.25%,
+        #dbdbdb 56.25%,
+        #dbdbdb 62.5%,
+        #dadada 62.5%,
+        #dadada 68.75%,
+        #d8d8d8 68.75%,
+        #d8d8d8 75%,
+        #d4d4d4 75%,
+        #d4d4d4 81.25%,
+        #d2d2d2 81.25%,
+        #d2d2d2 87.5%,
+        #d1d1d1 87.5%,
+        #d1d1d1 93.75%,
+        #cfcfcf 93.75%,
+        #cfcfcf 100%
+    );
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.75),  /* inner top */
+        inset 2px 0 0 rgba(255,255,255,0.75),  /* inner left */
+        inset -2px 0 0 rgba(0,0,0,0.00),  /* inner right */
+        inset 0 -2px 0 rgba(255,255,255,0.75),  /* inner bottom */
+        inset 0 1px 0 rgba(137,140,149,1.00),  /* outer top */
+        inset 1px 0 0 rgba(137,140,149,1.00),  /* outer left */
+        inset 0 -1px 0 rgba(137,140,149,1.00),  /* outer bottom */
+        inset -1px 0 0 rgba(137,140,149,1.00);  /* outer right */
+
+    border: none;
+    color: #000000;
+}
+
+notebook > header.left > tabs > tab:hover,
+notebook > header.left > tabs > tab:backdrop:hover {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #eaf6fd 0%,
+        #eaf6fd 6.25%,
+        #e8f6fd 6.25%,
+        #e8f6fd 12.5%,
+        #e6f5fd 12.5%,
+        #e6f5fd 18.75%,
+        #e4f4fc 18.75%,
+        #e4f4fc 25%,
+        #e1f3fc 25%,
+        #e1f3fc 31.25%,
+        #def2fc 31.25%,
+        #def2fc 37.5%,
+        #dcf1fc 37.5%,
+        #dcf1fc 43.75%,
+        #d9f0fc 43.75%,
+        #d9f0fc 50%,
+        #bee6fd 50%,
+        #bee6fd 56.25%,
+        #bce5fc 56.25%,
+        #bce5fc 62.5%,
+        #b9e3fb 62.5%,
+        #b9e3fb 68.75%,
+        #b5e2fa 68.75%,
+        #b5e2fa 75%,
+        #afdef8 75%,
+        #afdef8 81.25%,
+        #acdcf7 81.25%,
+        #acdcf7 87.5%,
+        #a9dbf6 87.5%,
+        #a9dbf6 93.75%,
+        #a7d9f5 93.75%,
+        #a7d9f5 100%
+    );
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.65),  /* inner top */
+        inset 2px 0 0 rgba(255,255,255,0.65),  /* inner left */
+        inset -2px 0 0 rgba(0,0,0,0.00),  /* inner right */
+        inset 0 -2px 0 rgba(255,255,255,0.65),  /* inner bottom */
+        inset 0 1px 0 rgba(60,127,177,1.00),  /* outer top */
+        inset 1px 0 0 rgba(60,127,177,1.00),  /* outer left */
+        inset 0 -1px 0 rgba(60,127,177,1.00),  /* outer bottom */
+        inset -1px 0 0 rgba(137,140,149,1.00);  /* outer right */
+
+    border: none;
+    color: #000000;
+}
+
+notebook > header.left > tabs > tab:checked,
+notebook > header.left > tabs > tab:backdrop:checked {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #ffffff 0%,
+        #ffffff 100%
+    );
+    box-shadow:
+        inset 0 1px 0 rgba(137,140,149,1.00),  /* top */
+        inset 1px 0 0 rgba(137,140,149,1.00),  /* left */
+        inset -1px 0 0 rgba(0,0,0,0.00),  /* right */
+        inset 0 -1px 0 rgba(137,140,149,1.00);  /* bottom */
+    border: none;
+    color: #000000;
+}
+
+/* ========== NOTEBOOKS (RIGHT) ========== */
+notebook > header.right > tabs > tab,
+notebook > header.right > tabs > tab:backdrop {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #f2f2f2 0%,
+        #f2f2f2 12.5%,
+        #f1f1f1 12.5%,
+        #f1f1f1 18.75%,
+        #f0f0f0 18.75%,
+        #f0f0f0 25%,
+        #efefef 25%,
+        #efefef 31.25%,
+        #ededed 31.25%,
+        #ededed 37.5%,
+        #ececec 37.5%,
+        #ececec 43.75%,
+        #ebebeb 43.75%,
+        #ebebeb 50%,
+        #dddddd 50%,
+        #dddddd 56.25%,
+        #dbdbdb 56.25%,
+        #dbdbdb 62.5%,
+        #dadada 62.5%,
+        #dadada 68.75%,
+        #d8d8d8 68.75%,
+        #d8d8d8 75%,
+        #d4d4d4 75%,
+        #d4d4d4 81.25%,
+        #d2d2d2 81.25%,
+        #d2d2d2 87.5%,
+        #d1d1d1 87.5%,
+        #d1d1d1 93.75%,
+        #cfcfcf 93.75%,
+        #cfcfcf 100%
+    );
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.75),  /* inner top */
+        inset -2px 0 0 rgba(255,255,255,0.75),  /* inner right */
+        inset 0 -2px 0 rgba(255,255,255,0.75),  /* inner bottom */
+        inset 2px 0 0 rgba(0,0,0,0.00),  /* inner left */
+        inset 0 1px 0 rgba(137,140,149,1.00),  /* outer top */
+        inset -1px 0 0 rgba(137,140,149,1.00),  /* outer right */
+        inset 0 -1px 0 rgba(137,140,149,1.00),  /* outer bottom */
+        inset 1px 0 0 rgba(137,140,149,1.00);  /* outer left */
+
+    border: none;
+    color: #000000;
+}
+
+notebook > header.right > tabs > tab:hover,
+notebook > header.right > tabs > tab:backdrop:hover {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #eaf6fd 0%,
+        #eaf6fd 6.25%,
+        #e8f6fd 6.25%,
+        #e8f6fd 12.5%,
+        #e6f5fd 12.5%,
+        #e6f5fd 18.75%,
+        #e4f4fc 18.75%,
+        #e4f4fc 25%,
+        #e1f3fc 25%,
+        #e1f3fc 31.25%,
+        #def2fc 31.25%,
+        #def2fc 37.5%,
+        #dcf1fc 37.5%,
+        #dcf1fc 43.75%,
+        #d9f0fc 43.75%,
+        #d9f0fc 50%,
+        #bee6fd 50%,
+        #bee6fd 56.25%,
+        #bce5fc 56.25%,
+        #bce5fc 62.5%,
+        #b9e3fb 62.5%,
+        #b9e3fb 68.75%,
+        #b5e2fa 68.75%,
+        #b5e2fa 75%,
+        #afdef8 75%,
+        #afdef8 81.25%,
+        #acdcf7 81.25%,
+        #acdcf7 87.5%,
+        #a9dbf6 87.5%,
+        #a9dbf6 93.75%,
+        #a7d9f5 93.75%,
+        #a7d9f5 100%
+    );
+    box-shadow:
+        inset 0 2px 0 rgba(255,255,255,0.65), /* inner top */
+        inset -2px 0 0 rgba(255,255,255,0.65), /* inner right */
+        inset 0 -2px 0 rgba(255,255,255,0.65), /* inner bottom */
+        inset 2px 0 0 rgba(0,0,0,0.00), /* inner left */
+        inset 0 1px 0 rgba(60,127,177,1.00), /* outer top */
+        inset -1px 0 0 rgba(60,127,177,1.00), /* outer right */
+        inset 0 -1px 0 rgba(60,127,177,1.00), /* outer bottom */
+        inset 1px 0 0 rgba(137,140,149,1.00);  /* outer left */
+
+    border: none;
+    color: #000000;
+}
+
+notebook > header.right > tabs > tab:checked,
+notebook > header.right > tabs > tab:backdrop:checked {
+    margin: 0;
+    background-image: linear-gradient(to bottom,
+        #ffffff 0%,
+        #ffffff 100%
+    );
+    box-shadow:
+        inset 0 1px 0 rgba(137,140,149,1.00), /* top */
+        inset -1px 0 0 rgba(137,140,149,1.00), /* right */
+        inset 0 -1px 0 rgba(137,140,149,1.00), /* bottom */
+        inset 1px 0 0 rgba(0,0,0,0.00);  /* left */
+    border: none;
+    color: #000000;
+}

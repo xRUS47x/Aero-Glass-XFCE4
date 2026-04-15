@@ -1,0 +1,318 @@
+/*************
+ * scrollbar *
+ *************/
+
+/*
+   Contributor notes:
+   Please use two space indentions.
+   Stack all related and child selectors and selector states into a logical hierarchy to a readable degree.
+   Make sure that all changes made here are part of the GtkScrollbar.
+*/
+
+scrollbar,
+.scrollbar {
+  -GtkScrollbar-has-backward-stepper: true;
+  -GtkScrollbar-has-forward-stepper: true;
+  -GtkRange-stepper-size: 17;
+  -GtkRange-slider-width: 17;
+  -GtkScrolledWindow-scrollbar-spacing: 0;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+  margin: 0;
+  padding: 0; }
+  scrollbar.vertical,
+  .scrollbar.vertical {
+    min-width: 17px;
+    min-height: 17px; }
+  scrollbar.horizontal,
+  .scrollbar.horizontal {
+    min-width: 17px;
+    min-height: 17px; }
+  scrollbar trough,
+  .scrollbar trough {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+    margin: 0;
+    padding: 0; }
+    scrollbar.vertical trough,
+    .scrollbar.vertical trough {
+      min-width: 17px;
+      min-height: 17px;
+      background-image: url("../../assets/ui/scrollbar/trough-vertical.png");
+      background-position: center;
+      background-repeat: repeat-y; }
+    scrollbar.horizontal trough,
+    .scrollbar.horizontal trough {
+      min-width: 17px;
+      min-height: 17px;
+      background-image: url("../../assets/ui/scrollbar/trough-horizontal.png");
+      background-position: center;
+      background-repeat: repeat-x; }
+  scrollbar slider,
+  .scrollbar slider {
+    margin: 0;
+    padding: 0;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: none; }
+    scrollbar.vertical slider,
+    .scrollbar.vertical slider {
+      min-width: 17px;
+      min-height: 22px;
+      border-width: 3px 2px 4px 2px;
+      border-image: url("../../assets/ui/scrollbar/slider-vertical-normal.png") 3 2 4 2 fill stretch; }
+      scrollbar.vertical slider:hover,
+      .scrollbar.vertical slider:hover {
+        border-image: url("../../assets/ui/scrollbar/slider-vertical-hover.png") 3 2 4 2 fill stretch; }
+      scrollbar.vertical slider:active,
+      .scrollbar.vertical slider:active {
+        border-image: url("../../assets/ui/scrollbar/slider-vertical-active.png") 3 2 4 2 fill stretch; }
+      scrollbar.vertical slider:backdrop,
+      .scrollbar.vertical slider:backdrop {
+        border-image: url("../../assets/ui/scrollbar/slider-vertical-backdrop.png") 3 2 4 2 fill stretch; }
+      scrollbar.vertical slider:disabled,
+      scrollbar.vertical slider:insensitive,
+      .scrollbar.vertical slider:disabled,
+      .scrollbar.vertical slider:insensitive {
+        border-image: url("../../assets/ui/scrollbar/slider-vertical-insensitive.png") 3 2 4 2 fill stretch; }
+    scrollbar.horizontal slider,
+    .scrollbar.horizontal slider {
+      min-width: 20px;
+      min-height: 17px;
+      border-width: 2px 4px 2px 2px;
+      border-image: url("../../assets/ui/scrollbar/slider-horizontal-normal.png") 2 4 2 2 fill stretch; }
+      scrollbar.horizontal slider:hover,
+      .scrollbar.horizontal slider:hover {
+        border-image: url("../../assets/ui/scrollbar/slider-horizontal-hover.png") 2 4 2 2 fill stretch; }
+      scrollbar.horizontal slider:active,
+      .scrollbar.horizontal slider:active {
+        border-image: url("../../assets/ui/scrollbar/slider-horizontal-active.png") 2 4 2 2 fill stretch; }
+      scrollbar.horizontal slider:backdrop,
+      .scrollbar.horizontal slider:backdrop {
+        border-image: url("../../assets/ui/scrollbar/slider-horizontal-backdrop.png") 2 4 2 2 fill stretch; }
+      scrollbar.horizontal slider:disabled,
+      scrollbar.horizontal slider:insensitive,
+      .scrollbar.horizontal slider:disabled,
+      .scrollbar.horizontal slider:insensitive {
+        border-image: url("../../assets/ui/scrollbar/slider-horizontal-insensitive.png") 2 4 2 2 fill stretch; }
+  /* This is for Libreoffice scrollbar buttons */
+  scrollbar button,
+  scrollbar .button,
+  .scrollbar button,
+  .scrollbar .button {
+    -gtk-icon-source: none;
+    background-image: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 17px;
+    min-height: 17px;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none; }
+    scrollbar button:active,
+    scrollbar .button:active,
+    .scrollbar button:active,
+    .scrollbar .button:active {
+      min-width: 17px;
+      min-height: 17px;
+      border: none;
+      background-color: transparent;
+      box-shadow: none; }
+  /* Every other scrollbar that isn't Libreoffice */
+  scrollbar button.up,
+  scrollbar button.down,
+  scrollbar button.left,
+  scrollbar button.right,
+  .scrollbar button.up,
+  .scrollbar button.down,
+  .scrollbar button.left,
+  .scrollbar button.right {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    -gtk-icon-source: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: none;
+    border-width: 0;
+    border-style: solid;
+    min-width: 17px;
+    min-height: 17px; }
+    scrollbar button.up:active,
+    scrollbar button.down:active,
+    scrollbar button.left:active,
+    scrollbar button.right:active,
+    .scrollbar button.up:active,
+    .scrollbar button.down:active,
+    .scrollbar button.left:active,
+    .scrollbar button.right:active {
+      border: none;
+      box-shadow: none; }
+  /* Scrollbar buttons for GTK3 applications (such as Firefox or Thunderbird) using deprecated selectors */
+  scrollbar .button,
+  .scrollbar .button {
+    -gtk-icon-source: none;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-width: 0;
+    min-width: 17px;
+    min-height: 17px;
+    box-shadow: none; }
+    scrollbar .button:active,
+    .scrollbar .button:active {
+      -gtk-icon-source: none;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-width: 0;
+      min-width: 17px;
+      min-height: 17px;
+      box-shadow: none; }
+
+/* where is the junction? in scrollablewindow? Does it exists anymore? */
+scrollbar.junction,
+scrollbar .junction,
+.scrollbar.junction,
+.scrollbar .junction,
+junction {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  background-image: url("../../assets/ui/scrollbar/junction.png");
+  background-position: center;
+  background-repeat: repeat;
+  box-shadow: none;
+  min-width: 17px;
+  min-height: 17px; }
+
+/* Vertical scrollbar button icons */
+scrollbar.vertical button.up,
+scrollbar .button.vertical.top,
+.scrollbar.vertical button.up,
+.scrollbar .button.vertical.top {
+  background-image: url("../../assets/ui/scrollbar/button-up-normal.png"); }
+  scrollbar.vertical button.up:hover,
+  scrollbar .button.vertical.top:hover,
+  .scrollbar.vertical button.up:hover,
+  .scrollbar .button.vertical.top:hover {
+    background-image: url("../../assets/ui/scrollbar/button-up-hover.png"); }
+  scrollbar.vertical button.up:active,
+  scrollbar .button.vertical.top:active,
+  .scrollbar.vertical button.up:active,
+  .scrollbar .button.vertical.top:active {
+    background-image: url("../../assets/ui/scrollbar/button-up-active.png"); }
+  scrollbar.vertical button.up:disabled,
+  scrollbar.vertical button.up:insensitive,
+  scrollbar .button.vertical.top:disabled,
+  scrollbar .button.vertical.top:insensitive,
+  .scrollbar.vertical button.up:disabled,
+  .scrollbar.vertical button.up:insensitive,
+  .scrollbar .button.vertical.top:disabled,
+  .scrollbar .button.vertical.top:insensitive {
+    background-image: url("../../assets/ui/scrollbar/button-up-insensitive.png"); }
+
+scrollbar.vertical button.down,
+scrollbar .button.vertical.bottom,
+.scrollbar.vertical button.down,
+.scrollbar .button.vertical.bottom {
+  background-image: url("../../assets/ui/scrollbar/button-down-normal.png"); }
+  scrollbar.vertical button.down:hover,
+  scrollbar .button.vertical.bottom:hover,
+  .scrollbar.vertical button.down:hover,
+  .scrollbar .button.vertical.bottom:hover {
+    background-image: url("../../assets/ui/scrollbar/button-down-hover.png"); }
+  scrollbar.vertical button.down:active,
+  scrollbar .button.vertical.bottom:active,
+  .scrollbar.vertical button.down:active,
+  .scrollbar .button.vertical.bottom:active {
+    background-image: url("../../assets/ui/scrollbar/button-down-active.png"); }
+  scrollbar.vertical button.down:disabled,
+  scrollbar.vertical button.down:insensitive,
+  scrollbar .button.vertical.bottom:disabled,
+  scrollbar .button.vertical.bottom:insensitive,
+  .scrollbar.vertical button.down:disabled,
+  .scrollbar.vertical button.down:insensitive,
+  .scrollbar .button.vertical.bottom:disabled,
+  .scrollbar .button.vertical.bottom:insensitive {
+    background-image: url("../../assets/ui/scrollbar/button-down-insensitive.png"); }
+
+/* Horizontal scrollbar button icons */
+scrollbar.horizontal button.left,
+scrollbar.horizontal button.up,
+scrollbar .button.horizontal.left,
+.scrollbar.horizontal button.left,
+.scrollbar.horizontal button.up,
+.scrollbar .button.horizontal.left {
+  background-image: url("../../assets/ui/scrollbar/button-left-normal.png"); }
+  scrollbar.horizontal button.left:hover,
+  scrollbar.horizontal button.up:hover,
+  scrollbar .button.horizontal.left:hover,
+  .scrollbar.horizontal button.left:hover,
+  .scrollbar.horizontal button.up:hover,
+  .scrollbar .button.horizontal.left:hover {
+    background-image: url("../../assets/ui/scrollbar/button-left-hover.png"); }
+  scrollbar.horizontal button.left:active,
+  scrollbar.horizontal button.up:active,
+  scrollbar .button.horizontal.left:active,
+  .scrollbar.horizontal button.left:active,
+  .scrollbar.horizontal button.up:active,
+  .scrollbar .button.horizontal.left:active {
+    background-image: url("../../assets/ui/scrollbar/button-left-active.png"); }
+  scrollbar.horizontal button.left:disabled,
+  scrollbar.horizontal button.left:insensitive,
+  scrollbar.horizontal button.up:disabled,
+  scrollbar.horizontal button.up:insensitive,
+  scrollbar .button.horizontal.left:disabled,
+  scrollbar .button.horizontal.left:insensitive,
+  .scrollbar.horizontal button.left:disabled,
+  .scrollbar.horizontal button.left:insensitive,
+  .scrollbar.horizontal button.up:disabled,
+  .scrollbar.horizontal button.up:insensitive,
+  .scrollbar .button.horizontal.left:disabled,
+  .scrollbar .button.horizontal.left:insensitive {
+    background-image: url("../../assets/ui/scrollbar/button-left-insensitive.png"); }
+
+scrollbar.horizontal button.right,
+scrollbar.horizontal button.down,
+scrollbar .button.horizontal.right,
+.scrollbar.horizontal button.right,
+.scrollbar.horizontal button.down,
+.scrollbar .button.horizontal.right {
+  background-image: url("../../assets/ui/scrollbar/button-right-normal.png"); }
+  scrollbar.horizontal button.right:hover,
+  scrollbar.horizontal button.down:hover,
+  scrollbar .button.horizontal.right:hover,
+  .scrollbar.horizontal button.right:hover,
+  .scrollbar.horizontal button.down:hover,
+  .scrollbar .button.horizontal.right:hover {
+    background-image: url("../../assets/ui/scrollbar/button-right-hover.png"); }
+  scrollbar.horizontal button.right:active,
+  scrollbar.horizontal button.down:active,
+  scrollbar .button.horizontal.right:active,
+  .scrollbar.horizontal button.right:active,
+  .scrollbar.horizontal button.down:active,
+  .scrollbar .button.horizontal.right:active {
+    background-image: url("../../assets/ui/scrollbar/button-right-active.png"); }
+  scrollbar.horizontal button.right:disabled,
+  scrollbar.horizontal button.right:insensitive,
+  scrollbar.horizontal button.down:disabled,
+  scrollbar.horizontal button.down:insensitive,
+  scrollbar .button.horizontal.right:disabled,
+  scrollbar .button.horizontal.right:insensitive,
+  .scrollbar.horizontal button.right:disabled,
+  .scrollbar.horizontal button.right:insensitive,
+  .scrollbar.horizontal button.down:disabled,
+  .scrollbar.horizontal button.down:insensitive,
+  .scrollbar .button.horizontal.right:disabled,
+  .scrollbar .button.horizontal.right:insensitive {
+    background-image: url("../../assets/ui/scrollbar/button-right-insensitive.png"); }

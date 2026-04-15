@@ -1,0 +1,228 @@
+spinbutton.horizontal {
+    border: none;
+}
+
+spinbutton:disabled:not(.vertical) {
+    color: #6d6d6d;
+}
+
+spinbutton.horizontal > button.up {
+    background-image: linear-gradient(to bottom,
+        #f2f2f2 0%,
+        #f2f2f2 9.090909091%,
+        #f1f1f1 9.090909091%,
+        #f1f1f1 18.181818182%,
+        #efefef 18.181818182%,
+        #efefef 27.272727273%,
+        #eeeeee 27.272727273%,
+        #eeeeee 36.363636364%,
+        #ececec 36.363636364%,
+        #ececec 45.454545455%,
+        #e8e8e8 45.454545455%,
+        #e8e8e8 54.545454545%,
+        #dbdbdb 54.545454545%,
+        #dbdbdb 63.636363636%,
+        #d8d8d8 63.636363636%,
+        #d8d8d8 72.727272727%,
+        #d6d6d6 72.727272727%,
+        #d6d6d6 81.818181818%,
+        #d3d3d3 81.818181818%,
+        #d3d3d3 90.909090909%,
+        #d1d1d1 90.909090909%,
+        #d1d1d1 100%
+    );
+    color: #5f6ea5;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.70);
+
+    border-radius: 0;
+    border: 1px solid #abadb3;
+}
+
+spinbutton.horizontal > button.up:hover {
+    background-image: linear-gradient(to bottom,
+        #e9f6fd 0%,
+        #e9f6fd 9.090909091%,
+        #e6f5fd 9.090909091%,
+        #e6f5fd 18.181818182%,
+        #e3f3fc 18.181818182%,
+        #e3f3fc 27.272727273%,
+        #dff2fc 27.272727273%,
+        #dff2fc 36.363636364%,
+        #dbf0fc 36.363636364%,
+        #dbf0fc 45.454545455%,
+        #d2edfc 45.454545455%,
+        #d2edfc 54.545454545%,
+        #bbe5fc 54.545454545%,
+        #bbe5fc 63.636363636%,
+        #b6e2fb 63.636363636%,
+        #b6e2fb 72.727272727%,
+        #b2e0f9 72.727272727%,
+        #b2e0f9 81.818181818%,
+        #adddf7 81.818181818%,
+        #adddf7 90.909090909%,
+        #a9dbf5 90.909090909%,
+        #a9dbf5 100%
+    );
+    color: #5f6ea5;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.70);
+
+    border: 1px solid #3c7fb1;
+}
+
+spinbutton.horizontal > button.up:active:focus {
+    background-image: linear-gradient(to bottom,
+        #c2e4f6 0%,
+        #c2e4f6 9.090909091%,
+        #c2e4f6 9.090909091%,
+        #c2e4f6 18.181818182%,
+        #c2e4f6 18.181818182%,
+        #c2e4f6 27.272727273%,
+        #c2e4f6 27.272727273%,
+        #c2e4f6 36.363636364%,
+        #c2e4f6 36.363636364%,
+        #c2e4f6 45.454545455%,
+        #c2e4f6 45.454545455%,
+        #c2e4f6 54.545454545%,
+        #aad9f3 54.545454545%,
+        #aad9f3 63.636363636%,
+        #a5d7f1 63.636363636%,
+        #a5d7f1 72.727272727%,
+        #a0d4f0 72.727272727%,
+        #a0d4f0 81.818181818%,
+        #9ad1ee 81.818181818%,
+        #9ad1ee 90.909090909%,
+        #95ceec 90.909090909%,
+        #95ceec 100%
+    );
+    color: #5f6ea5;
+    box-shadow: inset 0  1px 0 rgba(0,0,0,0.10),
+        inset 1px 0  0 rgba(0,0,0,0.10),
+        inset 0  2px 0 rgba(0,0,0,0.35),
+        inset 2px 0  0 rgba(0,0,0,0.35);
+
+    border: 1px solid #2c628b;
+}
+
+spinbutton.horizontal > button.up:disabled {
+    background-image: linear-gradient(to bottom,
+        #ffffff 0%,
+        #ffffff 100%
+    );
+    color: #5f6ea5;
+    border: 1px solid #bfbfbf;
+}
+
+spinbutton.horizontal > button.down {
+    margin-left: -1px;
+    background-image: linear-gradient(to bottom,
+        #f2f2f2 0%,
+        #f2f2f2 9.090909091%,
+        #f1f1f1 9.090909091%,
+        #f1f1f1 18.181818182%,
+        #efefef 18.181818182%,
+        #efefef 27.272727273%,
+        #eeeeee 27.272727273%,
+        #eeeeee 36.363636364%,
+        #ececec 36.363636364%,
+        #ececec 45.454545455%,
+        #e8e8e8 45.454545455%,
+        #e8e8e8 54.545454545%,
+        #dbdbdb 54.545454545%,
+        #dbdbdb 63.636363636%,
+        #d8d8d8 63.636363636%,
+        #d8d8d8 72.727272727%,
+        #d6d6d6 72.727272727%,
+        #d6d6d6 81.818181818%,
+        #d3d3d3 81.818181818%,
+        #d3d3d3 90.909090909%,
+        #d1d1d1 90.909090909%,
+        #d1d1d1 100%
+    );
+    color: #5f6ea5;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.70);
+
+    border-radius: 0;
+    border: 1px solid #abadb3;
+}
+
+spinbutton.horizontal > button.down:hover {
+    margin-left: -1px;
+    background-image: linear-gradient(to bottom,
+        #e9f6fd 0%,
+        #e9f6fd 9.090909091%,
+        #e6f5fd 9.090909091%,
+        #e6f5fd 18.181818182%,
+        #e3f3fc 18.181818182%,
+        #e3f3fc 27.272727273%,
+        #dff2fc 27.272727273%,
+        #dff2fc 36.363636364%,
+        #dbf0fc 36.363636364%,
+        #dbf0fc 45.454545455%,
+        #d2edfc 45.454545455%,
+        #d2edfc 54.545454545%,
+        #bbe5fc 54.545454545%,
+        #bbe5fc 63.636363636%,
+        #b6e2fb 63.636363636%,
+        #b6e2fb 72.727272727%,
+        #b2e0f9 72.727272727%,
+        #b2e0f9 81.818181818%,
+        #adddf7 81.818181818%,
+        #adddf7 90.909090909%,
+        #a9dbf5 90.909090909%,
+        #a9dbf5 100%
+    );
+    color: #5f6ea5;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,0.70);
+
+    border: 1px solid #3c7fb1;
+}
+
+spinbutton.horizontal > button.down:active:focus {
+    margin-left: -1px;
+    background-image: linear-gradient(to bottom,
+        #c2e4f6 0%,
+        #c2e4f6 9.090909091%,
+        #c2e4f6 9.090909091%,
+        #c2e4f6 18.181818182%,
+        #c2e4f6 18.181818182%,
+        #c2e4f6 27.272727273%,
+        #c2e4f6 27.272727273%,
+        #c2e4f6 36.363636364%,
+        #c2e4f6 36.363636364%,
+        #c2e4f6 45.454545455%,
+        #c2e4f6 45.454545455%,
+        #c2e4f6 54.545454545%,
+        #aad9f3 54.545454545%,
+        #aad9f3 63.636363636%,
+        #a5d7f1 63.636363636%,
+        #a5d7f1 72.727272727%,
+        #a0d4f0 72.727272727%,
+        #a0d4f0 81.818181818%,
+        #9ad1ee 81.818181818%,
+        #9ad1ee 90.909090909%,
+        #95ceec 90.909090909%,
+        #95ceec 100%
+    );
+    color: #5f6ea5;
+    box-shadow: inset 0  1px 0 rgba(0,0,0,0.10),
+        inset 1px 0  0 rgba(0,0,0,0.10),
+        inset 0  2px 0 rgba(0,0,0,0.35),
+        inset 2px 0  0 rgba(0,0,0,0.35);
+
+    border: 1px solid #2c628b;
+}
+
+spinbutton.horizontal > button.down:disabled {
+    margin-left: -1px;
+    background-image: linear-gradient(to bottom,
+        #ffffff 0%,
+        #ffffff 100%
+    );
+    color: #5f6ea5;
+    border: 1px solid #bfbfbf;
+}
+
+spinbutton:not(.horizontal),
+spinbutton:not(.vertical) {
+    border-radius: 0;
+}

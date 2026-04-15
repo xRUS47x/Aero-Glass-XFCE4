@@ -1,0 +1,72 @@
+menubar {
+    background-image: linear-gradient(to bottom,
+        #fefeff 0%,
+        #fefeff 5.263157895%,
+        #fcfdfe 5.263157895%,
+        #fcfdfe 10.526315789%,
+        #f6f8fc 10.526315789%,
+        #f6f8fc 15.789473684%,
+        #f2f5fa 15.789473684%,
+        #f2f5fa 21.052631579%,
+        #eff2f9 21.052631579%,
+        #eff2f9 26.315789474%,
+        #e8ecf6 26.315789474%,
+        #e8ecf6 31.578947368%,
+        #e5eaf5 31.578947368%,
+        #e5eaf5 36.842105263%,
+        #d4dbed 36.842105263%,
+        #d4dbed 42.105263158%,
+        #d4dbee 42.105263158%,
+        #d4dbee 47.368421053%,
+        #d6ddef 47.368421053%,
+        #d6ddef 52.631578947%,
+        #d7def0 52.631578947%,
+        #d7def0 57.894736842%,
+        #d9dff0 57.894736842%,
+        #d9dff0 63.157894737%,
+        #dae0f1 63.157894737%,
+        #dae0f1 68.421052632%,
+        #dce2f3 68.421052632%,
+        #dce2f3 73.684210526%,
+        #dee3f3 73.684210526%,
+        #dee3f3 78.947368421%,
+        #dfe4f4 78.947368421%,
+        #dfe4f4 84.210526316%,
+        #e0e5f5 84.210526316%,
+        #e0e5f5 89.473684211%,
+        #e1e6f6 89.473684211%,
+        #e1e6f6 94.736842105%,
+        #b6bccc 94.736842105%,
+        #b6bccc 100%
+    );
+    box-shadow:
+        inset -1px 0 0 rgba(255,255,255,0.45),
+        inset 1px 0 0 rgba(255,255,255,0.45);
+}
+
+menu,
+.menu {
+    background-color: #f0f0f0;
+    color: #000000;
+    border: 1px solid #979797;
+    box-shadow:
+        0 0 0 2px #f5f5f5 inset;
+}
+
+menu > menuitem {
+    padding-top: 4px;
+    padding-left: 16px;
+    padding-right: 19px;
+}
+
+menuitem {
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+menu separator {
+    margin: 3px 3px 3px 3px;
+    background-color: transparent;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #ffffff;
+}

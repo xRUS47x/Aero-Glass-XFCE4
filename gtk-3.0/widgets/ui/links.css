@@ -1,0 +1,83 @@
+button:link,
+button:visited,
+button:link:hover,
+button:visited:hover,
+button:link:active,
+button:visited:active,
+button:link:focus,
+button:visited:focus,
+button:link:hover:focus,
+button:visited:hover:focus,
+button:link:active:focus,
+button:visited:active:focus,
+button:link:disabled,
+button:visited:disabled {
+    background-color: transparent;
+    background-image: none;
+    border-color: transparent;
+    border-image: none;
+    box-shadow: none;
+    -gtk-icon-shadow: none;
+    min-height: 0;
+    min-width: 0;
+    outline: none;
+    padding: 0;
+    text-shadow: none;
+}
+
+button:link > label,
+button:visited > label,
+button:link:hover > label,
+button:visited:hover > label,
+button:link:active > label,
+button:visited:active > label,
+button:link:focus > label,
+button:visited:focus > label,
+button:link:hover:focus > label,
+button:visited:hover:focus > label,
+button:link:active:focus > label,
+button:visited:active:focus > label,
+button:link:disabled > label,
+button:visited:disabled > label {
+    background-color: transparent;
+    background-image: none;
+    -gtk-icon-shadow: none;
+    text-shadow: none;
+}
+
+button:link,
+button:link > label {
+    color: #0066CC;
+}
+
+button:visited,
+button:visited > label {
+    color: #663399;
+}
+
+button:link:hover,
+button:link:hover > label,
+button:visited:hover,
+button:visited:hover > label {
+    color: #3399FF;
+    text-decoration: underline;
+}
+
+button:link:active,
+button:link:active > label,
+button:visited:active,
+button:visited:active > label,
+button:link:hover:active,
+button:link:hover:active > label,
+button:visited:hover:active,
+button:visited:hover:active > label {
+    color: #003399;
+    text-decoration: underline;
+}
+
+button:link:disabled,
+button:link:disabled > label,
+button:visited:disabled,
+button:visited:disabled > label {
+    color: #A0A0A0;
+}

@@ -1,0 +1,31 @@
+separator.horizontal {
+    border-top: 1px solid #d5dfe5;
+    border-bottom: 1px solid #ffffff;
+}
+
+separator.vertical {
+    border-left: 1px solid #d5dfe5;
+    border-right: 1px solid #ffffff;
+}
+
+paned {
+    -GtkPaned-handle-size: 2;
+}
+
+paned.horizontal > separator {
+    background-image: linear-gradient(to right,
+        #d5dfe5 0%,
+        #d5dfe5 50%,
+        #ffffff 50%,
+        #ffffff 100%
+    );
+}
+
+paned.vertical > separator {
+    background-image: linear-gradient(to bottom,
+        #d5dfe5 0%,
+        #d5dfe5 50%,
+        #ffffff 50%,
+        #ffffff 100%
+    );
+}

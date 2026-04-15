@@ -1,0 +1,124 @@
+combobox > box.linked > entry + button.combo,
+combobox > box.horizontal.linked > entry + button.combo {
+    margin-left: -2px;
+    border: none;
+    background-image: none;
+    background-color: #ffffff;
+    box-shadow:
+        inset 1px 0  0 #ffffff,
+        inset -1px 0 0 #dbdfe6,
+        inset 0 -1px 0 #e3e9ef,
+        inset 0  1px 0 #abadb3;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+combobox > box.linked > entry + button.combo:hover,
+combobox > box.horizontal.linked > entry + button.combo:hover {
+    background-image: linear-gradient(to bottom,
+        #eaf6fd 0%,
+        #eaf6fd 5.263157895%,
+        #e8f6fd 5.263157895%,
+        #e8f6fd 10.526315789%,
+        #e6f5fd 10.526315789%,
+        #e6f5fd 15.789473684%,
+        #e4f4fc 15.789473684%,
+        #e4f4fc 21.052631579%,
+        #e1f3fc 21.052631579%,
+        #e1f3fc 26.315789474%,
+        #def2fc 26.315789474%,
+        #def2fc 31.578947368%,
+        #dcf1fc 31.578947368%,
+        #dcf1fc 36.842105263%,
+        #dcf1fc 36.842105263%,
+        #dcf1fc 42.105263158%,
+        #d9f0fc 42.105263158%,
+        #d9f0fc 47.368421053%,
+        #bee6fd 47.368421053%,
+        #bee6fd 52.631578947%,
+        #bce5fc 52.631578947%,
+        #bce5fc 57.894736842%,
+        #bce5fc 57.894736842%,
+        #bce5fc 63.157894737%,
+        #b9e3fb 63.157894737%,
+        #b9e3fb 68.421052632%,
+        #b5e2fa 68.421052632%,
+        #b5e2fa 73.684210526%,
+        #b2e0f9 73.684210526%,
+        #b2e0f9 78.947368421%,
+        #afdef8 78.947368421%,
+        #afdef8 84.210526316%,
+        #acdcf7 84.210526316%,
+        #acdcf7 89.473684211%,
+        #a9dbf6 89.473684211%,
+        #a9dbf6 94.736842105%,
+        #a9dbf6 94.736842105%,
+        #a9dbf6 100%
+    );
+    box-shadow:
+        0 0 0 2px #fafdfe inset,
+        0 0 0 1px #3c7fb1 inset;
+}
+
+combobox > box.linked > entry + button.combo:checked,
+combobox > box.horizontal.linked > entry + button.combo:checked {
+    background-image: linear-gradient(to bottom,
+        #deedf6 0%,
+        #deedf6 5.263157895%,
+        #deedf5 5.263157895%,
+        #deedf5 10.526315789%,
+        #e0f1fa 10.526315789%,
+        #e0f1fa 15.789473684%,
+        #ddf0fa 15.789473684%,
+        #ddf0fa 21.052631579%,
+        #d8eefa 21.052631579%,
+        #d8eefa 26.315789474%,
+        #d3ecf9 26.315789474%,
+        #d3ecf9 31.578947368%,
+        #cee9f8 31.578947368%,
+        #cee9f8 36.842105263%,
+        #cee9f8 36.842105263%,
+        #cee9f8 42.105263158%,
+        #c9e7f7 42.105263158%,
+        #c9e7f7 47.368421053%,
+        #c4e5f6 47.368421053%,
+        #c4e5f6 52.631578947%,
+        #98d1ef 52.631578947%,
+        #98d1ef 57.894736842%,
+        #98d1ef 57.894736842%,
+        #98d1ef 63.157894737%,
+        #93ceed 63.157894737%,
+        #93ceed 68.421052632%,
+        #8ccaeb 68.421052632%,
+        #8ccaeb 73.684210526%,
+        #86c6e8 73.684210526%,
+        #86c6e8 78.947368421%,
+        #7fc2e5 78.947368421%,
+        #7fc2e5 84.210526316%,
+        #78bde2 84.210526316%,
+        #78bde2 89.473684211%,
+        #72b9df 89.473684211%,
+        #72b9df 94.736842105%,
+        #6db5dc 94.736842105%,
+        #6db5dc 100%
+    );
+    box-shadow:
+        inset 0 2px 0 #9eb0ba,
+        inset 0 -2px 0 #63acd3,
+        inset 2px 0  0 rgba(0,0,0,0.19),
+        inset -2px 0 0 rgba(0,0,0,0.19),
+        0 0 0 1px #2c628b inset;
+}
+
+combobox > box.linked > entry + button.combo:disabled,
+combobox > box.horizontal.linked > entry + button.combo:disabled {
+    background-image: none;
+    background-color: #ffffff;
+    box-shadow:
+        inset 1px 0  0 #ffffff,
+        inset -1px 0 0 #afafaf,
+        inset 0 -1px 0 #afafaf,
+        inset 0  1px 0 #afafaf;
+}

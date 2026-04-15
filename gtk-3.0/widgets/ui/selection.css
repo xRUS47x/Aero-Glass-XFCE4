@@ -1,0 +1,67 @@
+selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+label selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+entry selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+entry:disabled selection,
+entry.read-only selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+spinbutton entry selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+spinbutton:disabled entry selection,
+spinbutton entry.read-only selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+textview text selection,
+textview.view text selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+textview:disabled text selection,
+textview.view:disabled text selection {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}

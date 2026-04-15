@@ -1,0 +1,185 @@
+/* Normal */
+button.text-button,
+button.combo,
+button.font,
+button.file,
+dialog buttonbox.dialog-action-area > button,
+dialog box.inline-toolbar > button {
+    background-image: linear-gradient(to bottom,
+        #fcfcfc 0%,
+        #fcfcfc 5.263157895%,
+        #f2f2f2 5.263157895%,
+        #f2f2f2 10.526315789%,
+        #f2f2f2 10.526315789%,
+        #f2f2f2 15.789473684%,
+        #f1f1f1 15.789473684%,
+        #f1f1f1 21.052631579%,
+        #f0f0f0 21.052631579%,
+        #f0f0f0 26.315789474%,
+        #efefef 26.315789474%,
+        #efefef 31.578947368%,
+        #ededed 31.578947368%,
+        #ededed 36.842105263%,
+        #ececec 36.842105263%,
+        #ececec 42.105263158%,
+        #ebebeb 42.105263158%,
+        #ebebeb 47.368421053%,
+        #dddddd 47.368421053%,
+        #dddddd 52.631578947%,
+        #dbdbdb 52.631578947%,
+        #dbdbdb 57.894736842%,
+        #dadada 57.894736842%,
+        #dadada 63.157894737%,
+        #d8d8d8 63.157894737%,
+        #d8d8d8 68.421052632%,
+        #d6d6d6 68.421052632%,
+        #d6d6d6 73.684210526%,
+        #d4d4d4 73.684210526%,
+        #d4d4d4 78.947368421%,
+        #d2d2d2 78.947368421%,
+        #d2d2d2 84.210526316%,
+        #d1d1d1 84.210526316%,
+        #d1d1d1 89.473684211%,
+        #cfcfcf 89.473684211%,
+        #cfcfcf 94.736842105%,
+        #f3f3f3 94.736842105%,
+        #f3f3f3 100%
+    );
+    border: 1px solid;
+    border-color: #707070;
+    border-radius: 3px;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.75),
+        inset -1px 0 0 rgba(255,255,255,0.75);
+    color: #000000;
+    min-height: 19px;
+    min-width: 19px;
+    padding: 0px;
+    transition: none;
+}
+
+/* Hover */
+button.text-button:hover,
+button.combo:hover,
+button.font:hover,
+button.file:hover,
+dialog buttonbox.dialog-action-area > button:hover,
+dialog box.inline-toolbar > button:hover {
+    background-image: linear-gradient(to bottom,
+        #fafdfe 0%,
+        #fafdfe 5.263157895%,
+        #eaf6fd 5.263157895%,
+        #eaf6fd 10.526315789%,
+        #e8f6fd 10.526315789%,
+        #e8f6fd 15.789473684%,
+        #e6f5fd 15.789473684%,
+        #e6f5fd 21.052631579%,
+        #e4f4fc 21.052631579%,
+        #e4f4fc 26.315789474%,
+        #e1f3fc 26.315789474%,
+        #e1f3fc 31.578947368%,
+        #def2fc 31.578947368%,
+        #def2fc 36.842105263%,
+        #dcf1fc 36.842105263%,
+        #dcf1fc 42.105263158%,
+        #d9f0fc 42.105263158%,
+        #d9f0fc 47.368421053%,
+        #bee6fd 47.368421053%,
+        #bee6fd 52.631578947%,
+        #bce5fc 52.631578947%,
+        #bce5fc 57.894736842%,
+        #b9e3fb 57.894736842%,
+        #b9e3fb 63.157894737%,
+        #b5e2fa 63.157894737%,
+        #b5e2fa 68.421052632%,
+        #b2e0f9 68.421052632%,
+        #b2e0f9 73.684210526%,
+        #afdef8 73.684210526%,
+        #afdef8 78.947368421%,
+        #acdcf7 78.947368421%,
+        #acdcf7 84.210526316%,
+        #a9dbf6 84.210526316%,
+        #a9dbf6 89.473684211%,
+        #a7d9f5 89.473684211%,
+        #a7d9f5 94.736842105%,
+        #e8f5fc 94.736842105%,
+        #e8f5fc 100%
+    );
+    border-color: #3c7fb1;
+    box-shadow:
+        inset 1px 0 0 rgba(255,255,255,0.75),
+        inset -1px 0 0 rgba(255,255,255,0.75);
+}
+
+/* Active / Checked */
+button.text-button:hover:active,
+button.text-button:checked,
+button.combo:hover:active,
+button.combo:checked,
+button.font:hover:active,
+button.font:checked,
+button.file:hover:active,
+button.file:checked,
+dialog buttonbox.dialog-action-area > button:hover:active,
+dialog buttonbox.dialog-action-area > button:active,
+dialog buttonbox.dialog-action-area > button:checked,
+dialog box.inline-toolbar > button:hover:active,
+dialog box.inline-toolbar > button:active,
+dialog box.inline-toolbar > button:checked {
+    background-image: linear-gradient(to bottom,
+        #9eb0ba 0%,
+        #9eb0ba 5.263157895%,
+        #e5f4fc 5.263157895%,
+        #e5f4fc 10.526315789%,
+        #e5f4fc 10.526315789%,
+        #e5f4fc 15.789473684%,
+        #e1f2fb 15.789473684%,
+        #e1f2fb 21.052631579%,
+        #ddf0fa 21.052631579%,
+        #ddf0fa 26.315789474%,
+        #d8eefa 26.315789474%,
+        #d8eefa 31.578947368%,
+        #d3ecf9 31.578947368%,
+        #d3ecf9 36.842105263%,
+        #cee9f8 36.842105263%,
+        #cee9f8 42.105263158%,
+        #c9e7f7 42.105263158%,
+        #c9e7f7 47.368421053%,
+        #c4e5f6 47.368421053%,
+        #c4e5f6 52.631578947%,
+        #98d1ef 52.631578947%,
+        #98d1ef 57.894736842%,
+        #93ceed 57.894736842%,
+        #93ceed 63.157894737%,
+        #8ccaeb 63.157894737%,
+        #8ccaeb 68.421052632%,
+        #86c6e8 68.421052632%,
+        #86c6e8 73.684210526%,
+        #7fc2e5 73.684210526%,
+        #7fc2e5 78.947368421%,
+        #78bde2 78.947368421%,
+        #78bde2 84.210526316%,
+        #72b9df 84.210526316%,
+        #72b9df 89.473684211%,
+        #6db6dd 89.473684211%,
+        #6db6dd 94.736842105%,
+        #68b3db 94.736842105%,
+        #68b3db 100%
+    );
+    border-color: #2c628b;
+    box-shadow:
+        inset 1px 0 0 rgba(0,0,0,0.185),
+        inset -1px 0 0 rgba(0,0,0,0.185);
+}
+
+/* Disabled */
+button.text-button:disabled,
+button.combo:disabled,
+button.font:disabled,
+button.file:disabled,
+dialog buttonbox.dialog-action-area > button:disabled,
+dialog box.inline-toolbar > button:disabled {
+    background-image: image(#f4f4f4);
+    border-color: #adb2b5;
+    box-shadow: inset 0 0 0 1px rgba(252,252,252,1.00);
+}

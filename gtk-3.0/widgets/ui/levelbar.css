@@ -1,0 +1,198 @@
+/*
+ * Windows 7 PNG levelbar for GTK 3
+ * Expected asset path: ./../../assets/ui/bars/
+ *
+ * Trough slices:
+ *   trough-h-left.png   9x14
+ *   trough-h-center.png 1x14
+ *   trough-h-right.png  9x14
+ *   trough-v-top.png    14x9
+ *   trough-v-center.png 14x1
+ *   trough-v-bottom.png 14x9
+ *
+ * Fill assets:
+ *   green-h-full.png    51x14
+ *   red-h-full.png      51x14
+ *   yellow-h-full.png   51x14
+ *   green-v-full.png    14x51
+ *   red-v-full.png      14x51
+ *   yellow-v-full.png   14x51
+ *   green-h-center.png  1x14
+ *   red-h-center.png    1x14
+ *   yellow-h-center.png 1x14
+ *   green-v-center.png  14x1
+ *   red-v-center.png    14x1
+ *   yellow-v-center.png 14x1
+ */
+
+levelbar,
+levelbar:backdrop {
+  transition: 200ms ease-out;
+  min-height: 14px;
+  min-width: 14px;
+}
+
+/* =========================
+ * 0) Sizes / spacing
+ * ========================= */
+levelbar.horizontal trough,
+levelbar.horizontal trough:backdrop {
+  min-height: 14px;
+}
+
+levelbar.vertical trough,
+levelbar.vertical trough:backdrop {
+  min-width: 14px;
+}
+
+levelbar.horizontal trough block {
+  min-height: 14px;
+}
+
+levelbar.vertical trough block {
+  min-width: 14px;
+}
+
+levelbar.horizontal.discrete trough block {
+  margin: 0 1px;
+}
+
+levelbar.vertical.discrete trough block {
+  margin: 1px 0;
+}
+
+/* =========================
+ * 1) TROUGH
+ * ========================= */
+levelbar.horizontal trough,
+levelbar.horizontal trough:backdrop {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  background-image:
+    url("../../assets/ui/bars/trough-h-left.png"),
+    url("../../assets/ui/bars/trough-h-right.png"),
+    url("../../assets/ui/bars/trough-h-center.png");
+  background-repeat: no-repeat, no-repeat, repeat-x;
+  background-position: 0 0, 100% 0, 9px 0;
+  background-size: 9px 14px, 9px 14px, 1px 14px;
+}
+
+levelbar.vertical trough,
+levelbar.vertical trough:backdrop {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+  background-image:
+    url("../../assets/ui/bars/trough-v-top.png"),
+    url("../../assets/ui/bars/trough-v-bottom.png"),
+    url("../../assets/ui/bars/trough-v-center.png");
+  background-repeat: no-repeat, no-repeat, repeat-y;
+  background-position: 0 0, 0 100%, 0 9px;
+  background-size: 14px 9px, 14px 9px, 14px 1px;
+}
+
+/* =========================
+ * 2) Block base
+ * ========================= */
+levelbar trough block {
+  background: none;
+  box-shadow: none;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0;
+}
+
+levelbar trough block.empty,
+levelbar trough block.empty:backdrop {
+  border-width: 0;
+  border-image: none;
+  background: transparent;
+}
+
+/* =========================
+ * 3) Filled blocks
+ * Caps come from *_full.png via border-image.
+ * The center strip comes from the dedicated *_center.png asset.
+ * ========================= */
+
+/* Default / green / full */
+levelbar.horizontal trough block.filled,
+levelbar.horizontal trough block.filled:backdrop,
+levelbar.full.horizontal trough block.filled,
+levelbar.full.horizontal trough block.filled:backdrop,
+levelbar.horizontal trough block.filled.full,
+levelbar.horizontal trough block.filled.full:backdrop {
+  background-color: transparent;
+  background-image: url("../../assets/ui/bars/green-h-center.png");
+  background-repeat: repeat-x;
+  background-position: 0 0;
+  background-size: 1px 14px;
+  background-origin: content-box;
+  background-clip: content-box;
+  border-width: 0 25px 0 25px;
+  border-image-source: url("../../assets/ui/bars/green-h-full.png");
+  border-image-slice: 0 25 0 25;
+  border-image-width: 0 25px 0 25px;
+  border-image-repeat: stretch;
+}
+
+levelbar.vertical trough block.filled,
+levelbar.vertical trough block.filled:backdrop,
+levelbar.full.vertical trough block.filled,
+levelbar.full.vertical trough block.filled:backdrop,
+levelbar.vertical trough block.filled.full,
+levelbar.vertical trough block.filled.full:backdrop {
+  background-color: transparent;
+  background-image: url("../../assets/ui/bars/green-v-center.png");
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-size: 14px 1px;
+  background-origin: content-box;
+  background-clip: content-box;
+  border-width: 25px 0 25px 0;
+  border-image-source: url("../../assets/ui/bars/green-v-full.png");
+  border-image-slice: 25 0 25 0;
+  border-image-width: 25px 0 25px 0;
+  border-image-repeat: stretch;
+}
+
+/* low = red */
+levelbar.low.horizontal trough block.filled,
+levelbar.low.horizontal trough block.filled:backdrop,
+levelbar.horizontal trough block.filled.low,
+levelbar.horizontal trough block.filled.low:backdrop {
+  background-image: url("../../assets/ui/bars/red-h-center.png");
+  border-image-source: url("../../assets/ui/bars/red-h-full.png");
+}
+
+levelbar.low.vertical trough block.filled,
+levelbar.low.vertical trough block.filled:backdrop,
+levelbar.vertical trough block.filled.low,
+levelbar.vertical trough block.filled.low:backdrop {
+  background-image: url("../../assets/ui/bars/red-v-center.png");
+  border-image-source: url("../../assets/ui/bars/red-v-full.png");
+}
+
+/* high = yellow */
+levelbar.high.horizontal trough block.filled,
+levelbar.high.horizontal trough block.filled:backdrop,
+levelbar.horizontal trough block.filled.high,
+levelbar.horizontal trough block.filled.high:backdrop {
+  background-image: url("../../assets/ui/bars/yellow-h-center.png");
+  border-image-source: url("../../assets/ui/bars/yellow-h-full.png");
+}
+
+levelbar.high.vertical trough block.filled,
+levelbar.high.vertical trough block.filled:backdrop,
+levelbar.vertical trough block.filled.high,
+levelbar.vertical trough block.filled.high:backdrop {
+  background-image: url("../../assets/ui/bars/yellow-v-center.png");
+  border-image-source: url("../../assets/ui/bars/yellow-v-full.png");
+}
