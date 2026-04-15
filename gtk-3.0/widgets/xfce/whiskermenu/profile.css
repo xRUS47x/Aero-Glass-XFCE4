@@ -1,0 +1,18 @@
+#whiskermenu-window image.profile-picture {
+    background-color: transparent;
+    background-image: url("../../../assets/xfce/whiskermenu/profile/user-glass-frame.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 64px 64px;
+    -gtk-icon-transform: scale(1.5);
+    margin-left: 298px;
+    min-height: 64px;
+    min-width: 64px;
+    padding: 1px;
+}
+
+#whiskermenu-window label.profile-username {
+    opacity: 0;
+    font-size: 0;
+}
+

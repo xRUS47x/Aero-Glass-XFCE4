@@ -1,0 +1,87 @@
+#whiskermenu-window treeview {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-top: 1px solid #ffffff;
+    color: #282828;
+    padding-left: 1px;
+}
+
+#whiskermenu-window treeview.view:selected {
+    background-image: linear-gradient(to bottom,
+        #ddecfd 0%,
+        #ddecfd 3.125%,
+        #dcebfd 3.125%,
+        #dcebfd 6.25%,
+        #dcebfd 6.25%,
+        #dcebfd 9.375%,
+        #dbeafd 9.375%,
+        #dbeafd 12.5%,
+        #daeafd 12.5%,
+        #daeafd 15.625%,
+        #dae9fd 15.625%,
+        #dae9fd 18.75%,
+        #d9e9fd 18.75%,
+        #d9e9fd 21.875%,
+        #d8e9fd 21.875%,
+        #d8e9fd 25%,
+        #d7e8fd 25%,
+        #d7e8fd 28.125%,
+        #d6e8fd 28.125%,
+        #d6e8fd 31.25%,
+        #d5e7fd 31.25%,
+        #d5e7fd 34.375%,
+        #d4e6fd 34.375%,
+        #d4e6fd 37.5%,
+        #d3e6fd 37.5%,
+        #d3e6fd 40.625%,
+        #d1e6fd 40.625%,
+        #d1e6fd 43.75%,
+        #d1e5fd 43.75%,
+        #d1e5fd 46.875%,
+        #d0e4fd 46.875%,
+        #d0e4fd 50%,
+        #cee3fd 50%,
+        #cee3fd 53.125%,
+        #cee3fd 53.125%,
+        #cee3fd 56.25%,
+        #cce3fd 56.25%,
+        #cce3fd 59.375%,
+        #cbe2fd 59.375%,
+        #cbe2fd 62.5%,
+        #cae1fd 62.5%,
+        #cae1fd 65.625%,
+        #c9e0fd 65.625%,
+        #c9e0fd 68.75%,
+        #c8e0fd 68.75%,
+        #c8e0fd 71.875%,
+        #c8e0fd 71.875%,
+        #c8e0fd 75%,
+        #c6dffd 75%,
+        #c6dffd 78.125%,
+        #c5dffd 78.125%,
+        #c5dffd 81.25%,
+        #c5defd 81.25%,
+        #c5defd 84.375%,
+        #c4ddfd 84.375%,
+        #c4ddfd 87.5%,
+        #c3ddfd 87.5%,
+        #c3ddfd 90.625%,
+        #c2ddfd 90.625%,
+        #c2ddfd 93.75%,
+        #c2ddfd 93.75%,
+        #c2ddfd 96.875%,
+        #c2dcfd 96.875%,
+        #c2dcfd 100%
+    );
+    box-shadow:
+        inset 0 1px 0 rgba(125,162,206,1.00),
+        inset 1px 0 0 rgba(125,162,206,1.00),
+        inset -1px 0 0 rgba(125,162,206,1.00),
+        inset 0 -1px 0 rgba(125,162,206,1.00),
+        inset 0 2px 0 rgba(255,255,255,0.38),
+        inset 2px 0 0 rgba(255,255,255,0.38),
+        inset -2px 0 0 rgba(255,255,255,0.38),
+        inset 0 -2px 0 rgba(255,255,255,0.38);
+}

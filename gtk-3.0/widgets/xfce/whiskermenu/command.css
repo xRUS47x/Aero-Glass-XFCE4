@@ -1,0 +1,33 @@
+#whiskermenu-window .command-button {
+    background-image: url("../../../assets/xfce/whiskermenu/command/command-standard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    border: none;
+    box-shadow: none;
+    color: #ffffff;
+    min-height: 22px;
+    min-width: 22px;
+}
+
+#whiskermenu-window .command-button:hover {
+    background-image: url("../../../assets/xfce/whiskermenu/command/command-hover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    min-height: 22px;
+    min-width: 22px;
+}
+
+#whiskermenu-window .command-button:active:hover {
+    background-image: url("../../../assets/xfce/whiskermenu/command/command-pressed.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px 22px;
+    min-height: 22px;
+    min-width: 22px;
+}
+
+#whiskermenu-window .command-button image {
+    -gtk-icon-transform: scale(0.75);
+}
