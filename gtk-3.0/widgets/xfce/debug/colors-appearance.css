@@ -1,0 +1,218 @@
+@define-color color_base #c4def9;
+
+@define-color accent @color_base;
+
+@define-color panel_edge_dark  mix(@accent, #000000, 0.60);
+@define-color panel_edge_light mix(@accent, #ffffff, 0.45);
+
+.xfce4-panel.background {
+    background-color: transparent;
+    background-image:
+        linear-gradient(
+            alpha(@panel_edge_dark, 1.00),
+            alpha(@panel_edge_dark, 1.00)
+        ),
+        linear-gradient(
+            alpha(@panel_edge_light, 1.00),
+            alpha(@panel_edge_light, 1.00)
+        ),
+        linear-gradient(
+            alpha(@color_base, 1.00),
+            alpha(@color_base, 1.00)
+        );
+    background-position:
+        0 0,
+        0 1px,
+        0 0;
+    background-repeat: no-repeat;
+    background-size:
+        100% 1px,
+        100% 1px,
+        100% 100%;
+}
+
+@define-color whisker_edge_dark  mix(@accent, #000000, 0.75);
+@define-color whisker_edge_light mix(@accent, #ffffff, 0.50);
+@define-color treeview_edge_dark  mix(@accent, #262626, 0.45);
+@define-color treeview_edge_light mix(@accent, #d9d9d9, 0.30);
+
+#whiskermenu-window {
+    background-color: transparent;
+    background-image:
+        linear-gradient(
+            to bottom,
+            alpha(#000000, 0.160784) 0%,
+            alpha(#000000, 0.172549) 1%,
+            alpha(#000000, 0.180392) 2%,
+            alpha(#000000, 0.192157) 3%,
+            alpha(#000000, 0.207843) 4%,
+            alpha(#000000, 0.215686) 5%,
+            alpha(#000000, 0.227451) 6%,
+            alpha(#000000, 0.247059) 7%,
+            alpha(#000000, 0.262745) 8%,
+            alpha(#000000, 0.278431) 9%,
+            alpha(#000000, 0.294118) 10%,
+            alpha(#000000, 0.309804) 11%,
+            alpha(#000000, 0.333333) 12%,
+            alpha(#000000, 0.345098) 13%,
+            alpha(#000000, 0.364706) 14%,
+            alpha(#000000, 0.388235) 15%,
+            alpha(#000000, 0.407843) 16%,
+            alpha(#000000, 0.419608) 17%,
+            alpha(#000000, 0.427451) 18%,
+            alpha(#000000, 0.439216) 19%,
+            alpha(#000000, 0.447059) 20%,
+            alpha(#000000, 0.454902) 21%,
+            alpha(#000000, 0.462745) 22%,
+            alpha(#000000, 0.470588) 23%,
+            alpha(#000000, 0.478431) 24%,
+            alpha(#000000, 0.486275) 25%,
+            alpha(#000000, 0.494118) 26%,
+            alpha(#000000, 0.501961) 27%,
+            alpha(#000000, 0.509804) 28%,
+            alpha(#000000, 0.517647) 29%,
+            alpha(#000000, 0.525490) 30%,
+            alpha(#000000, 0.529412) 31%,
+            alpha(#000000, 0.537255) 32%,
+            alpha(#000000, 0.545098) 33%,
+            alpha(#000000, 0.549020) 34%,
+            alpha(#000000, 0.556863) 35%,
+            alpha(#000000, 0.564706) 36%,
+            alpha(#000000, 0.568627) 37%,
+            alpha(#000000, 0.572549) 38%,
+            alpha(#000000, 0.576471) 39%,
+            alpha(#000000, 0.580392) 40%,
+            alpha(#000000, 0.584314) 41%,
+            alpha(#000000, 0.588235) 42%,
+            alpha(#000000, 0.592157) 43%,
+            alpha(#000000, 0.596078) 44%,
+            alpha(#000000, 0.596078) 45%,
+            alpha(#000000, 0.600000) 46%,
+            alpha(#000000, 0.600000) 47%,
+            alpha(#000000, 0.600000) 48%,
+            alpha(#000000, 0.600000) 49%,
+            alpha(#000000, 0.600000) 50%,
+            alpha(#000000, 0.600000) 51%,
+            alpha(#000000, 0.600000) 52%,
+            alpha(#000000, 0.596078) 53%,
+            alpha(#000000, 0.596078) 54%,
+            alpha(#000000, 0.592157) 55%,
+            alpha(#000000, 0.588235) 56%,
+            alpha(#000000, 0.584314) 57%,
+            alpha(#000000, 0.580392) 58%,
+            alpha(#000000, 0.576471) 59%,
+            alpha(#000000, 0.572549) 60%,
+            alpha(#000000, 0.564706) 61%,
+            alpha(#000000, 0.556863) 62%,
+            alpha(#000000, 0.552941) 63%,
+            alpha(#000000, 0.545098) 64%,
+            alpha(#000000, 0.537255) 65%,
+            alpha(#000000, 0.529412) 66%,
+            alpha(#000000, 0.521569) 67%,
+            alpha(#000000, 0.513725) 68%,
+            alpha(#000000, 0.505882) 69%,
+            alpha(#000000, 0.494118) 70%,
+            alpha(#000000, 0.486275) 71%,
+            alpha(#000000, 0.478431) 72%,
+            alpha(#000000, 0.466667) 73%,
+            alpha(#000000, 0.458824) 74%,
+            alpha(#000000, 0.447059) 75%,
+            alpha(#000000, 0.439216) 76%,
+            alpha(#000000, 0.431373) 77%,
+            alpha(#000000, 0.419608) 78%,
+            alpha(#000000, 0.407843) 79%,
+            alpha(#000000, 0.392157) 80%,
+            alpha(#000000, 0.384314) 81%,
+            alpha(#000000, 0.372549) 82%,
+            alpha(#000000, 0.364706) 83%,
+            alpha(#000000, 0.352941) 84%,
+            alpha(#000000, 0.337255) 85%,
+            alpha(#000000, 0.313725) 86%,
+            alpha(#000000, 0.282353) 87%,
+            alpha(#000000, 0.262745) 88%,
+            alpha(#000000, 0.227451) 89%,
+            alpha(#000000, 0.200000) 90%,
+            alpha(#000000, 0.176471) 91%,
+            alpha(#000000, 0.156863) 92%,
+            alpha(#000000, 0.133333) 93%,
+            alpha(#000000, 0.113725) 94%,
+            alpha(#000000, 0.098039) 95%,
+            alpha(#000000, 0.078431) 96%,
+            alpha(#000000, 0.058824) 97%,
+            alpha(#000000, 0.043137) 98%,
+            alpha(#000000, 0.035294) 99%,
+            alpha(#000000, 0.019608) 100%
+        ),
+        linear-gradient(
+            to bottom,
+            @color_base 0%,
+            @color_base 100%
+        );
+    background-clip: padding-box;
+    background-position: 0 0, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100% 100%, 100% 100%;
+    border-radius: 0;
+    box-shadow:
+        inset 0 0 0 2px @whisker_edge_light,
+        inset 0 0 0 1px @whisker_edge_dark;
+}
+
+#whiskermenu-window border {
+    border-color: @whisker_edge_dark;
+}
+
+#whiskermenu-window scrolledwindow.frame {
+    background-image: none;
+    border: 1px solid @treeview_edge_light;
+    border-image: none;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 1px @treeview_edge_dark;
+    margin-left: 1px;
+    padding: 2px;
+}
+
+@define-color titlebar_fill @color_base;
+@define-color titlebar_border_outer mix(@titlebar_fill, #000000, 0.80);
+@define-color titlebar_border_bottom mix(@titlebar_fill, #000000, 0.50);
+@define-color titlebar_highlight mix(@titlebar_fill, #ffffff, 0.85);
+@define-color titlebar_shadow_bottom mix(@titlebar_fill, #ffffff, 0.60);
+
+@define-color titlebar_backdrop_fill mix(mix(@titlebar_fill, #000000, 0.20), #ffffff, 0.55);
+@define-color titlebar_backdrop_border_outer mix(mix(@titlebar_backdrop_fill, #000000, 0.60);
+@define-color titlebar_backdrop_border_bottom mix(@titlebar_backdrop_fill, #000000, 0.50);
+@define-color titlebar_backdrop_highlight mix(mix(@titlebar_backdrop_fill, #000000, 0.05), #ffffff, 0.60);
+
+.titlebar:not(headerbar),
+headerbar {
+    background-color: @titlebar_fill;
+    background-image: none;
+    border-bottom: 1px solid @titlebar_border_bottom;
+    border-left: 1px solid @titlebar_border_outer;
+    border-right: 1px solid @titlebar_border_outer;
+    border-top: 1px solid @titlebar_border_outer;
+    border-radius: 6px 6px 0 0;
+    box-shadow:
+        inset 0 1px @titlebar_highlight,
+        inset 1px 0 @titlebar_highlight,
+        inset -1px 0 @titlebar_highlight,
+        inset 0 -1px @titlebar_shadow_bottom;
+    min-height: 63px;
+}
+
+.titlebar:backdrop:not(headerbar),
+headerbar:backdrop {
+    background-color: @titlebar_backdrop_fill;
+    background-image: none;
+    border-bottom: 1px solid @titlebar_backdrop_border_bottom;
+    border-left: 1px solid @titlebar_backdrop_border_outer;
+    border-right: 1px solid @titlebar_backdrop_border_outer;
+    border-top: 1px solid @titlebar_backdrop_border_outer;
+    border-radius: 6px 6px 0 0;
+    box-shadow:
+        inset 0 1px @titlebar_backdrop_highlight,
+        inset 1px 0 @titlebar_backdrop_highlight,
+        inset -1px 0 @titlebar_backdrop_highlight,
+        inset 0 -1px @titlebar_backdrop_highlight;
+    min-height: 63px;
+}
