@@ -1,17 +1,29 @@
 A Linux XFCE theme that replicates the Look and Feel of Windows Aero.
 
+## Notice Regarding Microsoft-Related Assets
+
+Microsoft, Windows, and Windows 7 are trademarks of Microsoft Corporation.
+Any Microsoft-derived, Microsoft-referencing, or Microsoft-inspired assets remain the property of their respective owner and are not covered by this project's CC0 dedication.
+The CC0 dedication applies only to original project material created by the author(s) and does not affect any copyright, trademark, or other rights held by Microsoft.
+This project is unofficial and is not affiliated with, endorsed by, sponsored by, or approved by Microsoft.
+
+## Project Status
+
+Beta / WIP
+
+This theme is still under active development.
+Visual details, asset quality, compatibility, and behavior may change over time.
+
 ## Preview
 
-
-<img width="1920" height="1080" alt="Aero-Glass" src="https://github.com/user-attachments/assets/82536182-86ec-4d97-bbd8-ad8b25dbf0d1" />
-
+<img width="1920" height="1080" alt="preview-1" src="https://github.com/user-attachments/assets/3ff09f05-bf1f-4a6b-9cdd-5048e844c5f0" />
 
 ## Tested and Compatible OS + XFCE Version
 
 - Linux Mint 22.2 - XFCE 4.18
 - Linux Mint 22.2 - XFCE 4.20
 
-(The theme's functionality may vary depending on the Distribution and XFCE version.)
+(Theme behavior may vary depending on the Linux distribution, XFCE version, compositor setup, and local GTK/XFWM configuration.)
 
 ## Manual Installation Guide
 
@@ -20,28 +32,19 @@ Download the `.zip` file at the ` <> Code ` Button and extract it to the local t
 
 Paste the `picom.conf` to the directory `/home/$USER/.config` and restart picom to apply the settings.
 
-## Updating/Downgrading the theme to a supported XFCE version
-
-- Right-click on the theme's root folder.
-
-- Click "Open in Terminal".
-
-- Type "./xfce-theme-version-switcher.sh" and press Enter.
-
-- Now you can either upgrade or downgrade the Theme to your current XFCE version.
-  
-<img width="681" height="472" alt="Version Switcher" src="https://github.com/user-attachments/assets/54dc160b-511f-4501-80c1-093fdf2caa4a" />
-
 ## Customizing the color and opacity of the menu, taskbar and window decorations.
 
-- Right-click on the theme's root folder.
+- To change the color of window borders, the start menu, and the taskbar, you need to go to the theme folder where the script "xfce-color-switching-tool.sh" is located.
+- Then, right-click on this shell script and go to "Properties."
+- Click on the "Permissions" tab and check the box next to "Program" and "Allow this file to run as a program."
+- After that, close the window, right-click on an empty area within the theme folder, and select "Open in Terminal."
+- Enter the command "./xfce-color-switching-tool.sh" to start the script.
+- / ! \ Please note that you must resize the window to at least 155x45px before starting the script, otherwise the program may not start or display errors may occur.
 
-- Click "Open in Terminal".
+<img width="1889" height="1054" alt="preview-2" src="https://github.com/user-attachments/assets/5788eaae-55cb-4eaf-9397-319a31d34e7f" />
 
-- Type "./color-tool.py" and press Enter.
+## License
 
-- Now you can change the theme's colors as desired.
+Original code and original project material may be released under CC0, unless stated otherwise.
 
-- To save the color scheme, click "Apply" and then "Save Changes".
-
-<img width="1271" height="979" alt="Color-Tool" src="https://github.com/user-attachments/assets/3ec37397-a235-4e10-8486-3bf45ce9acb4" />
+Microsoft-related names, branding, and any third-party assets are excluded from the CC0 dedication and remain subject to their respective legal rights.
