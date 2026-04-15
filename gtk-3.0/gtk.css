@@ -1,0 +1,46 @@
+/* UI */
+@import url("widgets/ui/assistant.css");
+@import url("widgets/ui/base.css");
+@import url("widgets/ui/buttons.css");
+@import url("widgets/ui/check_radiobuttons.css");
+@import url("widgets/ui/combobox.css");
+@import url("widgets/ui/csd-windows.css");
+@import url("widgets/ui/entry.css");
+@import url("widgets/ui/frame.css");
+@import url("widgets/ui/levelbar.css");
+@import url("widgets/ui/links.css");
+@import url("widgets/ui/marks.css");
+@import url("widgets/ui/menu.css");
+@import url("widgets/ui/notebook.css");
+@import url("widgets/ui/progressbar.css");
+@import url("widgets/ui/rubberband.css");
+@import url("widgets/ui/scale.css");
+@import url("widgets/ui/scrollbar.css");
+@import url("widgets/ui/selection.css");
+@import url("widgets/ui/separator.css");
+@import url("widgets/ui/spinbutton.css");
+@import url("widgets/ui/spinner.css");
+@import url("widgets/ui/switch.css");
+@import url("widgets/ui/toolbar.css");
+@import url("widgets/ui/tooltip.css");
+@import url("widgets/ui/treeview.css");
+
+/* DEBUG */
+@import url("widgets/xfce/debug/colors-appearance.css");
+
+/* XFCE PANEL */
+@import url("widgets/xfce/panel/base.css");
+@import url("widgets/xfce/panel/whiskermenu-button.css");
+@import url("widgets/xfce/panel/launcher-button.css");
+@import url("widgets/xfce/panel/tasklist-button.css");
+@import url("widgets/xfce/panel/pulseaudio-button.css");
+@import url("widgets/xfce/panel/clock-button.css");
+@import url("widgets/xfce/panel/showdesktop-button.css");
+
+/* WHISKERMENU */
+@import url("widgets/xfce/whiskermenu/profile.css");
+@import url("widgets/xfce/whiskermenu/treeview-application.css");
+@import url("widgets/xfce/whiskermenu/category.css");
+@import url("widgets/xfce/whiskermenu/command.css");
+@import url("widgets/xfce/whiskermenu/entry.css");
+@import url("widgets/xfce/whiskermenu/separator.css");
