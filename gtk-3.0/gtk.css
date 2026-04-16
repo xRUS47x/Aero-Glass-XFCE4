@@ -28,6 +28,9 @@
 /* DEBUG */
 @import url("widgets/xfce/debug/colors-appearance.css");
 
+/* XFCE DESKTOP */
+@import url("widgets/xfce/desktop/xfdesktop.css");
+
 /* XFCE PANEL */
 @import url("widgets/xfce/panel/base.css");
 @import url("widgets/xfce/panel/whiskermenu-button.css");
