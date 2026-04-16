@@ -1,0 +1,34 @@
+XfdesktopIconView.view {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    box-shadow: none;
+    color: #ffffff;
+}
+
+XfdesktopIconView.view:active {
+    background-color: rgba(124, 163, 216, 0.64);
+    background-image: -gtk-gradient(linear, left top, left bottom,
+                                    from(rgba(170, 196, 232, 0.72)),
+                                    color-stop(0.50, rgba(138, 170, 211, 0.68)),
+                                    to(rgba(104, 139, 190, 0.64)));
+    border: 1px solid rgba(111, 152, 201, 0.98);
+    border-radius: 3px;
+    box-shadow: inset 0 1px rgba(230, 238, 248, 0.86),
+                inset 1px 0 rgba(203, 218, 237, 0.78),
+                inset -1px 0 rgba(203, 218, 237, 0.78),
+                inset 0 -1px rgba(184, 201, 225, 0.72);
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.92);
+}
+
+XfdesktopIconView.view .label {
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.92);
+}
+
+XfdesktopIconView.view .rubberband {
+    background-color: rgba(55, 135, 215, 0.35);
+    border: 1px solid #3399ff;
+}
