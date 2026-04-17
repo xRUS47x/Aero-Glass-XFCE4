@@ -11,8 +11,13 @@ This project is unofficial and is not affiliated with, endorsed by, sponsored by
 
 Beta / WIP
 
-This theme is still under active development.
+This theme is still under active development.  
 Visual details, asset quality, compatibility, and behavior may change over time.
+
+Community contributions, improvements, and forks are welcome.  
+Unless stated otherwise, original project material released under CC0 may be copied, modified, adapted, and reused freely.
+
+Microsoft-related assets and any other third-party material remain excluded from the CC0 dedication and are subject to the rights of their respective owners.
 
 ## Preview
 
