@@ -65,3 +65,21 @@ textview.view:disabled text selection {
     color: #ffffff;
     text-shadow: none;
 }
+
+treeview.view:selected,
+treeview.view:selected:focus {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
+
+treeview.view:selected:hover,
+treeview.view:selected:hover:focus {
+    background-color: #3399ff;
+    background-image: none;
+    box-shadow: none;
+    color: #ffffff;
+    text-shadow: none;
+}
