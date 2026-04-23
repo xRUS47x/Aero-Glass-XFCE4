@@ -61,6 +61,7 @@ frame.border-ridge label {
     background-color: #ffffff;
 }
 
-.frame scrolledwindow {
+.frame scrolledwindow,
+scrolledwindow.frame {
     border: 1px solid #828790;
 }
