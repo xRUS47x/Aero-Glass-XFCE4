@@ -1,20 +1,32 @@
 toolbar {
     background-color: #f0f0f0;
     background-image: none;
-    border-color: transparent;
-    border-image: none;
-    box-shadow: none;
-    -gtk-icon-shadow: none;
-    min-height: 0;
-    min-width: 0;
-    outline: none;
-    padding: 0;
-    text-shadow: none;
+    min-height: 43px;
 }
 
-toolbar toolbutton button:hover,
-toolbar toolbutton button.flat:hover {
-    background: linear-gradient(to bottom,
+toolbar.primary-toolbar separator.vertical {
+    border-left: 1px solid #848484;
+    border-right: 1px solid #f5f5f5;
+    margin: 3px 0 6px 0;
+}
+
+toolbar button.text-button,
+toolbar button.image-button.text-button,
+toolbar button.flat.toggle {
+    background-image: linear-gradient(to bottom,
+        rgba(0,0,0,0.00) 0%,
+        rgba(0,0,0,0.00) 100%
+    );
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    box-shadow: none;
+    margin: 2px 0 5px 0;
+    padding: 0 8px 0 8px;
+}
+
+toolbar button.text-button:hover,
+toolbar button.image-button.text-button:hover,
+toolbar button.flat.toggle:hover {
+    background-image: linear-gradient(to bottom,
         rgba(255,255,255,0.333333) 0%,
         rgba(255,255,255,0.333333) 3.125%,
         rgba(255,255,255,0.133333) 3.125%,
@@ -50,59 +62,107 @@ toolbar toolbutton button.flat:hover {
         rgba(255,255,255,0.0) 96.875%,
         rgba(255,255,255,0.0) 100%
     );
-    border-radius: 3px;
-    border: 1px solid #a8a8a8;
-    box-shadow: inset 0 0 0 1px alpha(#ffffff, 0.45);
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    box-shadow:
+        inset 1px 1px 0 rgba(255,255,255,0.45),
+        inset -1px 1px 0 rgba(255,255,255,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.25),
+        inset 0 -1px 0 rgba(255,255,255,0.25);
+    margin: 2px 0 5px 0;
+    padding: 0 8px 0 8px;
 }
 
-toolbar toolbutton button:active,
-toolbar toolbutton button:checked,
-toolbar toolbutton button.flat:active,
-toolbar toolbutton button.flat:checked {
-    background: linear-gradient(to bottom,
-        rgba(0,0,0,0.35) 0%,
-        rgba(0,0,0,0.35) 2.941176471%,
-        rgba(0,0,0,0.25) 2.941176471%,
-        rgba(0,0,0,0.25) 5.882352941%,
-        rgba(0,0,0,0.1625) 5.882352941%,
-        rgba(0,0,0,0.1625) 8.823529412%,
-        rgba(0,0,0,0.129167) 8.823529412%,
-        rgba(0,0,0,0.129167) 11.764705882%,
-        rgba(0,0,0,0.104167) 11.764705882%,
-        rgba(0,0,0,0.104167) 14.705882353%,
-        rgba(0,0,0,0.0875) 14.705882353%,
-        rgba(0,0,0,0.0875) 17.647058824%,
-        rgba(0,0,0,0.070833) 17.647058824%,
-        rgba(0,0,0,0.070833) 20.588235294%,
-        rgba(0,0,0,0.058333) 20.588235294%,
-        rgba(0,0,0,0.058333) 23.529411765%,
-        rgba(0,0,0,0.05) 23.529411765%,
-        rgba(0,0,0,0.05) 32.352941176%,
-        rgba(0,0,0,0.075) 32.352941176%,
-        rgba(0,0,0,0.075) 38.235294118%,
-        rgba(0,0,0,0.070833) 38.235294118%,
-        rgba(0,0,0,0.070833) 47.058823529%,
-        rgba(0,0,0,0.0625) 47.058823529%,
-        rgba(0,0,0,0.0625) 52.941176471%,
-        rgba(0,0,0,0.054167) 52.941176471%,
-        rgba(0,0,0,0.054167) 58.823529412%,
-        rgba(0,0,0,0.045833) 58.823529412%,
-        rgba(0,0,0,0.045833) 94.117647059%,
-        rgba(0,0,0,0.041667) 94.117647059%,
-        rgba(0,0,0,0.041667) 97.058823529%,
-        rgba(0,0,0,0.054167) 97.058823529%,
-        rgba(0,0,0,0.054167) 100%
+toolbar button.text-button:hover:checked,
+toolbar button.image-button.text-button:hover:checked,
+toolbar button.flat.toggle:hover:checked,
+toolbar button.text-button:hover:active,
+toolbar button.image-button.text-button:hover:active,
+toolbar button.flat.toggle:hover:active,
+toolbar button.text-button:checked,
+toolbar button.image-button.text-button:checked,
+toolbar button.flat.toggle:checked {
+    background-image: linear-gradient(to bottom,
+        rgba(0,0,0,0.350000000) 0%,
+        rgba(0,0,0,0.350000000) 2.941176471%,
+        rgba(0,0,0,0.250000000) 2.941176471%,
+        rgba(0,0,0,0.250000000) 5.882352941%,
+        rgba(0,0,0,0.162500000) 5.882352941%,
+        rgba(0,0,0,0.162500000) 8.823529412%,
+        rgba(0,0,0,0.129166667) 8.823529412%,
+        rgba(0,0,0,0.129166667) 11.764705882%,
+        rgba(0,0,0,0.104166667) 11.764705882%,
+        rgba(0,0,0,0.104166667) 14.705882353%,
+        rgba(0,0,0,0.087500000) 14.705882353%,
+        rgba(0,0,0,0.087500000) 17.647058824%,
+        rgba(0,0,0,0.070833333) 17.647058824%,
+        rgba(0,0,0,0.070833333) 20.588235294%,
+        rgba(0,0,0,0.058333333) 20.588235294%,
+        rgba(0,0,0,0.058333333) 23.529411765%,
+        rgba(0,0,0,0.050000000) 23.529411765%,
+        rgba(0,0,0,0.050000000) 26.470588235%,
+        rgba(0,0,0,0.050000000) 26.470588235%,
+        rgba(0,0,0,0.050000000) 29.411764706%,
+        rgba(0,0,0,0.050000000) 29.411764706%,
+        rgba(0,0,0,0.050000000) 32.352941176%,
+        rgba(0,0,0,0.075000000) 32.352941176%,
+        rgba(0,0,0,0.075000000) 35.294117647%,
+        rgba(0,0,0,0.075000000) 35.294117647%,
+        rgba(0,0,0,0.075000000) 38.235294118%,
+        rgba(0,0,0,0.070833333) 38.235294118%,
+        rgba(0,0,0,0.070833333) 41.176470588%,
+        rgba(0,0,0,0.070833333) 41.176470588%,
+        rgba(0,0,0,0.070833333) 44.117647059%,
+        rgba(0,0,0,0.070833333) 44.117647059%,
+        rgba(0,0,0,0.070833333) 47.058823529%,
+        rgba(0,0,0,0.062500000) 47.058823529%,
+        rgba(0,0,0,0.062500000) 50%,
+        rgba(0,0,0,0.062500000) 50%,
+        rgba(0,0,0,0.062500000) 52.941176471%,
+        rgba(0,0,0,0.054166667) 52.941176471%,
+        rgba(0,0,0,0.054166667) 55.882352941%,
+        rgba(0,0,0,0.054166667) 55.882352941%,
+        rgba(0,0,0,0.054166667) 58.823529412%,
+        rgba(0,0,0,0.045833333) 58.823529412%,
+        rgba(0,0,0,0.045833333) 61.764705882%,
+        rgba(0,0,0,0.045833333) 61.764705882%,
+        rgba(0,0,0,0.045833333) 64.705882353%,
+        rgba(0,0,0,0.045833333) 64.705882353%,
+        rgba(0,0,0,0.045833333) 67.647058824%,
+        rgba(0,0,0,0.045833333) 67.647058824%,
+        rgba(0,0,0,0.045833333) 70.588235294%,
+        rgba(0,0,0,0.045833333) 70.588235294%,
+        rgba(0,0,0,0.045833333) 73.529411765%,
+        rgba(0,0,0,0.045833333) 73.529411765%,
+        rgba(0,0,0,0.045833333) 76.470588235%,
+        rgba(0,0,0,0.045833333) 76.470588235%,
+        rgba(0,0,0,0.045833333) 79.411764706%,
+        rgba(0,0,0,0.045833333) 79.411764706%,
+        rgba(0,0,0,0.045833333) 82.352941176%,
+        rgba(0,0,0,0.045833333) 82.352941176%,
+        rgba(0,0,0,0.045833333) 85.294117647%,
+        rgba(0,0,0,0.045833333) 85.294117647%,
+        rgba(0,0,0,0.045833333) 88.235294118%,
+        rgba(0,0,0,0.045833333) 88.235294118%,
+        rgba(0,0,0,0.045833333) 91.176470588%,
+        rgba(0,0,0,0.045833333) 91.176470588%,
+        rgba(0,0,0,0.045833333) 94.117647059%,
+        rgba(0,0,0,0.041666667) 94.117647059%,
+        rgba(0,0,0,0.041666667) 97.058823529%,
+        rgba(0,0,0,0.054166667) 97.058823529%,
+        rgba(0,0,0,0.054166667) 100%
     );
-    border-radius: 3px;
-    border: 1px solid #545454;
-    box-shadow: inset 1px 0 0 rgba(0,0,0,0.199115),
-        inset 2px 0 0 rgba(0,0,0,0.070796);
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    box-shadow:
+        inset 2px 0 0 rgba(0,0,0,0.07),
+        inset 1px 0 0 rgba(0,0,0,0.135);
+    margin: 2px 0 5px 0;
+    padding: 0 8px 0 8px;
 }
 
 .inline-toolbar {
     background-color: #f0f0f0;
+    border-bottom: 1px solid #dfdfdf;
     border-left: 1px solid #dfdfdf;
     border-right: 1px solid #dfdfdf;
-    border-bottom: 1px solid #dfdfdf;
     padding: 9px;
 }
