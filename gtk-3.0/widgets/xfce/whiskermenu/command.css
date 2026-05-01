@@ -1,33 +1,131 @@
 #whiskermenu-window .command-button {
-    background-image: url("../../../assets/xfce/whiskermenu/command/command-standard.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 22px 22px;
-    border: none;
-    box-shadow: none;
+    background-color: none;
+    background-image:
+        linear-gradient(to bottom,
+            rgba(185, 185, 185, 0.95) 0%,
+            rgba(145, 145, 145, 0.78) 5.26%,
+            rgba(132, 132, 132, 0.68) 10.53%,
+            rgba(125, 125, 125, 0.63) 15.79%,
+            rgba(119, 119, 119, 0.57) 21.05%,
+            rgba(112, 112, 112, 0.53) 26.32%,
+            rgba(103, 103, 103, 0.48) 31.58%,
+            rgba(94, 94, 94, 0.40) 36.84%,
+            rgba(79, 79, 79, 0.34) 42.11%,
+            rgba(61, 61, 61, 0.28) 47.37%,
+            rgba(0, 0, 0, 0.15) 52.63%,
+            rgba(0, 0, 0, 0.11) 57.89%,
+            rgba(0, 0, 0, 0.10) 63.16%,
+            rgba(0, 0, 0, 0.09) 68.42%,
+            rgba(0, 0, 0, 0.08) 73.68%,
+            rgba(0, 0, 0, 0.07) 78.95%,
+            rgba(0, 0, 0, 0.06) 84.21%,
+            rgba(0, 0, 0, 0.05) 89.47%,
+            rgba(31, 31, 31, 0.10) 94.74%,
+            rgba(134, 134, 134, 0.66) 100%);
+
+    border-bottom-color: rgba(0, 0, 0, 0.29);
+    border-left-color: rgba(0, 0, 0, 0.49);
+    border-radius: 3px;
+    border-right-color: rgba(0, 0, 0, 0.49);
+    border-style: solid;
+    border-top-color: rgba(0, 0, 0, 0.29);
+    border-width: 1px;
+
+    box-shadow:
+        inset 1px 0 rgba(255, 255, 255, 0.08),
+        inset -1px 0 rgba(255, 255, 255, 0.08),
+        inset 0 1px rgba(255, 255, 255, 0.08),
+        inset 0 -1px rgba(0, 0, 0, 0.18);
+
     color: #ffffff;
-    min-height: 22px;
-    min-width: 22px;
 }
 
 #whiskermenu-window .command-button:hover {
-    background-image: url("../../../assets/xfce/whiskermenu/command/command-hover.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 22px 22px;
-    min-height: 22px;
-    min-width: 22px;
+    background-color: rgba(0, 0, 0, 0.00);
+    background-image:
+        linear-gradient(to bottom,
+            rgba(247, 247, 247, 1.00) 0%,
+            rgba(207, 207, 207, 0.98) 5.26%,
+            rgba(167, 167, 167, 0.91) 10.53%,
+            rgba(155, 155, 155, 0.88) 15.79%,
+            rgba(142, 142, 142, 0.83) 21.05%,
+            rgba(132, 132, 132, 0.79) 26.32%,
+            rgba(119, 119, 119, 0.73) 31.58%,
+            rgba(105, 105, 105, 0.66) 36.84%,
+            rgba(92, 92, 92, 0.58) 42.11%,
+            rgba(76, 76, 76, 0.51) 47.37%,
+            rgba(0, 0, 0, 0.32) 52.63%,
+            rgba(0, 0, 0, 0.24) 57.89%,
+            rgba(0, 0, 0, 0.22) 63.16%,
+            rgba(0, 0, 0, 0.20) 68.42%,
+            rgba(0, 0, 0, 0.18) 73.68%,
+            rgba(0, 0, 0, 0.16) 78.95%,
+            rgba(0, 0, 0, 0.13) 84.21%,
+            rgba(0, 0, 0, 0.11) 89.47%,
+            rgba(115, 115, 115, 0.58) 94.74%,
+            rgba(192, 192, 192, 0.96) 100%);
+
+    border-bottom-color: rgba(0, 0, 0, 0.47);
+    border-left-color: rgba(0, 0, 0, 0.67);
+    border-right-color: rgba(0, 0, 0, 0.67);
+    border-top-color: rgba(0, 0, 0, 0.47);
+
+    box-shadow:
+        inset 1px 0 rgba(255, 255, 255, 0.20),
+        inset -1px 0 rgba(255, 255, 255, 0.20),
+        inset 0 1px rgba(255, 255, 255, 0.16),
+        inset 0 -1px rgba(0, 0, 0, 0.22);
 }
 
 #whiskermenu-window .command-button:active:hover {
-    background-image: url("../../../assets/xfce/whiskermenu/command/command-pressed.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 22px 22px;
-    min-height: 22px;
-    min-width: 22px;
+    background-color: rgba(0, 0, 0, 0.00);
+    background-image:
+        linear-gradient(to bottom,
+            rgba(134, 134, 134, 0.97) 0%,
+            rgba(160, 160, 160, 0.88) 5.26%,
+            rgba(147, 147, 147, 0.83) 10.53%,
+            rgba(138, 138, 138, 0.78) 15.79%,
+            rgba(127, 127, 127, 0.74) 21.05%,
+            rgba(118, 118, 118, 0.70) 26.32%,
+            rgba(110, 110, 110, 0.65) 31.58%,
+            rgba(96, 96, 96, 0.58) 36.84%,
+            rgba(84, 84, 84, 0.53) 42.11%,
+            rgba(65, 65, 65, 0.46) 47.37%,
+            rgba(0, 0, 0, 0.32) 52.63%,
+            rgba(0, 0, 0, 0.24) 57.89%,
+            rgba(0, 0, 0, 0.22) 63.16%,
+            rgba(0, 0, 0, 0.20) 68.42%,
+            rgba(0, 0, 0, 0.18) 73.68%,
+            rgba(0, 0, 0, 0.16) 78.95%,
+            rgba(0, 0, 0, 0.13) 84.21%,
+            rgba(0, 0, 0, 0.11) 89.47%,
+            rgba(0, 0, 0, 0.09) 94.74%,
+            rgba(60, 60, 60, 0.57) 100%);
+
+    border-bottom-color: rgba(0, 0, 0, 0.47);
+    border-left-color: rgba(0, 0, 0, 0.67);
+    border-right-color: rgba(0, 0, 0, 0.67);
+    border-top-color: rgba(0, 0, 0, 0.47);
+
+    box-shadow:
+        inset 1px 0 rgba(0, 0, 0, 0.18),
+        inset -1px 0 rgba(0, 0, 0, 0.18),
+        inset 0 1px rgba(0, 0, 0, 0.12),
+        inset 0 -1px rgba(0, 0, 0, 0.26);
 }
 
-#whiskermenu-window .command-button image {
-    -gtk-icon-transform: scale(0.75);
+#whiskermenu-window .command-button {
+    border-radius: 0;
+}
+
+#whiskermenu-window .command-button:first-child {
+    border-radius: 3px 0 0 3px;
+}
+
+#whiskermenu-window .command-button:last-child {
+    border-radius: 0 3px 3px 0;
+}
+
+#whiskermenu-window .command-button:only-child {
+    border-radius: 3px;
 }
