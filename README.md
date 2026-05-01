@@ -1,4 +1,4 @@
-A Linux XFCE theme that replicates the Look and Feel of Windows Aero.
+A GTK/XFCE theme that brings the visual style of Windows 7 Aero to Linux XFCE.
 
 ## Notice Regarding Microsoft-Related Assets
 
