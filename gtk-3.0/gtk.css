@@ -48,3 +48,6 @@
 @import url("widgets/xfce/whiskermenu/command.css");
 @import url("widgets/xfce/whiskermenu/entry.css");
 @import url("widgets/xfce/whiskermenu/separator.css");
+
+/* APPLICATIONS */
+@import url("widgets/xfce/applications/thunar.css");
