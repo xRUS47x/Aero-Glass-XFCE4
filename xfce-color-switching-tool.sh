@@ -31,7 +31,7 @@ LAST_RESTART_PANEL_STATUS=""
 LAST_RESTART_XFWM_STATUS=""
 MANIFEST_NAME=".xpm_color_targets.json"
 XFWM4_DIR_NAME="xfwm4"
-ORIGINAL_THEME_TARGET="#b3cce6"
+ORIGINAL_THEME_TARGET="#ff0000"
 LAST_APPLY_THEME_ROOT=""
 LAST_APPLY_THEME_COLOR=""
 LAST_APPLY_MANIFEST=""
@@ -534,7 +534,7 @@ commit_saved_state_from_current() {
   last_saved_saturation=$(clamp_percent "$saturation")
   last_saved_brightness=$(clamp_percent "$brightness")
   last_saved_custom_color_enabled=$(clamp_percent "$custom_color_enabled")
-  last_saved_custom_color_hex=$(normalize_html_hex "$custom_color_hex" 2>/dev/null || printf '#%s' 'b3cce6')
+  last_saved_custom_color_hex=$(normalize_html_hex "$custom_color_hex" 2>/dev/null || printf '#%s' 'ff0000')
   config_has_saved_state=1
 }
 
@@ -547,7 +547,7 @@ restore_working_state_from_saved() {
   saturation=$(clamp_percent "$last_saved_saturation")
   brightness=$(clamp_percent "$last_saved_brightness")
   custom_color_enabled=$(clamp_percent "$last_saved_custom_color_enabled")
-  custom_color_hex=$(normalize_html_hex "$last_saved_custom_color_hex" 2>/dev/null || printf '#%s' 'b3cce6')
+  custom_color_hex=$(normalize_html_hex "$last_saved_custom_color_hex" 2>/dev/null || printf '#%s' 'ff0000')
   sync_palette_cursor_with_current
 }
 
@@ -561,13 +561,13 @@ initialize_saved_and_working_state() {
     last_saved_saturation=$(clamp_percent "$last_saved_saturation")
     last_saved_brightness=$(clamp_percent "$last_saved_brightness")
     last_saved_custom_color_enabled=$(clamp_percent "$last_saved_custom_color_enabled")
-    last_saved_custom_color_hex=$(normalize_html_hex "$last_saved_custom_color_hex" 2>/dev/null || printf '#%s' 'b3cce6')
+    last_saved_custom_color_hex=$(normalize_html_hex "$last_saved_custom_color_hex" 2>/dev/null || printf '#%s' 'ff0000')
     restore_working_state_from_saved
     ACTION_STATUS_MESSAGE="$(tr_text status_loaded_saved)"
   else
     apply_preset_values "$selected"
     custom_color_enabled=0
-    custom_color_hex="#b3cce6"
+    custom_color_hex="#ff0000"
     sync_palette_cursor_with_current
     commit_saved_state_from_current
     ACTION_STATUS_MESSAGE=""
@@ -1035,7 +1035,7 @@ hue=0
 saturation=0
 brightness=0
 custom_color_enabled=0
-custom_color_hex="#b3cce6"
+custom_color_hex="#ff0000"
 last_saved_selected=14
 last_saved_transparency=1
 last_saved_show_mixer=1
@@ -1044,7 +1044,7 @@ last_saved_hue=0
 last_saved_saturation=0
 last_saved_brightness=0
 last_saved_custom_color_enabled=0
-last_saved_custom_color_hex="#b3cce6"
+last_saved_custom_color_hex="#ff0000"
 config_has_saved_state=0
 ACTION_STATUS_MESSAGE=""
 button_index=0       # 0 = Save, 1 = Cancel
