@@ -1,11 +1,11 @@
 {
-  "original_target": "#b3cce6",
+  "original_target": "#ff0000",
   "xpm_symbols": {
     "xfwm4/bottom-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/bottom-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/bottom-left-active.xpm": [
       "."
@@ -23,8 +23,7 @@
       "."
     ],
     "xfwm4/close-inactive.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/close-prelight.xpm": [
       "."
@@ -33,12 +32,10 @@
       "."
     ],
     "xfwm4/hide-active.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/hide-inactive.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/hide-prelight.xpm": [
       "."
@@ -47,18 +44,16 @@
       "."
     ],
     "xfwm4/left-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/left-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/maximize-active.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/maximize-inactive.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/maximize-prelight.xpm": [
       "."
@@ -67,12 +62,10 @@
       "."
     ],
     "xfwm4/maximize-toggled-active.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/maximize-toggled-inactive.xpm": [
-      ".",
-      ","
+      "."
     ],
     "xfwm4/maximize-toggled-prelight.xpm": [
       "."
@@ -93,100 +86,40 @@
       "."
     ],
     "xfwm4/right-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/right-inactive.xpm": [
-      "."
-    ],
-    "xfwm4/shade-active.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/shade-inactive.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/shade-prelight.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/shade-pressed.xpm": [
-      "."
-    ],
-    "xfwm4/shade-toggled-active.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/shade-toggled-inactive.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/shade-toggled-prelight.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/shade-toggled-pressed.xpm": [
-      "."
-    ],
-    "xfwm4/stick-active.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/stick-inactive.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/stick-prelight.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/stick-pressed.xpm": [
-      "."
-    ],
-    "xfwm4/stick-toggled-active.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/stick-toggled-inactive.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/stick-toggled-prelight.xpm": [
-      ".",
-      ","
-    ],
-    "xfwm4/stick-toggled-pressed.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-1-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-1-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-2-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-2-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-3-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-3-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-4-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-4-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-5-active.xpm": [
-      "."
+      " "
     ],
     "xfwm4/title-5-inactive.xpm": [
-      "."
+      " "
     ],
     "xfwm4/top-left-active.xpm": [
       "."
