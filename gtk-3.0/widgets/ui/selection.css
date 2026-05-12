@@ -48,6 +48,16 @@ spinbutton entry.read-only selection {
     text-shadow: none;
 }
 
+.standard-view .view:selected {
+	background-color: #cee3fc;
+	color: #000000;
+}
+
+.standard-view:backdrop .view:selected {
+	background-color: #efefef;
+	color: #000000;
+}
+
 textview text selection,
 textview.view text selection {
     background-color: #3399ff;
