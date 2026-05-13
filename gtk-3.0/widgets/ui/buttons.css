@@ -1,4 +1,3 @@
-/* Normal */
 button.text-button,
 button.combo,
 button.font,
@@ -58,7 +57,6 @@ dialog box.inline-toolbar > button {
     transition: none;
 }
 
-/* Hover */
 button.text-button:hover,
 button.combo:hover,
 button.font:hover,
@@ -111,7 +109,6 @@ dialog box.inline-toolbar > button:hover {
         inset -1px 0 0 rgba(255,255,255,0.75);
 }
 
-/* Active / Checked */
 button.text-button:hover:active,
 button.text-button:checked,
 button.combo:hover:active,
@@ -172,7 +169,6 @@ dialog box.inline-toolbar > button:checked {
         inset -1px 0 0 rgba(0,0,0,0.185);
 }
 
-/* Disabled */
 button.text-button:disabled,
 button.combo:disabled,
 button.font:disabled,
@@ -182,6 +178,7 @@ dialog box.inline-toolbar > button:disabled {
     background-image: image(#f4f4f4);
     border-color: #adb2b5;
     box-shadow: inset 0 0 0 1px rgba(252,252,252,1.00);
+    color: #6d6d6d;
 }
 
 button.font > box.horizontal > box.horizontal > separator.vertical,
