@@ -1,0 +1,75 @@
+#whiskermenu-window scrollbar,
+#whiskermenu-window scrollbar button,
+#whiskermenu-window scrollbar button:disabled,
+#whiskermenu-window scrollbar button.down,
+#whiskermenu-window scrollbar button.down:disabled,
+#whiskermenu-window scrollbar button.down:hover,
+#whiskermenu-window scrollbar button.down:hover:active,
+#whiskermenu-window scrollbar button:hover,
+#whiskermenu-window scrollbar button:hover:active,
+#whiskermenu-window scrollbar button.up,
+#whiskermenu-window scrollbar button.up:disabled,
+#whiskermenu-window scrollbar button.up:hover,
+#whiskermenu-window scrollbar button.up:hover:active,
+#whiskermenu-window scrollbar contents,
+#whiskermenu-window scrollbar contents:disabled,
+#whiskermenu-window scrollbar contents:hover,
+#whiskermenu-window scrollbar:disabled,
+#whiskermenu-window scrollbar:hover,
+#whiskermenu-window scrollbar slider,
+#whiskermenu-window scrollbar slider:disabled,
+#whiskermenu-window scrollbar slider:hover,
+#whiskermenu-window scrollbar slider:hover:active,
+#whiskermenu-window scrollbar trough,
+#whiskermenu-window scrollbar trough:disabled,
+#whiskermenu-window scrollbar trough:hover {
+    background-color: transparent;
+    background-image: none;
+    background: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-image: none;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+    -gtk-icon-shadow: none;
+    -gtk-icon-source: none;
+    icon-shadow: none;
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    outline: none;
+    padding: 0;
+    text-shadow: none;
+}
+
+#whiskermenu-window scrollbar.vertical,
+#whiskermenu-window scrollbar.vertical button,
+#whiskermenu-window scrollbar.vertical button.down,
+#whiskermenu-window scrollbar.vertical button.up,
+#whiskermenu-window scrollbar.vertical contents,
+#whiskermenu-window scrollbar.vertical slider,
+#whiskermenu-window scrollbar.vertical trough {
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#whiskermenu-window scrollbar.horizontal,
+#whiskermenu-window scrollbar.horizontal button,
+#whiskermenu-window scrollbar.horizontal button.down,
+#whiskermenu-window scrollbar.horizontal button.up,
+#whiskermenu-window scrollbar.horizontal contents,
+#whiskermenu-window scrollbar.horizontal slider,
+#whiskermenu-window scrollbar.horizontal trough {
+    margin-bottom: 0;
+    margin-top: 0;
+    min-height: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
