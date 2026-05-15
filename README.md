@@ -21,7 +21,7 @@ Microsoft-related assets and any other third-party material remain excluded from
 
 ## Preview
 
-<img width="1920" height="1080" alt="preview-1" src="https://github.com/user-attachments/assets/3ff09f05-bf1f-4a6b-9cdd-5048e844c5f0" />
+<img width="1920" height="1080" alt="Screenshot" src="https://github.com/user-attachments/assets/e7b2903a-1e37-47a6-b0f6-2b08586d5f4e" />
 
 ## Tested and Compatible OS + XFCE Version
 
