@@ -1,4 +1,5 @@
 /* UI */
+@import url("widgets/ui/arrows.css");
 @import url("widgets/ui/assistant.css");
 @import url("widgets/ui/base.css");
 @import url("widgets/ui/buttons.css");
@@ -33,21 +34,22 @@
 
 /* XFCE PANEL */
 @import url("widgets/xfce/panel/base.css");
-@import url("widgets/xfce/panel/whiskermenu-button.css");
-@import url("widgets/xfce/panel/launcher-button.css");
-@import url("widgets/xfce/panel/tasklist-button.css");
-@import url("widgets/xfce/panel/pulseaudio-button.css");
-@import url("widgets/xfce/panel/clock-button.css");
 @import url("widgets/xfce/panel/calendar.css");
+@import url("widgets/xfce/panel/clock-button.css");
+@import url("widgets/xfce/panel/launcher-button.css");
+@import url("widgets/xfce/panel/pulseaudio-button.css");
 @import url("widgets/xfce/panel/showdesktop-button.css");
+@import url("widgets/xfce/panel/tasklist-button.css");
+@import url("widgets/xfce/panel/whiskermenu-button.css");
 
 /* WHISKERMENU */
-@import url("widgets/xfce/whiskermenu/profile.css");
-@import url("widgets/xfce/whiskermenu/treeview-application.css");
 @import url("widgets/xfce/whiskermenu/category.css");
 @import url("widgets/xfce/whiskermenu/command.css");
 @import url("widgets/xfce/whiskermenu/entry.css");
+@import url("widgets/xfce/whiskermenu/profile.css");
+@import url("widgets/xfce/whiskermenu/scrollbar.css");
 @import url("widgets/xfce/whiskermenu/separator.css");
+@import url("widgets/xfce/whiskermenu/treeview-application.css");
 
 /* APPLICATIONS */
 @import url("widgets/xfce/applications/thunar.css");
