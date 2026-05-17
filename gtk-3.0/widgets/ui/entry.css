@@ -7,6 +7,7 @@ entry {
     border-top: 1px solid #abadb3;
     box-shadow: none;
     color: #000000;
+    margin: 5px;
     min-height: 21px;
     min-width: 20px;
     padding-left: 5px;
@@ -41,4 +42,3 @@ entry image {
 entry image.left {
     padding-right: 4px;
 }
-
