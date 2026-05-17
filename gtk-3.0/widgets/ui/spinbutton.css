@@ -1,9 +1,13 @@
+spinbutton.horizontal:disabled {
+    color: #6d6d6d;
+}
+
 spinbutton.horizontal > button.up {
 	margin-left: 1px;
 }
 
 spinbutton.horizontal > button.down {
-	margin-left: -1px;
+	margin-left: -6px;
 }
 
 spinbutton.horizontal > button.up,
@@ -44,6 +48,8 @@ spinbutton.horizontal > button.down {
         inset 0 0 0 2px rgba(255,255,255,0.75),
         inset 0 0 0 1px #abadb3;
     color: #5f6ea5;
+    margin-bottom: 5px;
+    margin-top: 5px;
     padding-left: 4px;
     padding-right: 4px;
 }
@@ -137,4 +143,5 @@ spinbutton.horizontal > button.down:disabled {
     );
     box-shadow:
         inset 0 0 0 1px #bfbfbf;
+    color: #97999e;
 }
