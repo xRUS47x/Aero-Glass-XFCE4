@@ -1,8 +1,42 @@
-check {
-    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/normal.png"));
+checkbutton > check {
+    min-height: 13px;
+    min-width: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+radiobutton > radio {
+    min-height: 12px;
+    min-width: 12px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+checkbutton label,
+radiobutton label {
+    color: #000000;
+    font-size: 12px;
+}
+
+checkbutton:disabled label,
+radiobutton:disabled label {
+    color: #6d6d6d;
+}
+
+scrolledwindow treeview check {
     min-height: 13px;
     min-width: 13px;
     padding: 3px;
+}
+
+scrolledwindow treeview radio {
+    min-height: 12px;
+    min-width: 12px;
+    padding: 4px;
+}
+
+check {
+    -gtk-icon-source: -gtk-scaled(url("../../assets/ui/checkbuttons/normal.png"));
 }
 
 check:hover {
@@ -51,9 +85,6 @@ check:indeterminate:disabled {
 
 radio {
     -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/normal.png"));
-    min-height: 12px;
-    min-width: 12px;
-    padding: 4px;
 }
 
 radio:hover {
