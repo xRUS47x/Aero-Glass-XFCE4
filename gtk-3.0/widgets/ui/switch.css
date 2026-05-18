@@ -1,111 +1,176 @@
 switch {
     background-image: linear-gradient(to bottom,
-        #fcfcfc 0%,
-        #fcfcfc 5.263157895%,
-        #f2f2f2 5.263157895%,
-        #f2f2f2 10.526315789%,
-        #f2f2f2 10.526315789%,
-        #f2f2f2 15.789473684%,
-        #f1f1f1 15.789473684%,
-        #f1f1f1 21.052631579%,
-        #f0f0f0 21.052631579%,
-        #f0f0f0 26.315789474%,
-        #efefef 26.315789474%,
-        #efefef 31.578947368%,
-        #ededed 31.578947368%,
-        #ededed 36.842105263%,
-        #ececec 36.842105263%,
-        #ececec 42.105263158%,
-        #ebebeb 42.105263158%,
-        #ebebeb 47.368421053%,
-        #dddddd 47.368421053%,
-        #dddddd 52.631578947%,
-        #dbdbdb 52.631578947%,
-        #dbdbdb 57.894736842%,
-        #dadada 57.894736842%,
-        #dadada 63.157894737%,
-        #d8d8d8 63.157894737%,
-        #d8d8d8 68.421052632%,
-        #d6d6d6 68.421052632%,
-        #d6d6d6 73.684210526%,
-        #d4d4d4 73.684210526%,
-        #d4d4d4 78.947368421%,
-        #d2d2d2 78.947368421%,
-        #d2d2d2 84.210526316%,
-        #d1d1d1 84.210526316%,
-        #d1d1d1 89.473684211%,
-        #cfcfcf 89.473684211%,
-        #cfcfcf 94.736842105%,
-        #f3f3f3 94.736842105%,
-        #f3f3f3 100%
+        #f4f4f4 0%,
+        #f4f4f4 4.761904762%,
+        #f3f3f3 4.761904762%,
+        #f3f3f3 9.523809524%,
+        #f2f2f2 9.523809524%,
+        #f2f2f2 14.285714286%,
+        #f2f2f2 14.285714286%,
+        #f2f2f2 19.047619048%,
+        #f1f1f1 19.047619048%,
+        #f1f1f1 23.80952381%,
+        #f0f0f0 23.80952381%,
+        #f0f0f0 28.571428571%,
+        #efefef 28.571428571%,
+        #efefef 33.333333333%,
+        #ededed 33.333333333%,
+        #ededed 38.095238095%,
+        #ececec 38.095238095%,
+        #ececec 42.857142857%,
+        #ebebeb 42.857142857%,
+        #ebebeb 47.619047619%,
+        #dddddd 47.619047619%,
+        #dddddd 52.380952381%,
+        #dbdbdb 52.380952381%,
+        #dbdbdb 57.142857143%,
+        #dadada 57.142857143%,
+        #dadada 61.904761905%,
+        #d8d8d8 61.904761905%,
+        #d8d8d8 66.666666667%,
+        #d6d6d6 66.666666667%,
+        #d6d6d6 71.428571429%,
+        #d4d4d4 71.428571429%,
+        #d4d4d4 76.19047619%,
+        #d2d2d2 76.19047619%,
+        #d2d2d2 80.952380952%,
+        #d1d1d1 80.952380952%,
+        #d1d1d1 85.714285714%,
+        #cfcfcf 85.714285714%,
+        #cfcfcf 90.476190476%,
+        #cecece 90.476190476%,
+        #cecece 95.238095238%,
+        #cdcdcd 95.238095238%,
+        #cdcdcd 100%
     );
-    border: 1px solid;
-    border-color: #707070;
     border-radius: 3px;
     box-shadow:
-        inset 1px 0  0 rgba(255,255,255,0.75),
-        inset -1px 0 0 rgba(255,255,255,0.75);
+        inset 0 0 0 2px rgba(255,255,255,0.745),
+        inset 0 0 0 1px #707070;
     color: transparent;
-    min-height: 19px;
-    min-width: 19px;
-    padding: 0px;
-    text-shadow: none;
-    transition: none;
+    margin-right: 7px;
+    min-height: 16px;
+    min-width: 32px;
+    padding: 1px;
 }
 
-switch:hover,
+switch:hover {
+    background-image: linear-gradient(to bottom,
+        #eef8fe 0%,
+        #eef8fe 4.761904762%,
+        #ecf7fc 4.761904762%,
+        #ecf7fc 9.523809524%,
+        #eaf6fd 9.523809524%,
+        #eaf6fd 14.285714286%,
+        #e8f6fd 14.285714286%,
+        #e8f6fd 19.047619048%,
+        #e6f5fd 19.047619048%,
+        #e6f5fd 23.80952381%,
+        #e4f4fc 23.80952381%,
+        #e4f4fc 28.571428571%,
+        #e1f3fc 28.571428571%,
+        #e1f3fc 33.333333333%,
+        #def2fc 33.333333333%,
+        #def2fc 38.095238095%,
+        #dcf1fc 38.095238095%,
+        #dcf1fc 42.857142857%,
+        #d9f0fc 42.857142857%,
+        #d9f0fc 47.619047619%,
+        #bee6fd 47.619047619%,
+        #bee6fd 52.380952381%,
+        #bce5fc 52.380952381%,
+        #bce5fc 57.142857143%,
+        #b9e3fb 57.142857143%,
+        #b9e3fb 61.904761905%,
+        #b5e2fa 61.904761905%,
+        #b5e2fa 66.666666667%,
+        #b2e0f9 66.666666667%,
+        #b2e0f9 71.428571429%,
+        #afdef8 71.428571429%,
+        #afdef8 76.19047619%,
+        #acdcf7 76.19047619%,
+        #acdcf7 80.952380952%,
+        #a9dbf6 80.952380952%,
+        #a9dbf6 85.714285714%,
+        #a7d9f5 85.714285714%,
+        #a7d9f5 90.476190476%,
+        #a4d7f4 90.476190476%,
+        #a4d7f4 95.238095238%,
+        #a1d6f3 95.238095238%,
+        #a1d6f3 100%
+    );
+    border-radius: 3px;
+    box-shadow:
+        inset 0 0 0 2px rgba(255,255,255,0.747),
+        inset 0 0 0 1px #3c7fb1;
+    color: transparent;
+}
+
 switch:hover:active,
 switch:checked {
     background-image: linear-gradient(to bottom,
-        #fafdfe 0%,
-        #fafdfe 5.263157895%,
-        #eaf6fd 5.263157895%,
-        #eaf6fd 10.526315789%,
-        #e8f6fd 10.526315789%,
-        #e8f6fd 15.789473684%,
-        #e6f5fd 15.789473684%,
-        #e6f5fd 21.052631579%,
-        #e4f4fc 21.052631579%,
-        #e4f4fc 26.315789474%,
-        #e1f3fc 26.315789474%,
-        #e1f3fc 31.578947368%,
-        #def2fc 31.578947368%,
-        #def2fc 36.842105263%,
-        #dcf1fc 36.842105263%,
-        #dcf1fc 42.105263158%,
-        #d9f0fc 42.105263158%,
-        #d9f0fc 47.368421053%,
-        #bee6fd 47.368421053%,
-        #bee6fd 52.631578947%,
-        #bce5fc 52.631578947%,
-        #bce5fc 57.894736842%,
-        #b9e3fb 57.894736842%,
-        #b9e3fb 63.157894737%,
-        #b5e2fa 63.157894737%,
-        #b5e2fa 68.421052632%,
-        #b2e0f9 68.421052632%,
-        #b2e0f9 73.684210526%,
-        #afdef8 73.684210526%,
-        #afdef8 78.947368421%,
-        #acdcf7 78.947368421%,
-        #acdcf7 84.210526316%,
-        #a9dbf6 84.210526316%,
-        #a9dbf6 89.473684211%,
-        #a7d9f5 89.473684211%,
-        #a7d9f5 94.736842105%,
-        #e8f5fc 94.736842105%,
-        #e8f5fc 100%
+        #e5f4fc 0%,
+        #e5f4fc 4.761904762%,
+        #e5f4fc 4.761904762%,
+        #e5f4fc 9.523809524%,
+        #e5f4fc 9.523809524%,
+        #e5f4fc 14.285714286%,
+        #e5f4fc 14.285714286%,
+        #e5f4fc 19.047619048%,
+        #e1f2fb 19.047619048%,
+        #e1f2fb 23.80952381%,
+        #ddf0fa 23.80952381%,
+        #ddf0fa 28.571428571%,
+        #d8eefa 28.571428571%,
+        #d8eefa 33.333333333%,
+        #d3ecf9 33.333333333%,
+        #d3ecf9 38.095238095%,
+        #cee9f8 38.095238095%,
+        #cee9f8 42.857142857%,
+        #c9e7f7 42.857142857%,
+        #c9e7f7 47.619047619%,
+        #c4e5f6 47.619047619%,
+        #c4e5f6 52.380952381%,
+        #98d1ef 52.380952381%,
+        #98d1ef 57.142857143%,
+        #93ceed 57.142857143%,
+        #93ceed 61.904761905%,
+        #8ccaeb 61.904761905%,
+        #8ccaeb 66.666666667%,
+        #86c6e8 66.666666667%,
+        #86c6e8 71.428571429%,
+        #7fc2e5 71.428571429%,
+        #7fc2e5 76.19047619%,
+        #78bde2 76.19047619%,
+        #78bde2 80.952380952%,
+        #72b9df 80.952380952%,
+        #72b9df 85.714285714%,
+        #6db6dd 85.714285714%,
+        #6db6dd 90.476190476%,
+        #68b3db 90.476190476%,
+        #68b3db 95.238095238%,
+        #63b0d9 95.238095238%,
+        #63b0d9 100%
     );
-    border-color: #3c7fb1;
+    border-radius: 3px;
     box-shadow:
-        inset 1px 0  0 rgba(255,255,255,0.75),
-        inset -1px 0 0 rgba(255,255,255,0.75);
+        inset 0 2px 0 rgba(0,27,39,0.309),
+        inset 2px 0 0 rgba(0,23,39,0.210),
+        inset -2px 0 0 rgba(0,23,39,0.210),
+        inset 0 0 0 1px #2c628b;
+    color: transparent;
 }
 
 switch:disabled {
-    background-image: image(#f4f4f4);
-    border-color: #adb2b5;
-    box-shadow: inset 0 0 0 1px rgba(252,252,252,1.00);
+    background-image: linear-gradient(to bottom,
+        #f4f4f4 0%,
+        #f4f4f4 100%
+    );
+    border-radius: 3px;
+    box-shadow:
+        inset 0 0 0 2px #fcfcfc,
+        inset 0 0 0 1px #adb2b5;
+    color: transparent;
 }
 
 switch slider,
@@ -113,60 +178,67 @@ switch slider:hover,
 switch slider:hover:active,
 switch slider:checked {
     background-image: linear-gradient(to bottom,
-        #fcfcfc 0%,
-        #fcfcfc 5.263157895%,
-        #f2f2f2 5.263157895%,
-        #f2f2f2 10.526315789%,
-        #f2f2f2 10.526315789%,
-        #f2f2f2 15.789473684%,
-        #f1f1f1 15.789473684%,
-        #f1f1f1 21.052631579%,
-        #f0f0f0 21.052631579%,
-        #f0f0f0 26.315789474%,
-        #efefef 26.315789474%,
-        #efefef 31.578947368%,
-        #ededed 31.578947368%,
-        #ededed 36.842105263%,
-        #ececec 36.842105263%,
-        #ececec 42.105263158%,
-        #ebebeb 42.105263158%,
-        #ebebeb 47.368421053%,
-        #dddddd 47.368421053%,
-        #dddddd 52.631578947%,
-        #dbdbdb 52.631578947%,
-        #dbdbdb 57.894736842%,
-        #dadada 57.894736842%,
-        #dadada 63.157894737%,
-        #d8d8d8 63.157894737%,
-        #d8d8d8 68.421052632%,
-        #d6d6d6 68.421052632%,
-        #d6d6d6 73.684210526%,
-        #d4d4d4 73.684210526%,
-        #d4d4d4 78.947368421%,
-        #d2d2d2 78.947368421%,
-        #d2d2d2 84.210526316%,
-        #d1d1d1 84.210526316%,
-        #d1d1d1 89.473684211%,
-        #cfcfcf 89.473684211%,
-        #cfcfcf 94.736842105%,
-        #f3f3f3 94.736842105%,
-        #f3f3f3 100%
+        #f4f4f4 0%,
+        #f4f4f4 4.761904762%,
+        #f3f3f3 4.761904762%,
+        #f3f3f3 9.523809524%,
+        #f2f2f2 9.523809524%,
+        #f2f2f2 14.285714286%,
+        #f2f2f2 14.285714286%,
+        #f2f2f2 19.047619048%,
+        #f1f1f1 19.047619048%,
+        #f1f1f1 23.80952381%,
+        #f0f0f0 23.80952381%,
+        #f0f0f0 28.571428571%,
+        #efefef 28.571428571%,
+        #efefef 33.333333333%,
+        #ededed 33.333333333%,
+        #ededed 38.095238095%,
+        #ececec 38.095238095%,
+        #ececec 42.857142857%,
+        #ebebeb 42.857142857%,
+        #ebebeb 47.619047619%,
+        #dddddd 47.619047619%,
+        #dddddd 52.380952381%,
+        #dbdbdb 52.380952381%,
+        #dbdbdb 57.142857143%,
+        #dadada 57.142857143%,
+        #dadada 61.904761905%,
+        #d8d8d8 61.904761905%,
+        #d8d8d8 66.666666667%,
+        #d6d6d6 66.666666667%,
+        #d6d6d6 71.428571429%,
+        #d4d4d4 71.428571429%,
+        #d4d4d4 76.19047619%,
+        #d2d2d2 76.19047619%,
+        #d2d2d2 80.952380952%,
+        #d1d1d1 80.952380952%,
+        #d1d1d1 85.714285714%,
+        #cfcfcf 85.714285714%,
+        #cfcfcf 90.476190476%,
+        #cecece 90.476190476%,
+        #cecece 95.238095238%,
+        #cdcdcd 95.238095238%,
+        #cdcdcd 100%
     );
-    border: 1px solid;
-    border-color: #707070;
     border-radius: 3px;
     box-shadow:
-        inset 1px 0  0 rgba(255,255,255,0.75),
-        inset -1px 0 0 rgba(255,255,255,0.75);
-    color: #000000;
-    min-height: 19px;
-    min-width: 19px;
-    padding: 0px;
-    transition: none;
+        inset 0 0 0 2px rgba(255,255,255,0.745),
+        inset 0 0 0 1px #707070;
+    color: transparent;
+    min-width: 15px;
+    min-height: 15px;
+    margin: 0;
 }
 
 switch slider:disabled {
-    background-image: image(#f4f4f4);
-    border-color: #adb2b5;
-    box-shadow: inset 0 0 0 1px rgba(252,252,252,1.00);
+    background-image: linear-gradient(to bottom,
+        #f4f4f4 0%,
+        #f4f4f4 100%
+    );
+    border-radius: 3px;
+    box-shadow:
+        inset 0 0 0 2px #fcfcfc,
+        inset 0 0 0 1px #adb2b5;
+    color: transparent;
 }
