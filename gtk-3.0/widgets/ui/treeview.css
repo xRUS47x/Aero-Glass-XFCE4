@@ -49,23 +49,18 @@ treeview.view header button {
         #f1f2f4 95.454545455%,
         #f1f2f4 100%
     );
-    border-top: 0;
     border-bottom: 1px solid #d5d5d5;
-    border-left: 0;
-    border-right: 0;
     border-radius: 0;
     box-shadow:
-        inset -2px 0 0 rgba(255,255,255,0.45),
-        inset 1px 0 0 rgba(255,255,255,0.45),
-        inset -1px 0 0 rgba(0,0,0,0.15);
+        inset -2px 0 0 rgba(255,255,255,0.60),
+        inset -1px 0 0 rgba(0,0,0,0.065),
+        inset 1px 0 0 rgba(255,255,255,0.45);
     color: #000000;
-    min-height: 19px;
-    min-width: 19px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    font-size: 12px;
+    padding-bottom: 3px;
     padding-left: 6px;
     padding-right: 6px;
-    transition: none;
+    padding-top: 2px;
 }
 
 treeview.view header button:hover {
@@ -115,74 +110,13 @@ treeview.view header button:hover {
         #b7e7fb 95.454545455%,
         #b7e7fb 100%
     );
-    border-top: 0;
     border-bottom: 1px solid #93c9e3;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
     box-shadow:
-        inset 1px 0 0 rgba(20,65,85,0.25),
-        inset -1px 0 0 rgba(20,65,85,0.25);
+        inset 1px 0 0 rgba(1,124,191,0.444),
+        inset -1px 0 0 rgba(1,124,191,0.444);
 }
 
 treeview.view header button:focus:active {
-    background-image: linear-gradient(to bottom,
-        #f2f9fc 0%,
-        #f2f9fc 4.545454545%,
-        #f2f9fc 4.545454545%,
-        #f2f9fc 9.090909091%,
-        #f2f9fc 9.090909091%,
-        #f2f9fc 13.636363636%,
-        #f2f9fc 13.636363636%,
-        #f2f9fc 18.181818182%,
-        #f2f9fc 18.181818182%,
-        #f2f9fc 22.727272727%,
-        #f2f9fc 22.727272727%,
-        #f2f9fc 27.272727273%,
-        #f2f9fc 27.272727273%,
-        #f2f9fc 31.818181818%,
-        #f2f9fc 31.818181818%,
-        #f2f9fc 36.363636364%,
-        #f2f9fc 36.363636364%,
-        #f2f9fc 40.909090909%,
-        #e1f1f9 40.909090909%,
-        #e1f1f9 45.454545455%,
-        #e1f1f9 45.454545455%,
-        #e1f1f9 50%,
-        #e0f1f9 50%,
-        #e0f1f9 54.545454545%,
-        #dff0f8 54.545454545%,
-        #dff0f8 59.090909091%,
-        #dff0f8 59.090909091%,
-        #dff0f8 63.636363636%,
-        #dff0f8 63.636363636%,
-        #dff0f8 68.181818182%,
-        #ddeff8 68.181818182%,
-        #ddeff8 72.727272727%,
-        #dceef7 72.727272727%,
-        #dceef7 77.272727273%,
-        #dbeff7 77.272727273%,
-        #dbeff7 81.818181818%,
-        #daecf6 81.818181818%,
-        #daecf6 86.363636364%,
-        #d9eef7 86.363636364%,
-        #d9eef7 90.909090909%,
-        #d9ecf6 90.909090909%,
-        #d9ecf6 95.454545455%,
-        #d8ecf6 95.454545455%,
-        #d8ecf6 100%
-    );
-    border-top: 0;
-    border-bottom: 1px solid #96d9f9;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    box-shadow:
-        inset 1px 0 0 rgba(150,217,249,1.00),
-        inset -1px 0 0 rgba(150,217,249,1.00);
-}
-
-treeview.view header button:focus {
     background-image: linear-gradient(to bottom,
         #bce4f9 0%,
         #bce4f9 4.545454545%,
@@ -229,18 +163,68 @@ treeview.view header button:focus {
         #8ad1f5 95.454545455%,
         #8ad1f5 100%
     );
-    border-top: 0;
     border-bottom: 1px solid #93c9e3;
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
     box-shadow:
-        inset 0 2px 0 rgba(0,0,0,0.10),
-        inset 2px 0 0 rgba(0,0,0,0.10),
-        inset -2px 0 0 rgba(0,0,0,0.10),
-        inset 0 1px 0 rgba(0,0,0,0.25),
-        inset 1px 0 0 rgba(0,0,0,0.25),
-        inset -1px 0 0 rgba(0,0,0,0.25);
+        inset -3px 0 0 rgba(0,120,224,0.0426),
+        inset 2px 0 0 rgba(0,79,122,0.1915),
+        inset -2px 0 0 rgba(25,91,126,0.1915),
+        inset 0 2px 0 rgba(4,3,4,0.098),
+        inset 0 1px 0 rgba(1,5,5,0.213),
+        inset -1px 0 0 rgba(1,45,63,0.300),
+        inset 1px 0 0 rgba(1,45,63,0.300);
+}
+
+treeview.view header button:focus {
+    background-image: linear-gradient(to bottom,
+        #f2f9fc 0%,
+        #f2f9fc 4.545454545%,
+        #f2f9fc 4.545454545%,
+        #f2f9fc 9.090909091%,
+        #f2f9fc 9.090909091%,
+        #f2f9fc 13.636363636%,
+        #f2f9fc 13.636363636%,
+        #f2f9fc 18.181818182%,
+        #f2f9fc 18.181818182%,
+        #f2f9fc 22.727272727%,
+        #f2f9fc 22.727272727%,
+        #f2f9fc 27.272727273%,
+        #f2f9fc 27.272727273%,
+        #f2f9fc 31.818181818%,
+        #f2f9fc 31.818181818%,
+        #f2f9fc 36.363636364%,
+        #f2f9fc 36.363636364%,
+        #f2f9fc 40.909090909%,
+        #e1f1f9 40.909090909%,
+        #e1f1f9 45.454545455%,
+        #e1f1f9 45.454545455%,
+        #e1f1f9 50%,
+        #e0f1f9 50%,
+        #e0f1f9 54.545454545%,
+        #dff0f8 54.545454545%,
+        #dff0f8 59.090909091%,
+        #dff0f8 59.090909091%,
+        #dff0f8 63.636363636%,
+        #dff0f8 63.636363636%,
+        #dff0f8 68.181818182%,
+        #ddeff8 68.181818182%,
+        #ddeff8 72.727272727%,
+        #dceef7 72.727272727%,
+        #dceef7 77.272727273%,
+        #dbeff7 77.272727273%,
+        #dbeff7 81.818181818%,
+        #daecf6 81.818181818%,
+        #daecf6 86.363636364%,
+        #d9eef7 86.363636364%,
+        #d9eef7 90.909090909%,
+        #d9ecf6 90.909090909%,
+        #d9ecf6 95.454545455%,
+        #d8ecf6 95.454545455%,
+        #d8ecf6 100%
+    );
+    border-bottom: 1px solid #96d9f9;
+    box-shadow:
+        inset -1px 0 0 #96d9f9,
+        inset 1px 0 0 #96d9f9;
 }
 
 check {
@@ -345,15 +329,19 @@ radio:indeterminate:disabled {
     -gtk-icon-source: -gtk-scaled(url("../../assets/ui/radiobuttons/indeterminate-disabled.png"));
 }
 
-treeview.view.trough {
-    background-color: #e6e6e6;
+treeview.view.trough,
+treeview.view.trough:selected:focus {
+    background-image: none;
+    background-color: #7a93b1;
     border-radius: 0;
     box-shadow: none;
     color: #000000;
 }
 
-treeview.view.progressbar {
-    background-color: #06b025;
+treeview.view.progressbar,
+treeview.view.progressbar:selected:focus {
+    background-image: none;
+    background-color: #99cc33;
     border-radius: 0;
     box-shadow: none;
     color: #000000;
