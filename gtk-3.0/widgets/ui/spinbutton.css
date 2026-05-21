@@ -1,13 +1,32 @@
+spinbutton {
+    font-size: 12px;
+}
+
 spinbutton.horizontal:disabled {
     color: #6d6d6d;
 }
 
+spinbutton entry {
+padding-right: 54px;
+margin-bottom: 6px;
+}
+
 spinbutton.horizontal > button.up {
-	margin-left: 1px;
+	margin-left: -40px;
+	margin-right: 40px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 spinbutton.horizontal > button.down {
-	margin-left: -6px;
+	margin-left: -41px;
+	margin-right: 41px;
+    margin-bottom: 8px;
+    margin-top: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
 }
 
 spinbutton.horizontal > button.up,
@@ -48,10 +67,6 @@ spinbutton.horizontal > button.down {
         inset 0 0 0 2px rgba(255,255,255,0.75),
         inset 0 0 0 1px #abadb3;
     color: #5f6ea5;
-    margin-bottom: 5px;
-    margin-top: 5px;
-    padding-left: 4px;
-    padding-right: 4px;
 }
 
 spinbutton.horizontal > button.up:hover,
