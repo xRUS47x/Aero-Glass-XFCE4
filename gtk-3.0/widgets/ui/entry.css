@@ -7,11 +7,12 @@ entry {
     border-top: 1px solid #abadb3;
     box-shadow: none;
     color: #000000;
-    margin: 5px;
-    min-height: 21px;
-    min-width: 20px;
+    font-size: 12px;
+    margin-right: -2px;
+    padding-bottom: 3px;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 1px;
 }
 
 entry:disabled {
@@ -35,10 +36,10 @@ entry:focus {
 }
 
 entry image {
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 1px;
 }
 
 entry image.left {
     padding-right: 4px;
+    padding-top: 1px;
 }
