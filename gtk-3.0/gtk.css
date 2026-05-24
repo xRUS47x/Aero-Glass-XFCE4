@@ -34,6 +34,7 @@
 
 /* XFCE PANEL */
 @import url("widgets/xfce/panel/base.css");
+@import url("widgets/xfce/panel/buttons.css");
 @import url("widgets/xfce/panel/calendar.css");
 @import url("widgets/xfce/panel/clock-button.css");
 @import url("widgets/xfce/panel/launcher-button.css");
@@ -43,6 +44,7 @@
 @import url("widgets/xfce/panel/whiskermenu-button.css");
 
 /* WHISKERMENU */
+@import url("widgets/xfce/whiskermenu/buttons.css");
 @import url("widgets/xfce/whiskermenu/category.css");
 @import url("widgets/xfce/whiskermenu/command.css");
 @import url("widgets/xfce/whiskermenu/entry.css");
