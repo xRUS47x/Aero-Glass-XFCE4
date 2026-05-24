@@ -19,6 +19,17 @@ toolbar.primary-toolbar separator.vertical {
     margin: 3px 0 6px 0;
 }
 
+toolbar button,
+toolbar button:hover,
+toolbar button:hover:active,
+toolbar button:checked,
+toolbar button:disabled {
+    border-image: none;
+    font-size: none;
+    min-width: 0;
+}
+
+
 toolbar button.text-button,
 toolbar button.image-button.text-button,
 toolbar button.flat.toggle {
@@ -27,6 +38,7 @@ toolbar button.flat.toggle {
         rgba(0,0,0,0.00) 100%
     );
     border: 1px solid rgba(0, 0, 0, 0.00);
+    border-radius: 3px;
     box-shadow: none;
     margin: 2px 0 5px 0;
     padding: 0 8px 0 8px;
