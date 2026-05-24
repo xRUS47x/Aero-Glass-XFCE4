@@ -57,6 +57,9 @@ treeview.view header button {
         inset 1px 0 0 rgba(255,255,255,0.45);
     color: #000000;
     font-size: 12px;
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
     padding-bottom: 3px;
     padding-left: 6px;
     padding-right: 6px;
@@ -111,9 +114,13 @@ treeview.view header button:hover {
         #b7e7fb 100%
     );
     border-bottom: 1px solid #93c9e3;
+    border-radius: 0;
     box-shadow:
         inset 1px 0 0 rgba(1,124,191,0.444),
         inset -1px 0 0 rgba(1,124,191,0.444);
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
 }
 
 treeview.view header button:focus:active {
@@ -164,6 +171,7 @@ treeview.view header button:focus:active {
         #8ad1f5 100%
     );
     border-bottom: 1px solid #93c9e3;
+    border-radius: 0;
     box-shadow:
         inset -3px 0 0 rgba(0,120,224,0.0426),
         inset 2px 0 0 rgba(0,79,122,0.1915),
@@ -172,6 +180,9 @@ treeview.view header button:focus:active {
         inset 0 1px 0 rgba(1,5,5,0.213),
         inset -1px 0 0 rgba(1,45,63,0.300),
         inset 1px 0 0 rgba(1,45,63,0.300);
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
 }
 
 treeview.view header button:focus {
@@ -222,9 +233,13 @@ treeview.view header button:focus {
         #d8ecf6 100%
     );
     border-bottom: 1px solid #96d9f9;
+    border-radius: 0;
     box-shadow:
         inset -1px 0 0 #96d9f9,
         inset 1px 0 0 #96d9f9;
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
 }
 
 check {
