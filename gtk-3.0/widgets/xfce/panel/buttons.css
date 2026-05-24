@@ -1,0 +1,16 @@
+.xfce4-panel button,
+.xfce4-panel button:hover,
+.xfce4-panel button:hover:active,
+.xfce4-panel button:checked,
+.xfce4-panel button:disabled {
+    background-image: none;
+    border: none;
+    border-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: none;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+}
