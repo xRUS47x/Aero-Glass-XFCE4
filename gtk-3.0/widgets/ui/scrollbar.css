@@ -124,11 +124,11 @@ scrollbar.horizontal slider {
             #b7b8bb 93.333333333%,
             #b7b8bb 100%
         );
-    background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #f8f8f8;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.045),
         inset 4px 0 0 rgba(255, 255, 255, 0.045),
@@ -146,8 +146,8 @@ scrollbar.horizontal slider {
         inset 1px 0 0 #9e9e9e,
         inset 0 -1px 0 #a0a0a0,
         inset -1px 0 0 #9e9e9e;
-    min-width: 16px;
     min-height: 15px;
+    min-width: 16px;
 }
 
 scrollbar.horizontal slider:hover {
@@ -159,11 +159,11 @@ scrollbar.horizontal slider:hover {
             #a9dbf6 46.666666667%,
             #a9dbf6 100%
         );
-    background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #f8f8f8;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.151),
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
@@ -192,11 +192,11 @@ scrollbar.horizontal slider:hover:active {
             #6fcaf0 46.666666667%,
             #6fcaf0 100%
         );
-    background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
     border-bottom: 1px solid #e9e9e9;
+    border-top: 1px solid #f8f8f8;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.151),
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
@@ -248,8 +248,8 @@ scrollbar.vertical slider {
             #b7b8bb 93.333333333%,
             #b7b8bb 100%
         );
-    background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
     border-left: 1px solid #f8f8f8;
     border-right: 1px solid #e9e9e9;
@@ -270,8 +270,8 @@ scrollbar.vertical slider {
         inset 0 -1px 0 #9e9e9e,
         inset -1px 0 0 #a0a0a0,
         inset 0 1px 0 #9e9e9e;
-    min-width: 15px;
     min-height: 16px;
+    min-width: 15px;
 }
 
 scrollbar.vertical slider:hover {
@@ -283,8 +283,8 @@ scrollbar.vertical slider:hover {
             #a9dbf6 46.666666667%,
             #a9dbf6 100%
         );
-    background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
     border-left: 1px solid #f8f8f8;
     border-right: 1px solid #e9e9e9;
@@ -316,8 +316,8 @@ scrollbar.vertical slider:hover:active {
             #6fcaf0 46.666666667%,
             #6fcaf0 100%
         );
-    background-repeat: no-repeat, no-repeat;
     background-position: center center, center center;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
     border-left: 1px solid #f8f8f8;
     border-right: 1px solid #e9e9e9;
@@ -338,6 +338,8 @@ scrollbar.vertical slider:hover:active {
 }
 
 scrollbar.horizontal button.up {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-left-normal.png"),
         linear-gradient(to bottom,
@@ -372,11 +374,16 @@ scrollbar.horizontal button.up {
             #b7b8bb 93.333333333%,
             #b7b8bb 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
+    border: none;
     border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: none;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.045),
         inset 4px 0 0 rgba(255, 255, 255, 0.045),
@@ -394,11 +401,17 @@ scrollbar.horizontal button.up {
         inset 1px 0 0 #9e9e9e,
         inset 0 -1px 0 #a0a0a0,
         inset -1px 0 0 #9e9e9e;
-    min-width: 16px;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
     min-height: 15px;
+    min-width: 16px;
+    padding: 0;
 }
 
 scrollbar.horizontal button.up:hover {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-left-hover.png"),
         linear-gradient(to bottom,
@@ -407,11 +420,16 @@ scrollbar.horizontal button.up:hover {
             #a9dbf6 46.666666667%,
             #a9dbf6 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
+    border: none;
     border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: none;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.151),
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
@@ -429,9 +447,15 @@ scrollbar.horizontal button.up:hover {
         inset 1px 0 0 #3c7fb1,
         inset 0 -1px 0 #346e99,
         inset -1px 0 0 #346e99;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.horizontal button.up:hover:active {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-left-pressed.png"),
         linear-gradient(to bottom,
@@ -440,11 +464,16 @@ scrollbar.horizontal button.up:hover:active {
             #6fcaf0 46.666666667%,
             #6fcaf0 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
+    border: none;
     border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: none;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.151),
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
@@ -459,9 +488,15 @@ scrollbar.horizontal button.up:hover:active {
         inset 0 -2px 0 rgba(255, 207, 188, 0.326),
         inset -2px 0 0 rgba(255, 207, 188, 0.326),
         inset 0 0 0 1px #18598a;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.horizontal button.down {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-right-normal.png"),
         linear-gradient(to bottom,
@@ -496,11 +531,16 @@ scrollbar.horizontal button.down {
             #b7b8bb 93.333333333%,
             #b7b8bb 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
+    border: none;
     border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: none;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.045),
         inset 4px 0 0 rgba(255, 255, 255, 0.045),
@@ -518,11 +558,17 @@ scrollbar.horizontal button.down {
         inset 1px 0 0 #9e9e9e,
         inset 0 -1px 0 #a0a0a0,
         inset -1px 0 0 #9e9e9e;
-    min-width: 16px;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
     min-height: 15px;
+    min-width: 16px;
+    padding: 0;
 }
 
 scrollbar.horizontal button.down:hover {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-right-hover.png"),
         linear-gradient(to bottom,
@@ -531,11 +577,16 @@ scrollbar.horizontal button.down:hover {
             #a9dbf6 46.666666667%,
             #a9dbf6 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
+    border: none;
     border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: none;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.151),
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
@@ -553,9 +604,15 @@ scrollbar.horizontal button.down:hover {
         inset 1px 0 0 #3c7fb1,
         inset 0 -1px 0 #346e99,
         inset -1px 0 0 #346e99;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.horizontal button.down:hover:active {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-right-pressed.png"),
         linear-gradient(to bottom,
@@ -564,11 +621,16 @@ scrollbar.horizontal button.down:hover:active {
             #6fcaf0 46.666666667%,
             #6fcaf0 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
-    border-top: 1px solid #f8f8f8;
+    border: none;
     border-bottom: 1px solid #e9e9e9;
+    border-radius: 2px;
+    border-top: 1px solid #f8f8f8;
+    box-shadow: none;
     box-shadow:
         inset 0 4px 0 rgba(255, 255, 255, 0.151),
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
@@ -583,9 +645,15 @@ scrollbar.horizontal button.down:hover:active {
         inset 0 -2px 0 rgba(255, 207, 188, 0.326),
         inset -2px 0 0 rgba(255, 207, 188, 0.326),
         inset 0 0 0 1px #18598a;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.vertical button.up {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-up-normal.png"),
         linear-gradient(to right,
@@ -620,11 +688,16 @@ scrollbar.vertical button.up {
             #b7b8bb 93.333333333%,
             #b7b8bb 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
+    border: none;
     border-left: 1px solid #f8f8f8;
+    border-radius: 2px;
     border-right: 1px solid #e9e9e9;
+    box-shadow: none;
     box-shadow:
         inset 4px 0 0 rgba(255, 255, 255, 0.045),
         inset 0 -4px 0 rgba(255, 255, 255, 0.045),
@@ -642,11 +715,17 @@ scrollbar.vertical button.up {
         inset 0 -1px 0 #9e9e9e,
         inset -1px 0 0 #a0a0a0,
         inset 0 1px 0 #9e9e9e;
-    min-width: 15px;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
     min-height: 16px;
+    min-width: 15px;
+    padding: 0;
 }
 
 scrollbar.vertical button.up:hover {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-up-hover.png"),
         linear-gradient(to right,
@@ -655,11 +734,16 @@ scrollbar.vertical button.up:hover {
             #a9dbf6 46.666666667%,
             #a9dbf6 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
+    border: none;
     border-left: 1px solid #f8f8f8;
+    border-radius: 2px;
     border-right: 1px solid #e9e9e9;
+    box-shadow: none;
     box-shadow:
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
         inset 0 -4px 0 rgba(255, 255, 255, 0.151),
@@ -677,9 +761,15 @@ scrollbar.vertical button.up:hover {
         inset 0 -1px 0 #3c7fb1,
         inset -1px 0 0 #346e99,
         inset 0 1px 0 #346e99;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.vertical button.up:hover:active {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-up-pressed.png"),
         linear-gradient(to right,
@@ -688,11 +778,16 @@ scrollbar.vertical button.up:hover:active {
             #6fcaf0 46.666666667%,
             #6fcaf0 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
+    border: none;
     border-left: 1px solid #f8f8f8;
+    border-radius: 2px;
     border-right: 1px solid #e9e9e9;
+    box-shadow: none;
     box-shadow:
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
         inset 0 -4px 0 rgba(255, 255, 255, 0.151),
@@ -707,9 +802,15 @@ scrollbar.vertical button.up:hover:active {
         inset -2px 0 0 rgba(255, 207, 188, 0.326),
         inset 0 2px 0 rgba(255, 207, 188, 0.326),
         inset 0 0 0 1px #18598a;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.vertical button.down {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-down-normal.png"),
         linear-gradient(to right,
@@ -744,11 +845,16 @@ scrollbar.vertical button.down {
             #b7b8bb 93.333333333%,
             #b7b8bb 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
+    border: none;
     border-left: 1px solid #f8f8f8;
+    border-radius: 2px;
     border-right: 1px solid #e9e9e9;
+    box-shadow: none;
     box-shadow:
         inset 4px 0 0 rgba(255, 255, 255, 0.045),
         inset 0 -4px 0 rgba(255, 255, 255, 0.045),
@@ -766,11 +872,17 @@ scrollbar.vertical button.down {
         inset 0 -1px 0 #9e9e9e,
         inset -1px 0 0 #a0a0a0,
         inset 0 1px 0 #9e9e9e;
-    min-width: 15px;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
     min-height: 16px;
+    min-width: 15px;
+    padding: 0;
 }
 
 scrollbar.vertical button.down:hover {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-down-hover.png"),
         linear-gradient(to right,
@@ -779,11 +891,16 @@ scrollbar.vertical button.down:hover {
             #a9dbf6 46.666666667%,
             #a9dbf6 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
+    border: none;
     border-left: 1px solid #f8f8f8;
+    border-radius: 2px;
     border-right: 1px solid #e9e9e9;
+    box-shadow: none;
     box-shadow:
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
         inset 0 -4px 0 rgba(255, 255, 255, 0.151),
@@ -801,9 +918,15 @@ scrollbar.vertical button.down:hover {
         inset 0 -1px 0 #3c7fb1,
         inset -1px 0 0 #346e99,
         inset 0 1px 0 #346e99;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.vertical button.down:hover:active {
+    background-color: transparent;
+    background-image: none;
     background-image: 
         url("../../assets/ui/scrollbars/arrow/arrow-down-pressed.png"),
         linear-gradient(to right,
@@ -812,11 +935,16 @@ scrollbar.vertical button.down:hover:active {
             #6fcaf0 46.666666667%,
             #6fcaf0 100%
         );
-    background-repeat: no-repeat, no-repeat;
+    background-position: center center;
     background-position: center center, center center;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat, no-repeat;
     background-size: auto, 100% 100%;
+    border: none;
     border-left: 1px solid #f8f8f8;
+    border-radius: 2px;
     border-right: 1px solid #e9e9e9;
+    box-shadow: none;
     box-shadow:
         inset 4px 0 0 rgba(255, 255, 255, 0.151),
         inset 0 -4px 0 rgba(255, 255, 255, 0.151),
@@ -831,6 +959,10 @@ scrollbar.vertical button.down:hover:active {
         inset -2px 0 0 rgba(255, 207, 188, 0.326),
         inset 0 2px 0 rgba(255, 207, 188, 0.326),
         inset 0 0 0 1px #18598a;
+    color: transparent;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
 }
 
 scrollbar.horizontal button.down,
