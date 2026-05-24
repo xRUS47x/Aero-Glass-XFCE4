@@ -7,8 +7,21 @@ spinbutton.horizontal:disabled {
 }
 
 spinbutton entry {
-padding-right: 54px;
-margin-bottom: 6px;
+    padding-right: 54px;
+    margin-bottom: 6px;
+}
+
+spinbutton.horizontal > button {
+    background-image: none;
+    border: none;
+    border-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: none;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
 }
 
 spinbutton.horizontal > button.up {
