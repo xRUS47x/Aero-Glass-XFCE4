@@ -2,20 +2,21 @@ combobox > box.linked > entry + button.combo,
 combobox > box.horizontal.linked > entry + button.combo {
     background-color: #ffffff;
     background-image: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 2px;
+    border-image: none;
     border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 2px;
     box-shadow:
         inset 1px 0  0 #ffffff,
         inset -1px 0 0 #dbdfe6,
         inset 0 -1px 0 #e3e9ef,
         inset 0  1px 0 #abadb3;
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 2px;
-    border-top-left-radius: 0;
-    border-top-right-radius: 2px;
-    margin-bottom: 5px;
-    margin-left: -7px;
-    margin-top: 5px;
-    padding: 0px;
+    font-size: none;
+    margin: 0 0 0 -1px;
+    min-width: 17px;
+    padding: 0;
 }
 
 combobox > box.linked > entry + button.combo:hover,
