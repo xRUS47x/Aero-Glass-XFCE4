@@ -1,0 +1,16 @@
+#whiskermenu-window button,
+#whiskermenu-window button:hover,
+#whiskermenu-window button:hover:active,
+#whiskermenu-window button:checked,
+#whiskermenu-window button:disabled {
+    background-image: none;
+    border: none;
+    border-image: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: none;
+    margin: 0;
+    min-width: 0;
+    padding: 0;
+}
