@@ -3,6 +3,10 @@
     margin-right: -15px;
 }
 
+#clock-button > box > box > label {
+    color: #ffffff;
+}
+
 #clock-button > box > box > label:first-child {
     margin-bottom: -2px;
 }
