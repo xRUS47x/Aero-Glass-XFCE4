@@ -2,3 +2,11 @@
     background-color: #f0f0f0;
     color: #000000;
 }
+
+label {
+    color: #000000;
+}
+
+label:disabled {
+    color: #6d6d6d;
+}
