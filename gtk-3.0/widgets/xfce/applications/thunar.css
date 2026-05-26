@@ -67,6 +67,256 @@
     min-height: 31px;
 }
 
+.thunar .path-bar button {
+    background-image: linear-gradient(to bottom,
+        #fafcfe 0%,
+        #fafcfe 5%,
+        #eaf1f9 5%,
+        #eaf1f9 10%,
+        #ebf2f9 10%,
+        #ebf2f9 15%,
+        #ecf2f9 15%,
+        #ecf2f9 20%,
+        #ecf2f9 20%,
+        #ecf2f9 25%,
+        #ecf2f9 25%,
+        #ecf2f9 30%,
+        #ecf2f9 30%,
+        #ecf2f9 35%,
+        #ecf2f9 35%,
+        #ecf2f9 40%,
+        #ecf2f9 40%,
+        #ecf2f9 45%,
+        #ecf2f9 45%,
+        #ecf2f9 50%,
+        #ecf2f9 50%,
+        #ecf2f9 55%,
+        #ecf2f9 55%,
+        #ecf2f9 60%,
+        #ecf2f9 60%,
+        #ecf2f9 65%,
+        #ecf2f9 65%,
+        #ecf2f9 70%,
+        #ecf2f9 70%,
+        #ecf2f9 75%,
+        #ecf2f9 75%,
+        #ecf2f9 80%,
+        #ebf2f9 80%,
+        #ebf2f9 85%,
+        #ebf2f9 85%,
+        #ebf2f9 90%,
+        #eaf1f9 90%,
+        #eaf1f9 95%,
+        #f9fbfd 95%,
+        #f9fbfd 100%
+    );
+    border-top: 1px solid #636363;
+    border-bottom: 1px solid #c8c8c8;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000000;
+    font-size: 12px;
+    margin-left: 0px;
+    padding: 1px 5px 2px 2px;
+}
+
+.thunar .path-bar button:first-child {
+    border-left: 1px solid #808080;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.thunar .path-bar button:last-child {
+    border-right: 1px solid #808080;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.thunar .path-bar button label {
+    color: #000000;
+}
+
+.thunar .path-bar button:hover {
+    background-image: linear-gradient(to bottom,
+        #ecf7fe 0%,
+        #ecf7fe 5%,
+        #eaf6fd 5%,
+        #eaf6fd 10%,
+        #e8f6fd 10%,
+        #e8f6fd 15%,
+        #e6f5fd 15%,
+        #e6f5fd 20%,
+        #e4f4fd 20%,
+        #e4f4fd 25%,
+        #e2f3fc 25%,
+        #e2f3fc 30%,
+        #dff2fc 30%,
+        #dff2fc 35%,
+        #ddf1fc 35%,
+        #ddf1fc 40%,
+        #daf0fc 40%,
+        #daf0fc 45%,
+        #d7effc 45%,
+        #d7effc 50%,
+        #bde6fd 50%,
+        #bde6fd 55%,
+        #bae4fc 55%,
+        #bae4fc 60%,
+        #b7e3fb 60%,
+        #b7e3fb 65%,
+        #b4e1fa 65%,
+        #b4e1fa 70%,
+        #b1dff9 70%,
+        #b1dff9 75%,
+        #aedef8 75%,
+        #aedef8 80%,
+        #abdcf7 80%,
+        #abdcf7 85%,
+        #a9daf5 85%,
+        #a9daf5 90%,
+        #a6d9f4 90%,
+        #a6d9f4 95%,
+        #a3d7f3 95%,
+        #a3d7f3 100%
+    );
+    box-shadow:
+        inset 2px 0 0 rgba(255,255,254,0.742),
+        inset -2px 0 0 rgba(255,255,254,0.742),
+        inset 0 1px 0 rgba(255,255,254,0.748),
+        inset 0 -1px 0 rgba(255,255,254,0.750),
+        inset 1px 0 0 #3c7fb1,
+        inset -1px 0 0 #3c7fb1;
+}
+
+.thunar .path-bar button:hover:active {
+    background-image: linear-gradient(to bottom,
+        #c2e4f6 0%,
+        #c2e4f6 5%,
+        #c2e4f6 5%,
+        #c2e4f6 10%,
+        #c2e4f6 10%,
+        #c2e4f6 15%,
+        #c2e4f6 15%,
+        #c2e4f6 20%,
+        #c2e4f6 20%,
+        #c2e4f6 25%,
+        #c2e4f6 25%,
+        #c2e4f6 30%,
+        #c2e4f6 30%,
+        #c2e4f6 35%,
+        #c2e4f6 35%,
+        #c2e4f6 40%,
+        #c2e4f6 40%,
+        #c2e4f6 45%,
+        #c2e4f6 45%,
+        #c2e4f6 50%,
+        #a9d9f2 50%,
+        #a9d9f2 55%,
+        #a9d9f2 55%,
+        #a9d9f2 60%,
+        #a6d7f2 60%,
+        #a6d7f2 65%,
+        #a3d5f1 65%,
+        #a3d5f1 70%,
+        #9fd4f0 70%,
+        #9fd4f0 75%,
+        #9cd2ee 75%,
+        #9cd2ee 80%,
+        #98d0ed 80%,
+        #98d0ed 85%,
+        #95ceec 85%,
+        #95ceec 90%,
+        #92cceb 90%,
+        #92cceb 95%,
+        #90cbeb 95%,
+        #90cbeb 100%
+    );
+    box-shadow:
+        inset 0 2px 0 rgba(1,28,49,0.145),
+        inset 3px 0 0 rgba(1,28,49,0.145),
+        inset 0 1px 0 rgba(5,32,50,0.3475),
+        inset 2px 0 0 rgba(5,32,50,0.3475),
+        inset 1px 0 0 #2c628b,
+        inset -1px 0 0 #2c628b;
+}
+
+.thunar .path-bar button:backdrop {
+    background-image: linear-gradient(to bottom,
+        #fcfdfe 0%,
+        #fcfdfe 5%,
+        #f3f7fb 5%,
+        #f3f7fb 10%,
+        #f4f7fb 10%,
+        #f4f7fb 15%,
+        #f4f7fb 15%,
+        #f4f7fb 20%,
+        #f4f8fb 20%,
+        #f4f8fb 25%,
+        #f4f8fb 25%,
+        #f4f8fb 30%,
+        #f4f8fb 30%,
+        #f4f8fb 35%,
+        #f4f8fb 35%,
+        #f4f8fb 40%,
+        #f4f8fb 40%,
+        #f4f8fb 45%,
+        #f4f8fb 45%,
+        #f4f8fb 50%,
+        #f4f8fb 50%,
+        #f4f8fb 55%,
+        #f4f8fb 55%,
+        #f4f8fb 60%,
+        #f4f8fb 60%,
+        #f4f8fb 65%,
+        #f4f8fb 65%,
+        #f4f8fb 70%,
+        #f4f8fb 70%,
+        #f4f8fb 75%,
+        #f4f7fb 75%,
+        #f4f7fb 80%,
+        #f4f7fb 80%,
+        #f4f7fb 85%,
+        #f3f7fb 85%,
+        #f3f7fb 90%,
+        #f3f7fb 90%,
+        #f3f7fb 95%,
+        #fbfdfe 95%,
+        #fbfdfe 100%
+    );
+    border-top: 1px solid #5d5d5d;
+    border-bottom: 1px solid #bdbdbd;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    box-shadow: none;
+    color: #000000;
+    font-size: 12px;
+    margin-left: 0px;
+    padding: 1px 5px 2px 2px;
+}
+
+.thunar .path-bar button:first-child:backdrop {
+    border-left: 1px solid #7c7c7c;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.thunar .path-bar button:last-child:backdrop {
+    border-right: 1px solid #787878;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+.thunar .path-bar button:backdrop label {
+    color: #434e54;
+}
+
+.thunar toolbar entry {
+    margin: 5px 0px 5px 0px;
+}
+
 .thunar .frame scrolledwindow,
 .thunar scrolledwindow.frame {
     border: none;
@@ -192,5 +442,6 @@ window.thunar statusbar {
 }
 
 window.thunar statusbar label {
+    color: #1e395b;
 	padding-bottom: 21px;
 }
