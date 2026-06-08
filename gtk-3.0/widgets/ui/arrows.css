@@ -1,0 +1,81 @@
+combobox > box.linked > entry.combo + button.combo arrow {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-down.png");
+    min-width: 7px;
+    min-height: 4px;
+    padding: 10px 5px 10px 0;
+}
+
+combobox > box.linked > entry.combo + button.combo arrow:disabled {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-down-disabled.png");
+}
+
+combobox > box.linked > button.combo arrow {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-down.png");
+    min-width: 7px;
+    min-height: 4px;
+    padding: 10px 2px 10px 0;
+}
+
+combobox > box.linked > button.combo arrow:disabled {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-down-disabled.png");
+    min-width: 7px;
+    min-height: 4px;
+    padding: 10px 2px 10px 0;
+}
+
+expander title > arrow,
+expander title > arrow:hover {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-right.png");
+    min-height: 7px;
+    min-width: 4px;
+    padding: 8px 6px 8px 2px;
+}
+
+expander title > arrow:dir(rtl) {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-left.png");
+}
+
+expander title > arrow:checked,
+expander title > arrow:checked:hover {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-down.png");
+    min-height: 4px;
+    min-width: 7px;
+    padding: 10px 5px 10px 0;
+}
+
+expander title > arrow:disabled,
+expander title > arrow:disabled:hover {
+     -gtk-icon-source: url("../../assets/ui/arrow/arrow-down-disabled.png");
+}
+
+.menu menuitem arrow:dir(ltr),
+menu menuitem arrow:dir(ltr) {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-right.png");
+    min-height: 7px;
+    min-width: 4px;
+    padding-right: 9px;
+}
+
+.menu menuitem arrow:dir(rtl)
+menu menuitem arrow:dir(rtl), {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-left.png");
+    min-height: 7px;
+    min-width: 4px;
+    padding-left: 9px;
+}
+
+modelbutton.flat arrow.left,
+popover.background checkbutton arrow.left,
+popover.background radiobutton arrow.left {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-right.png");
+}
+
+modelbutton.flat arrow.right,
+popover.background checkbutton arrow.right,
+popover.background radiobutton arrow.right {
+    -gtk-icon-source: url("../../assets/ui/arrow/arrow-left.png");
+}
+
+treeview.view button image {
+    color: transparent;
+}
