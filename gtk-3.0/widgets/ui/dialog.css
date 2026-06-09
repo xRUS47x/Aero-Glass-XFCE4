@@ -1,0 +1,23 @@
+.error {
+    background-color: #ffe1e1;
+    border: 1px solid #b3b3b3;
+    color: #000000;
+}
+
+.info {
+    background-color: #e1ffe1;
+    border: 1px solid #b3b3b3;
+    color: #000000;
+}
+
+.question {
+    background-color: #e1e1ff;
+    border: 1px solid #b3b3b3;
+    color: #000000;
+}
+
+.warning {
+    background-color: #ffffe1;
+    border: 1px solid #b3b3b3;
+    color: #000000;
+}
