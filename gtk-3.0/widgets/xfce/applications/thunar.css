@@ -242,6 +242,10 @@
         inset -1px 0 0 #2c628b;
 }
 
+.thunar .path-bar button:hover:active label {
+    margin: 1px -1px -1px 1px;
+}
+
 .thunar .path-bar button:backdrop {
     background-image: linear-gradient(to bottom,
         #fcfdfe 0%,
