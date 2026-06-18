@@ -1,5 +1,10 @@
 treeview.view {
     background-color: #fcfcfc;
+    color: #000000;
+}
+
+treeview.view:disabled {
+    color: #6d6d6d;
 }
 
 treeview.view header button {
