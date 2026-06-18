@@ -330,6 +330,22 @@
     background-color: #fcfcfc
 }
 
+.thunar .standard-view .view:selected {
+	background-color: #cee3fc;
+	color: #000000;
+}
+
+.thunar .content-view rubberband,
+.thunar flowbox rubberband,
+.thunar .rubberband,
+.thunar rubberband,
+.thunar treeview.view rubberband,
+.thunar .view .rubberband {
+    background-color: rgba(55, 135, 215, 0.35);
+    background-image: none;
+    border: 1px solid #3399ff;
+}
+
 window.thunar grid.horizontal paned.horizontal grid.horizontal > widget,
 window.thunar statusbar {
     background-color: transparent;
