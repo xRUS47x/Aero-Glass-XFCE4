@@ -351,18 +351,34 @@ radio:indeterminate:disabled {
 
 treeview.view.trough,
 treeview.view.trough:selected:focus {
-    background-image: none;
     background-color: #7a93b1;
+    background-image: none;
     border-radius: 0;
-    box-shadow: none;
+    box-shadow:
+        inset 1px 0 0 #808080,
+        inset 0 1px 0 #808080,
+        inset -1px 0 0 #ffffff,
+        inset 0 -1px 0 #ffffff;
     color: #000000;
 }
 
 treeview.view.progressbar,
 treeview.view.progressbar:selected:focus {
-    background-image: none;
+    background-clip: padding-box;
     background-color: #99cc33;
+    background-image: none;
+    border-bottom: 0;
+    border-left: 0;
     border-radius: 0;
-    box-shadow: none;
+    border-right: 1px solid transparent;
+    border-top: 0;
+    box-shadow:
+        inset 2px 0 0 #7a93b1,
+        inset 0 2px 0 #7a93b1,
+        inset 0 -2px 0 #7a93b1,
+        inset -1px 0 0 #7a93b1,
+        inset 1px 0 0 #808080,
+        inset 0 1px 0 #808080,
+        inset 0 -1px 0 #ffffff;
     color: #000000;
 }
