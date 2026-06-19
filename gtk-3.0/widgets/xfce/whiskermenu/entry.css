@@ -7,10 +7,10 @@
     border-top: 1px solid #3f4040;
     box-shadow: none;
     color: #000000;
-    min-height: 21px;
+    margin: 0px 18px 14px 15px;
+    min-height: 20px;
     min-width: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding: 0 5px 0 5px;
 }
 
 #whiskermenu-window .search-area entry:disabled {
@@ -41,4 +41,3 @@
 #whiskermenu-window .search-area entry image.left {
     padding-right: 4px;
 }
-
