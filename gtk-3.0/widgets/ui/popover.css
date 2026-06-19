@@ -1,0 +1,23 @@
+popover.background,
+popover.background.scale-popup {
+    background-color: transparent;
+    background-clip:
+        padding-box,
+        border-box;
+    border-color: @color_base;
+    background-image:
+        linear-gradient(to bottom, white, white),
+        linear-gradient(to bottom, @color_base, @color_base);
+    border-image-repeat: stretch;
+    border-image-slice: 8;
+    border-image-source: url("../../assets/ui/border/glass-border.png");
+    border-image-width: 8px;
+    background-origin:
+        padding-box,
+        border-box;
+    border-radius: 9px;
+    border-style: solid;
+    border-width: 8px;
+    box-shadow: none;
+    padding: 0;
+}
