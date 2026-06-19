@@ -97,6 +97,10 @@ filechooserbutton > button.file > box.horizontal > separator.vertical:disabled {
     border-right: 1px solid #f0f0f0;
 }
 
+dialog .dialog-action-box button.text-button label {
+    margin: 2px 0 0 0;
+}
+
 button:hover {
     background-image: linear-gradient(to bottom,
         #eef8fe 0%,
@@ -215,3 +219,4 @@ button:disabled {
         inset 0 0 0 1px #adb2b5;
     color: #838383;
 }
+
