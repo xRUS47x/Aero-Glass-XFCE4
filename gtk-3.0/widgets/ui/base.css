@@ -10,3 +10,11 @@ label {
 label:disabled {
     color: #6d6d6d;
 }
+
+*:focus {
+    -gtk-outline-radius: 0;
+    outline-color: rgba(0,0,0,1.00);
+    outline-offset: -3px;
+    outline-style: dotted;
+    outline-width: 1px;
+}
