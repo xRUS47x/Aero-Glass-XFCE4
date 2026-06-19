@@ -686,3 +686,11 @@ filechooser .path-bar button:last-child:backdrop {
 filechooser .path-bar button:backdrop label {
     color: #434e54;
 }
+
+filechooser button.popup.toggle {
+    margin: -2px 0 2px 0;
+}
+
+filechooser button.popup.toggle:hover:active image {
+    margin: 1px -1px -1px 1px;
+}
