@@ -93,4 +93,6 @@
         0 0 0 2px rgba(255, 255, 255, 0.30) inset,
         0 0 0 1px rgba(0, 0, 0, 1.00) inset;
     color: #ffffff;
+    margin: 1px 1px 0 -1px;
+    padding: 7px 12px 7px 12px;
 }
