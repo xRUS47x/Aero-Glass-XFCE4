@@ -317,6 +317,26 @@
     color: #434e54;
 }
 
+.thunar toolbar > toolbutton:nth-child(1) > button {
+    background-image: none;
+    box-shadow: none;
+}
+
+.thunar toolbar > toolbutton:nth-child(2) > button {
+    background-image: none;
+    box-shadow: none;
+}
+
+.thunar toolbar > toolbutton:nth-child(3) > button {
+    background-image: none;
+    box-shadow: none;
+}
+
+.thunar toolbar > toolbutton:nth-child(4) > button {
+    background-image: none;
+    box-shadow: none;
+}
+
 .thunar toolbar entry {
     margin: 5px 0px 5px 0px;
 }
