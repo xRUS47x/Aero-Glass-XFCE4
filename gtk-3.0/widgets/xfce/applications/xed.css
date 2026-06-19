@@ -1,0 +1,261 @@
+window.xed-window toolbar.primary-toolbar {
+    background-color: #f0f0f0;
+    background-image: none;
+    min-height: 43px;
+}
+
+window.xed-window toolbar.primary-toolbar separator,
+window.xed-window toolbar.primary-toolbar separator:backdrop {
+    box-shadow:
+        inset 2px 0 0 #f5f5f5,
+        inset 1px 0 0 #848484;
+    margin: 3px 4px 6px 2px;
+    min-width: 2px;
+}
+
+window.xed-window toolbar.primary-toolbar separator.vertical {
+    border-left: 1px solid #f0f0f0;
+    border-right: 1px solid #f0f0f0;
+    margin: 3px 0 6px 0;
+}
+
+window.xed-window toolbar.primary-toolbar button,
+window.xed-window toolbar.primary-toolbar button:hover,
+window.xed-window toolbar.primary-toolbar button:hover:active,
+window.xed-window toolbar.primary-toolbar button:checked,
+window.xed-window toolbar.primary-toolbar button:disabled {
+    border-image: none;
+    min-width: 0;
+}
+
+window.xed-window toolbar.primary-toolbar button.text-button,
+window.xed-window toolbar.primary-toolbar button.image-button.text-button,
+window.xed-window toolbar.primary-toolbar button.flat.toggle,
+window.xed-window toolbar.primary-toolbar button.flat.image-button {
+    background-image: linear-gradient(to bottom,
+        rgba(0,0,0,0.00) 0%,
+        rgba(0,0,0,0.00) 100%
+    );
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    border-radius: 3px;
+    box-shadow: none;
+    margin: 2px 0 5px 0;
+    padding: 0 8px 0 8px;
+}
+
+window.xed-window toolbar.primary-toolbar button.text-button:hover,
+window.xed-window toolbar.primary-toolbar button.image-button.text-button:hover,
+window.xed-window toolbar.primary-toolbar button.flat.toggle:hover,
+window.xed-window toolbar.primary-toolbar button.flat.image-button:hover {
+    background-image: linear-gradient(to bottom,
+        rgba(255,255,255,0.333333) 0%,
+        rgba(255,255,255,0.333333) 3.125%,
+        rgba(255,255,255,0.133333) 3.125%,
+        rgba(255,255,255,0.133333) 6.25%,
+        rgba(255,255,255,0.0) 6.25%,
+        rgba(255,255,255,0.0) 9.375%,
+        rgba(0,0,0,0.0125) 9.375%,
+        rgba(0,0,0,0.0125) 12.5%,
+        rgba(0,0,0,0.020833) 12.5%,
+        rgba(0,0,0,0.020833) 15.625%,
+        rgba(0,0,0,0.029167) 15.625%,
+        rgba(0,0,0,0.029167) 18.75%,
+        rgba(0,0,0,0.033333) 18.75%,
+        rgba(0,0,0,0.033333) 31.25%,
+        rgba(0,0,0,0.091667) 31.25%,
+        rgba(0,0,0,0.091667) 37.5%,
+        rgba(0,0,0,0.083333) 37.5%,
+        rgba(0,0,0,0.083333) 46.875%,
+        rgba(0,0,0,0.070833) 46.875%,
+        rgba(0,0,0,0.070833) 53.125%,
+        rgba(0,0,0,0.058333) 53.125%,
+        rgba(0,0,0,0.058333) 59.375%,
+        rgba(0,0,0,0.045833) 59.375%,
+        rgba(0,0,0,0.045833) 68.75%,
+        rgba(0,0,0,0.029167) 68.75%,
+        rgba(0,0,0,0.029167) 75%,
+        rgba(0,0,0,0.020833) 75%,
+        rgba(0,0,0,0.020833) 81.25%,
+        rgba(0,0,0,0.0125) 81.25%,
+        rgba(0,0,0,0.0125) 90.625%,
+        rgba(0,0,0,0.008333) 90.625%,
+        rgba(0,0,0,0.008333) 96.875%,
+        rgba(255,255,255,0.0) 96.875%,
+        rgba(255,255,255,0.0) 100%
+    );
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    box-shadow:
+        inset 1px 1px 0 rgba(255,255,255,0.45),
+        inset -1px 1px 0 rgba(255,255,255,0.45),
+        inset 0 1px 0 rgba(255,255,255,0.25),
+        inset 0 -1px 0 rgba(255,255,255,0.25);
+    margin: 2px 0 5px 0;
+    padding: 0 8px 0 8px;
+}
+
+window.xed-window toolbar.primary-toolbar button.text-button:hover:checked,
+window.xed-window toolbar.primary-toolbar button.image-button.text-button:hover:checked,
+window.xed-window toolbar.primary-toolbar button.flat.toggle:hover:checked,
+window.xed-window toolbar.primary-toolbar button.flat.image-button:hover:checked,
+window.xed-window toolbar.primary-toolbar button.text-button:hover:active,
+window.xed-window toolbar.primary-toolbar button.image-button.text-button:hover:active,
+window.xed-window toolbar.primary-toolbar button.flat.toggle:hover:active,
+window.xed-window toolbar.primary-toolbar button.flat.image-button:hover:active,
+window.xed-window toolbar.primary-toolbar button.text-button:checked,
+window.xed-window toolbar.primary-toolbar button.image-button.text-button:checked,
+window.xed-window toolbar.primary-toolbar button.flat.toggle:checked,
+window.xed-window toolbar.primary-toolbar button.flat.image-button:checked {
+    background-image: linear-gradient(to bottom,
+        rgba(0,0,0,0.350000000) 0%,
+        rgba(0,0,0,0.350000000) 2.941176471%,
+        rgba(0,0,0,0.250000000) 2.941176471%,
+        rgba(0,0,0,0.250000000) 5.882352941%,
+        rgba(0,0,0,0.162500000) 5.882352941%,
+        rgba(0,0,0,0.162500000) 8.823529412%,
+        rgba(0,0,0,0.129166667) 8.823529412%,
+        rgba(0,0,0,0.129166667) 11.764705882%,
+        rgba(0,0,0,0.104166667) 11.764705882%,
+        rgba(0,0,0,0.104166667) 14.705882353%,
+        rgba(0,0,0,0.087500000) 14.705882353%,
+        rgba(0,0,0,0.087500000) 17.647058824%,
+        rgba(0,0,0,0.070833333) 17.647058824%,
+        rgba(0,0,0,0.070833333) 20.588235294%,
+        rgba(0,0,0,0.058333333) 20.588235294%,
+        rgba(0,0,0,0.058333333) 23.529411765%,
+        rgba(0,0,0,0.050000000) 23.529411765%,
+        rgba(0,0,0,0.050000000) 26.470588235%,
+        rgba(0,0,0,0.050000000) 26.470588235%,
+        rgba(0,0,0,0.050000000) 29.411764706%,
+        rgba(0,0,0,0.050000000) 29.411764706%,
+        rgba(0,0,0,0.050000000) 32.352941176%,
+        rgba(0,0,0,0.075000000) 32.352941176%,
+        rgba(0,0,0,0.075000000) 35.294117647%,
+        rgba(0,0,0,0.075000000) 35.294117647%,
+        rgba(0,0,0,0.075000000) 38.235294118%,
+        rgba(0,0,0,0.070833333) 38.235294118%,
+        rgba(0,0,0,0.070833333) 41.176470588%,
+        rgba(0,0,0,0.070833333) 41.176470588%,
+        rgba(0,0,0,0.070833333) 44.117647059%,
+        rgba(0,0,0,0.070833333) 44.117647059%,
+        rgba(0,0,0,0.070833333) 47.058823529%,
+        rgba(0,0,0,0.062500000) 47.058823529%,
+        rgba(0,0,0,0.062500000) 50%,
+        rgba(0,0,0,0.062500000) 50%,
+        rgba(0,0,0,0.062500000) 52.941176471%,
+        rgba(0,0,0,0.054166667) 52.941176471%,
+        rgba(0,0,0,0.054166667) 55.882352941%,
+        rgba(0,0,0,0.054166667) 55.882352941%,
+        rgba(0,0,0,0.054166667) 58.823529412%,
+        rgba(0,0,0,0.045833333) 58.823529412%,
+        rgba(0,0,0,0.045833333) 61.764705882%,
+        rgba(0,0,0,0.045833333) 61.764705882%,
+        rgba(0,0,0,0.045833333) 64.705882353%,
+        rgba(0,0,0,0.045833333) 64.705882353%,
+        rgba(0,0,0,0.045833333) 67.647058824%,
+        rgba(0,0,0,0.045833333) 67.647058824%,
+        rgba(0,0,0,0.045833333) 70.588235294%,
+        rgba(0,0,0,0.045833333) 70.588235294%,
+        rgba(0,0,0,0.045833333) 73.529411765%,
+        rgba(0,0,0,0.045833333) 73.529411765%,
+        rgba(0,0,0,0.045833333) 76.470588235%,
+        rgba(0,0,0,0.045833333) 76.470588235%,
+        rgba(0,0,0,0.045833333) 79.411764706%,
+        rgba(0,0,0,0.045833333) 79.411764706%,
+        rgba(0,0,0,0.045833333) 82.352941176%,
+        rgba(0,0,0,0.045833333) 82.352941176%,
+        rgba(0,0,0,0.045833333) 85.294117647%,
+        rgba(0,0,0,0.045833333) 85.294117647%,
+        rgba(0,0,0,0.045833333) 88.235294118%,
+        rgba(0,0,0,0.045833333) 88.235294118%,
+        rgba(0,0,0,0.045833333) 91.176470588%,
+        rgba(0,0,0,0.045833333) 91.176470588%,
+        rgba(0,0,0,0.045833333) 94.117647059%,
+        rgba(0,0,0,0.041666667) 94.117647059%,
+        rgba(0,0,0,0.041666667) 97.058823529%,
+        rgba(0,0,0,0.054166667) 97.058823529%,
+        rgba(0,0,0,0.054166667) 100%
+    );
+    border: 1px solid rgba(0, 0, 0, 0.65);
+    box-shadow:
+        inset 2px 0 0 rgba(0,0,0,0.07),
+        inset 1px 0 0 rgba(0,0,0,0.135);
+    margin: 2px 0 5px 0;
+    padding: 0 8px 0 8px;
+}
+
+window.xed-window .inline-toolbar {
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #dfdfdf;
+    border-left: 1px solid #dfdfdf;
+    border-right: 1px solid #dfdfdf;
+    padding: 9px;
+}
+
+window.xed-window notebook button.flat,
+window.xed-window notebook button.flat.image-button {
+    background-color: transparent;
+    background-image: url("../../assets/ui/buttons/small-close-button_normal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+    min-width: 13px;
+    min-height: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+window.xed-window notebook button.flat:hover,
+window.xed-window notebook button.flat.image-button:hover {
+    background-color: transparent;
+    background-image: url("../../assets/ui/buttons/small-close-button_hover.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+    margin: 0;
+    min-height: 13px;
+    min-width: 13px;
+    padding: 0;
+}
+
+window.xed-window notebook button.flat:hover:active,
+window.xed-window notebook button.flat.image-button:hover:active,
+window.xed-window notebook button.flat:active,
+window.xed-window notebook button.flat.image-button:active {
+    background-color: transparent;
+    background-image: url("../../assets/ui/buttons/small-close-button_pressed.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 13px 13px;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    color: transparent;
+    margin: 0;
+    min-height: 13px;
+    min-width: 13px;
+    padding: 0;
+}
+
+window.xed-window notebook button.flat image,
+window.xed-window notebook button.flat.image-button image {
+    color: transparent;
+    -gtk-icon-source: none;
+    margin: 0;
+    min-height: 0;
+    min-width: 0;
+    opacity: 0;
+    padding: 0;
+}
+
+window.xed-window textview.view.sourceview {
+    background-color: #ffffff;
+    box-shadow: inset 0 0 0 1px #888b94;
+}
