@@ -104,3 +104,9 @@
         inset 0 -2px 0 rgba(213, 231, 252, 0.960784314),
         inset 0 0 0 1px rgba(113, 154, 202, 0.952941176);
 }
+
+#whiskermenu-window scrolledwindow.frame.launchers-pane treeview.view.launchers {
+    color: #000000;
+    font-size: 12px;
+    padding: 0 3px 0 2px;
+}
