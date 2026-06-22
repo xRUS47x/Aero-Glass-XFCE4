@@ -1,9 +1,12 @@
 #showdesktop-button {
     background-image: url("../../../assets/xfce/panel/showdesktop/showdesktop-standard.png");
-    background-position: right;
+    background-position: 2px 0;
     background-repeat: no-repeat;
     background-size: 15px 40px;
-    min-width: 15px;
+
+    margin: 0 -17px 0 25px;
+    min-width: 17px;
+    padding: 0;
 }
 
 #showdesktop-button:hover {
@@ -15,5 +18,5 @@
 }
 
 #showdesktop-button image {
-  opacity: 0;
+    opacity: 0;
 }
