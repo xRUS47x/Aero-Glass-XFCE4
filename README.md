@@ -9,19 +9,20 @@ This project is unofficial and is not affiliated with, endorsed by, sponsored by
 
 ## Project Status
 
-Beta / WIP
+Beta / Upstream development paused
 
-This theme is still under active development.  
-Visual details, asset quality, compatibility, and behavior may change over time.
+This original upstream theme project is currently on hold.
+No further original development or regular maintenance should be expected from the original author for the time being.
+Existing and future forks are independent and may continue development separately.
 
-Community contributions, improvements, and forks are welcome.  
+Community contributions, improvements, and forks are (still) welcome.
 Unless stated otherwise, original project material released under CC0 may be copied, modified, adapted, and reused freely.
 
 Microsoft-related assets and any other third-party material remain excluded from the CC0 dedication and are subject to the rights of their respective owners.
 
 ## Preview
 
-<img width="1920" height="1080" alt="aero-xfce" src="https://github.com/user-attachments/assets/4f799717-df19-4912-aff7-da3b8b8b0bfb" />
+<img width="1920" height="1080" alt="aero-xfce" src="https://github.com/user-attachments/assets/0a74b9b0-a306-42e5-89d2-141415f62498" />
 
 ## Tested and Compatible OS + XFCE Version
 
